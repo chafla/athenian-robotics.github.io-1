@@ -7,7 +7,7 @@ For full documentation visit [plot.ly](https://plot.ly/python/).
 Before using plot.ly, follow these steps:
 
 1) [Sign up](https://plot.ly/accounts/login/?action=signup) and create a plot.ly account. Notice that 
-you can click on the Github logo and use your GitHub account to sign up.
+you can click on the Github logo and use your GitHub credentials to sign up.
 
 2) Create your credentials file:
 
@@ -20,9 +20,9 @@ $ python
 
 This will create a **~/.plotly/.credentials** file. 
 
-3) You will be using [plot.ly streams](), so you will need to 
-[Add some streaming API tokens](https://plot.ly/settings/api) to your account. You should create 
-a 3 to start.
+3) You will be using [plot.ly streams](https://plot.ly/streaming/), 
+so create some streaming API tokens
+[here](https://plot.ly/settings/api). You should create 3 to start.
 
 4) Manually add the newly created streaming API tokens to **~/.plotly/.credentials**: 
 ```
