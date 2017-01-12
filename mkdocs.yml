@@ -1,0 +1,12 @@
+site_name: Athenian Robotics
+
+pages:
+- Home: index.md
+#- Tutorial: tutorial.md
+
+theme: readthedocs
+
+google_analytics: ['UA-90285378-1', 'auto']
+
+repo_url: https://github.com/ev34j/ev34j
+
