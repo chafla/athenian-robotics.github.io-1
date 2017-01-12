@@ -9,6 +9,46 @@
             "location": "/#athenian-robotics", 
             "text": "", 
             "title": "Athenian Robotics"
+        }, 
+        {
+            "location": "/mkdocs/", 
+            "text": "MkDocs Notes\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject Layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.\nsite/         # Generated website", 
+            "title": "MkDocs"
+        }, 
+        {
+            "location": "/mkdocs/#mkdocs-notes", 
+            "text": "For full documentation visit  mkdocs.org .", 
+            "title": "MkDocs Notes"
+        }, 
+        {
+            "location": "/mkdocs/#commands", 
+            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.", 
+            "title": "Commands"
+        }, 
+        {
+            "location": "/mkdocs/#project-layout", 
+            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.\nsite/         # Generated website", 
+            "title": "Project Layout"
+        }, 
+        {
+            "location": "/plotly/", 
+            "text": "Plot.ly Notes\n\n\nFor full documentation visit \nplot.ly\n.\n\n\nOne-time Setup\n\n\nBefore using plot.ly, follow these steps:\n\n\n1) \nSign up\n and create a plot.ly account. Notice that \nyou can click on the Github logo and use your GitHub account to sign up.\n\n\n2) Create your credentials file:\n\n\n$ pip install plotly\n$ python\n\n import plotly\n\n plotly.tools.set_credentials_file(username='YourName', api_key='YourKey')\n\n\n\n\nThis will create a \n~/.plotly/.credentials\n file. \n\n\n3) You will be using \nplot.ly streams\n, so you will need to \n\nAdd some streaming API tokens\n to your account. You should create \na 3 to start.\n\n\n4) Manually add the newly created streaming API tokens to \n~/.plotly/.credentials\n: \n\n\n{\n    \nusername\n: \nYourName\n,\n    \nstream_ids\n: [\n        \nid1\n,\n        \nid2\n,\n        \nid3\n\n    ],\n    \napi_key\n: \nYourKey\n,\n    \nproxy_username\n: \n,\n    \nproxy_password\n: \n\n}\n\n\n\n\nPython API\n\n\nOnce your streaming API tokens are added, you can use them in your code without \na hard-coded reference:\n\n\nimport plotly.plotly as py\nimport plotly.tools as tls\n\nstream_ids = tls.get_credentials_file()['stream_ids']\n# This will use the first streaming API token\nstream_id = stream_ids[0]\nstream = py.Stream(stream_id)\nstream.open()", 
+            "title": "Plot.ly"
+        }, 
+        {
+            "location": "/plotly/#plotly-notes", 
+            "text": "For full documentation visit  plot.ly .", 
+            "title": "Plot.ly Notes"
+        }, 
+        {
+            "location": "/plotly/#one-time-setup", 
+            "text": "Before using plot.ly, follow these steps:  1)  Sign up  and create a plot.ly account. Notice that \nyou can click on the Github logo and use your GitHub account to sign up.  2) Create your credentials file:  $ pip install plotly\n$ python  import plotly  plotly.tools.set_credentials_file(username='YourName', api_key='YourKey')  This will create a  ~/.plotly/.credentials  file.   3) You will be using  plot.ly streams , so you will need to  Add some streaming API tokens  to your account. You should create \na 3 to start.  4) Manually add the newly created streaming API tokens to  ~/.plotly/.credentials :   {\n     username :  YourName ,\n     stream_ids : [\n         id1 ,\n         id2 ,\n         id3 \n    ],\n     api_key :  YourKey ,\n     proxy_username :  ,\n     proxy_password :  \n}", 
+            "title": "One-time Setup"
+        }, 
+        {
+            "location": "/plotly/#python-api", 
+            "text": "Once your streaming API tokens are added, you can use them in your code without \na hard-coded reference:  import plotly.plotly as py\nimport plotly.tools as tls\n\nstream_ids = tls.get_credentials_file()['stream_ids']\n# This will use the first streaming API token\nstream_id = stream_ids[0]\nstream = py.Stream(stream_id)\nstream.open()", 
+            "title": "Python API"
         }
     ]
 }

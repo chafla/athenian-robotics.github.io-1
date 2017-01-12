@@ -1,8 +1,13 @@
 site_name: Athenian Robotics
+site_url: http://www.athenian-robotics.org
+site_description: Athenian Robotics Documentation
+site_author: Athenian Robotics Team
 
 pages:
 - Home: index.md
-#- Tutorial: tutorial.md
+- Software Notes:
+  - MkDocs: mkdocs.md
+  - Plot.ly: plotly.md
 
 theme: readthedocs
 

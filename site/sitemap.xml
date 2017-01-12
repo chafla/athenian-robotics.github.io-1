@@ -3,10 +3,26 @@
 
     
     <url>
-     <loc>/</loc>
+     <loc>http://www.athenian-robotics.org/</loc>
      <lastmod>2017-01-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
+    
+
+    
+        
+    <url>
+     <loc>http://www.athenian-robotics.org/mkdocs/</loc>
+     <lastmod>2017-01-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://www.athenian-robotics.org/plotly/</loc>
+     <lastmod>2017-01-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
 </urlset>
