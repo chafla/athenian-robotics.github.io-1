@@ -49,7 +49,7 @@ import plotly.plotly as py
 import plotly.tools as tls
 
 stream_ids = tls.get_credentials_file()['stream_ids']
-# This will use the first streaming API token
+# Use the first streaming API token
 stream_id = stream_ids[0]
 stream = py.Stream(stream_id)
 stream.open()

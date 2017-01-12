@@ -20,7 +20,7 @@ $ make website
 
 ```bash
 $ git status 
-$ git add fileToAdd
+$ git add -A
 ```
 
 4) Commit the changes:
