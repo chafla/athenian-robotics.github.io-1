@@ -8,7 +8,7 @@ Installation details are
 [here](http://docs.python-guide.org/en/latest/starting/install3/osx/).
 
 Python3 requires `gcc`, which you can get by installing 
- [XCode](http://developer.apple.com/xcode/) or 
+[XCode](http://developer.apple.com/xcode/) or 
 [Command Line Tools](https://developer.apple.com/downloads/).
 
 Install python3 and pip3 with:
