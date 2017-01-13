@@ -10,7 +10,7 @@
 
 1) Make desired edits on content
 
-2) Rebuild /site
+2) Generate the website content into the /site directory:
 
 ```bash
 $ make website
