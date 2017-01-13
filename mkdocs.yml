@@ -7,9 +7,12 @@ pages:
 - Home: index.md
 - Software Notes:
   - MkDocs: mkdocs.md
-  - Python Administration: python-admin.md
   - MQTT: mqtt.md
   - Plot.ly: plotly.md
+- SysAdmin:
+   - Python Administration: python-admin.md
+   - EV3 Administration: ev3-admin.md
+
 
 theme: readthedocs
 

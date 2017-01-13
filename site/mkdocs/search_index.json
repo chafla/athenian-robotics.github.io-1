@@ -31,31 +31,6 @@
             "title": "Project Layout"
         }, 
         {
-            "location": "/python-admin/", 
-            "text": "Python Administration\n\n\nInstallation\n\n\nOSX\n\n\nInstallation details are \n\nhere\n.\n\n\nPython3 requires \ngcc\n, which you can get by installing \n \nXCode\n or \n\nCommand Line Tools\n.\n\n\nInstall python3 and pip3 with:\n\n\n$ brew install python3\n\n\n\n\nPackage Management\n\n\nDetermine installed packages with:\n\n\n$ pip3 list \n\n\n\n\nDetermine outdated packages with:\n\n\n$ pip3 list --outdated\n\n\n\n\nInstall a package with:\n\n\n$ pip3 install pkg_name\n\n\n\n\nUpdate a package with:\n\n\n$ pip3 install --upgrade pkg_name", 
-            "title": "Python Administration"
-        }, 
-        {
-            "location": "/python-admin/#python-administration", 
-            "text": "", 
-            "title": "Python Administration"
-        }, 
-        {
-            "location": "/python-admin/#installation", 
-            "text": "", 
-            "title": "Installation"
-        }, 
-        {
-            "location": "/python-admin/#osx", 
-            "text": "Installation details are  here .  Python3 requires  gcc , which you can get by installing \n  XCode  or  Command Line Tools .  Install python3 and pip3 with:  $ brew install python3", 
-            "title": "OSX"
-        }, 
-        {
-            "location": "/python-admin/#package-management", 
-            "text": "Determine installed packages with:  $ pip3 list   Determine outdated packages with:  $ pip3 list --outdated  Install a package with:  $ pip3 install pkg_name  Update a package with:  $ pip3 install --upgrade pkg_name", 
-            "title": "Package Management"
-        }, 
-        {
             "location": "/mqtt/", 
             "text": "MQTT Notes\n\n\nMQTT Broker Installation\n\n\nOSX\n\n\nTo install mosquitto:\n\n\n$ brew install mosquitto\n\n\n\n\nTo add mosquitto to launchd:\n\n\n$ brew services start mosquitto\n\n\n\n\nIf you don't want to run mosquitto as a background service:\n\n\n$ /usr/local/sbin/mosquitto -c /usr/local/etc/mosquitto/mosquitto.conf\n\n\n\n\nDocker\n\n\nTo run mosquitto as a docker service:\n\n\n$ docker run -ti -p 1883:1883 -p 9001:9001 toke/mosquitto\n\n\n\n\nImage details are \nhere\n\n\nRaspberry Pi\n\n\n$ sudo apt-get install mosquitto\n$ sudo apt-get install mosquitto-clients\n\n\n\n\nTesting from CLI\n\n\nSubscribe\n\n\n$ mosquitto_sub -d -h localhost -t /testnode\nClient mosqsub/27524-pleiku.lo sending CONNECT\nClient mosqsub/27524-pleiku.lo received CONNACK\nClient mosqsub/27524-pleiku.lo sending SUBSCRIBE (Mid: 1, Topic: /testnode, QoS: 0)\nClient mosqsub/27524-pleiku.lo received SUBACK\nSubscribed (mid: 1): 0\n\n\n\n\nPublish\n\n\n$ mosquitto_pub -d -h localhost -m \nsimple val\n -t /testnode\nClient mosqpub/27472-pleiku.lo sending CONNECT\nClient mosqpub/27472-pleiku.lo received CONNACK\nClient mosqpub/27472-pleiku.lo sending PUBLISH (d0, q0, r0, m1, '/testnode', ... (10 bytes))\nClient mosqpub/27472-pleiku.lo sending DISCONNECT", 
             "title": "MQTT"
@@ -119,6 +94,46 @@
             "location": "/plotly/#python-api", 
             "text": "Once your streaming API tokens are added, you can use them in your code without \na hard-coded reference:  import plotly.plotly as py\nimport plotly.tools as tls\n\nstream_ids = tls.get_credentials_file()['stream_ids']\n# Use the first streaming API token\nstream_id = stream_ids[0]\nstream = py.Stream(stream_id)\nstream.open()", 
             "title": "Python API"
+        }, 
+        {
+            "location": "/python-admin/", 
+            "text": "Python Administration\n\n\nInstallation\n\n\nOSX\n\n\nInstallation details are \n\nhere\n.\n\n\nPython3 requires \ngcc\n, which you can get by installing \n \nXCode\n or \n\nCommand Line Tools\n.\n\n\nInstall python3 and pip3 with:\n\n\n$ brew install python3\n\n\n\n\nPackage Management\n\n\nDetermine installed packages with:\n\n\n$ pip3 list \n\n\n\n\nDetermine outdated packages with:\n\n\n$ pip3 list --outdated\n\n\n\n\nInstall a package with:\n\n\n$ pip3 install pkg_name\n\n\n\n\nUpdate a package with:\n\n\n$ pip3 install --upgrade pkg_name", 
+            "title": "Python Administration"
+        }, 
+        {
+            "location": "/python-admin/#python-administration", 
+            "text": "", 
+            "title": "Python Administration"
+        }, 
+        {
+            "location": "/python-admin/#installation", 
+            "text": "", 
+            "title": "Installation"
+        }, 
+        {
+            "location": "/python-admin/#osx", 
+            "text": "Installation details are  here .  Python3 requires  gcc , which you can get by installing \n  XCode  or  Command Line Tools .  Install python3 and pip3 with:  $ brew install python3", 
+            "title": "OSX"
+        }, 
+        {
+            "location": "/python-admin/#package-management", 
+            "text": "Determine installed packages with:  $ pip3 list   Determine outdated packages with:  $ pip3 list --outdated  Install a package with:  $ pip3 install pkg_name  Update a package with:  $ pip3 install --upgrade pkg_name", 
+            "title": "Package Management"
+        }, 
+        {
+            "location": "/ev3-admin/", 
+            "text": "EV3 Administration\n\n\nPython\n\n\nTo install python3 and pip3:\n\n\n$ sudo apt-get install python3\n$ sudo apt-get install python3-pip", 
+            "title": "EV3 Administration"
+        }, 
+        {
+            "location": "/ev3-admin/#ev3-administration", 
+            "text": "", 
+            "title": "EV3 Administration"
+        }, 
+        {
+            "location": "/ev3-admin/#python", 
+            "text": "To install python3 and pip3:  $ sudo apt-get install python3\n$ sudo apt-get install python3-pip", 
+            "title": "Python"
         }
     ]
 }
