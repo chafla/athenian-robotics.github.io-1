@@ -16,7 +16,7 @@ Install python3 and pip3 with:
 $ brew install python3
 ```
 
-## Pip
+## Package Management
 
 Determine installed packages with:
 ```bash
