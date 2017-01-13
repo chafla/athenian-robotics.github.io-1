@@ -2,12 +2,12 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Athenian Robotics", 
+            "text": "Athenian Robotics\n\n\nThe Athenian Robotics Github home is \nhere\n.", 
             "title": "Home"
         }, 
         {
             "location": "/#athenian-robotics", 
-            "text": "", 
+            "text": "The Athenian Robotics Github home is  here .", 
             "title": "Athenian Robotics"
         }, 
         {
