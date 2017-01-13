@@ -8,7 +8,7 @@
   
   <meta name="author" content="Athenian Robotics Team">
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>MkDocs - Athenian Robotics</title>
+  <title>Python Administration - Athenian Robotics</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -18,9 +18,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "MkDocs";
-    var mkdocs_page_input_path = "mkdocs.md";
-    var mkdocs_page_url = "/mkdocs/";
+    var mkdocs_page_name = "Python Administration";
+    var mkdocs_page_input_path = "python-admin.md";
+    var mkdocs_page_url = "/python-admin/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -70,26 +70,26 @@
 
         
             
-    <li class="toctree-l1 current">
-        <a class="current" href="./">MkDocs</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#mkdocs-notes">MkDocs Notes</a></li>
-                
-                    <li><a class="toctree-l4" href="#commands">Commands</a></li>
-                
-                    <li><a class="toctree-l4" href="#project-layout">Project Layout</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l1 ">
+        <a class="" href="../mkdocs/">MkDocs</a>
         
     </li>
 
         
             
-    <li class="toctree-l1 ">
-        <a class="" href="../python-admin/">Python Administration</a>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Python Administration</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#python-administration">Python Administration</a></li>
+                
+                    <li><a class="toctree-l4" href="#installation">Installation</a></li>
+                
+                    <li><a class="toctree-l4" href="#pip">Pip</a></li>
+                
+            
+            </ul>
         
     </li>
 
@@ -137,10 +137,10 @@
         
       
     
-    <li>MkDocs</li>
+    <li>Python Administration</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/athenian-robotics/athenian-robotics.github.io/edit/master/docs/mkdocs.md"
+        <a href="https://github.com/athenian-robotics/athenian-robotics.github.io/edit/master/docs/python-admin.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -150,21 +150,33 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="mkdocs-notes">MkDocs Notes</h1>
-<p>For full documentation visit <a href="http://mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs help</code> - Print this help message.</li>
-</ul>
-<h2 id="project-layout">Project Layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-site/         # Generated website
+                <h1 id="python-administration">Python Administration</h1>
+<h2 id="installation">Installation</h2>
+<h3 id="osx">OSX</h3>
+<p>Installation details are 
+<a href="http://docs.python-guide.org/en/latest/starting/install3/osx/">here</a>.</p>
+<p>Python3 requires <code>gcc</code>, which you can get by installing 
+ <a href="http://developer.apple.com/xcode/">XCode</a> or 
+<a href="https://developer.apple.com/downloads/">Command Line Tools</a>.</p>
+<p>Install python3 and pip3 with:</p>
+<pre><code class="bash">$ brew install python3
+</code></pre>
+
+<h2 id="pip">Pip</h2>
+<p>Determine installed packages with:</p>
+<pre><code class="bash">$ pip3 list 
+</code></pre>
+
+<p>Determine outdated packages with:</p>
+<pre><code class="bash">$ pip3 list --outdated
+</code></pre>
+
+<p>Install a package with:</p>
+<pre><code class="bash">$ pip3 install pkg_name
+</code></pre>
+
+<p>Update a package with:</p>
+<pre><code class="bash">$ pip3 install --upgrade pkg_name
 </code></pre>
               
             </div>
@@ -173,10 +185,10 @@ site/         # Generated website
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../python-admin/" class="btn btn-neutral float-right" title="Python Administration">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../mqtt/" class="btn btn-neutral float-right" title="MQTT">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../mkdocs/" class="btn btn-neutral" title="MkDocs"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -204,10 +216,10 @@ site/         # Generated website
           <a href="https://github.com/athenian-robotics/athenian-robotics.github.io" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../mkdocs/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../python-admin/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../mqtt/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
