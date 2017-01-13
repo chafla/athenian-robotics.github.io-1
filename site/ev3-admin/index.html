@@ -113,6 +113,10 @@
             
                 <li class="toctree-l3"><a href="#ev3-administration">EV3 Administration</a></li>
                 
+                    <li><a class="toctree-l4" href="#connecting">Connecting</a></li>
+                
+                    <li><a class="toctree-l4" href="#linux-update">Linux Update</a></li>
+                
                     <li><a class="toctree-l4" href="#ev3-python-bindings">EV3 Python Bindings</a></li>
                 
             
@@ -164,6 +168,27 @@
             <div class="section">
               
                 <h1 id="ev3-administration">EV3 Administration</h1>
+<h2 id="connecting">Connecting</h2>
+<p>The default username/password is: robot/maker</p>
+<p>Connect to an EV3 named <em>ev3dev1.local</em> with:</p>
+<pre><code class="bash">$ ssh robot@ev3dev1.local
+</code></pre>
+
+<p>Copy files to an EV3 named <em>ev3dev1.local</em> with a <code>sftp</code> session:</p>
+<pre><code class="bash">$ sftp robot@ev3dev1.local
+robot@ev3dev3.local's password: 
+Connected to ev3dev3.local.
+sftp&gt; put file_name
+</code></pre>
+
+<p>Or you can use <code>scp</code>:</p>
+<pre><code class="bash">$ scp file_name robot@ev3dev1.local:/home/robot/
+</code></pre>
+
+<h2 id="linux-update">Linux Update</h2>
+<pre><code class="bash">$ sudo apt-get
+</code></pre>
+
 <h2 id="ev3-python-bindings">EV3 Python Bindings</h2>
 <p>Install the EV3 Python bindings with:</p>
 <pre><code class="bash">@ pip install python-ev3dev
