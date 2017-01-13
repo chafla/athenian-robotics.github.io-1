@@ -127,27 +127,27 @@
         }, 
         {
             "location": "/ev3-admin/", 
-            "text": "EV3 Administration\n\n\nConnecting\n\n\nThe default username/password is: robot/maker\n\n\nConnect to an EV3 named \nev3dev1.local\n with:\n\n\n$ ssh robot@ev3dev1.local\n\n\n\n\nCopy files to an EV3 named \nev3dev1.local\n with a \nsftp\n session:\n\n\n$ sftp robot@ev3dev1.local\nrobot@ev3dev3.local's password: \nConnected to ev3dev3.local.\nsftp\n put file_name\n\n\n\n\nOr you can use \nscp\n:\n\n\n$ scp file_name robot@ev3dev1.local:/home/robot/\n\n\n\n\nLinux Update\n\n\n$ sudo apt-get\n\n\n\n\nEV3 Python Bindings\n\n\nInstall the EV3 Python bindings with:\n\n\n@ pip install python-ev3dev\n\n\n\n\nFor full documentation visit \n\nhere\n.", 
+            "text": "EV3 Administration\n\n\nFor full ev3dev documentation visit \n\nhere\n.\n\n\nFor full ev3dev Python documentation visit \n\nhere\n.\n\n\nConnecting\n\n\nThe default username/password is: robot/maker\n\n\nConnect to an EV3 named \nev3dev1.local\n with:\n\n\n$ ssh robot@ev3dev1.local\n\n\n\n\nCopy files to an EV3 named \nev3dev1.local\n with a \nsftp\n session:\n\n\n$ sftp robot@ev3dev1.local\nrobot@ev3dev3.local's password: \nConnected to ev3dev3.local.\nsftp\n put file_name\n\n\n\n\nExit from \nsftp\n with ctrl-D.\n\n\nOr you can use \nscp\n:\n\n\n$ scp file_name robot@ev3dev1.local:/home/robot/\n\n\n\n\nUpdate Linux Bits\n\n\n$ sudo apt-get update\n$ sudo apt-get upgrade\n$ sudo apt-get dist-upgrade\n$ sudo reboot now\n\n\n\n\nEV3 Python Bindings\n\n\nInstall the EV3 Python bindings with:\n\n\n@ pip install python-ev3dev", 
             "title": "EV3"
         }, 
         {
             "location": "/ev3-admin/#ev3-administration", 
-            "text": "", 
+            "text": "For full ev3dev documentation visit  here .  For full ev3dev Python documentation visit  here .", 
             "title": "EV3 Administration"
         }, 
         {
             "location": "/ev3-admin/#connecting", 
-            "text": "The default username/password is: robot/maker  Connect to an EV3 named  ev3dev1.local  with:  $ ssh robot@ev3dev1.local  Copy files to an EV3 named  ev3dev1.local  with a  sftp  session:  $ sftp robot@ev3dev1.local\nrobot@ev3dev3.local's password: \nConnected to ev3dev3.local.\nsftp  put file_name  Or you can use  scp :  $ scp file_name robot@ev3dev1.local:/home/robot/", 
+            "text": "The default username/password is: robot/maker  Connect to an EV3 named  ev3dev1.local  with:  $ ssh robot@ev3dev1.local  Copy files to an EV3 named  ev3dev1.local  with a  sftp  session:  $ sftp robot@ev3dev1.local\nrobot@ev3dev3.local's password: \nConnected to ev3dev3.local.\nsftp  put file_name  Exit from  sftp  with ctrl-D.  Or you can use  scp :  $ scp file_name robot@ev3dev1.local:/home/robot/", 
             "title": "Connecting"
         }, 
         {
-            "location": "/ev3-admin/#linux-update", 
-            "text": "$ sudo apt-get", 
-            "title": "Linux Update"
+            "location": "/ev3-admin/#update-linux-bits", 
+            "text": "$ sudo apt-get update\n$ sudo apt-get upgrade\n$ sudo apt-get dist-upgrade\n$ sudo reboot now", 
+            "title": "Update Linux Bits"
         }, 
         {
             "location": "/ev3-admin/#ev3-python-bindings", 
-            "text": "Install the EV3 Python bindings with:  @ pip install python-ev3dev  For full documentation visit  here .", 
+            "text": "Install the EV3 Python bindings with:  @ pip install python-ev3dev", 
             "title": "EV3 Python Bindings"
         }
     ]

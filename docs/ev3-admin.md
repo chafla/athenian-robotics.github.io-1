@@ -1,5 +1,11 @@
 # EV3 Administration
 
+For full ev3dev documentation visit 
+[here](http://www.ev3dev.org).
+
+For full ev3dev Python documentation visit 
+[here](https://github.com/rhempel/ev3dev-lang-python).
+
 ## Connecting
 
 The default username/password is: robot/maker
@@ -17,16 +23,20 @@ Connected to ev3dev3.local.
 sftp> put file_name
 ```
 
+Exit from `sftp` with ctrl-D.
+
 Or you can use `scp`:
 ```bash
 $ scp file_name robot@ev3dev1.local:/home/robot/
 ```
 
-
-## Linux Update
+## Update Linux Bits
 
 ```bash
-$ sudo apt-get
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ sudo apt-get dist-upgrade
+$ sudo reboot now
 ```
 
 ## EV3 Python Bindings
@@ -36,5 +46,3 @@ Install the EV3 Python bindings with:
 @ pip install python-ev3dev
 ```
 
-For full documentation visit 
-[here](https://github.com/rhempel/ev3dev-lang-python).
