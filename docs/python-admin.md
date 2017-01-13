@@ -16,6 +16,15 @@ Install python3 and pip3 with:
 $ brew install python3
 ```
 
+### EV3
+
+Install python3 and pip3:
+```bash
+$ sudo apt-get install python3
+$ sudo apt-get install python3-pip
+```
+
+
 ## Package Management
 
 Determine installed packages with:
