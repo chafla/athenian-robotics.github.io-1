@@ -31,6 +31,46 @@
             "title": "Project Layout"
         }, 
         {
+            "location": "/mqtt/", 
+            "text": "MQTT Broker Installation\n\n\nOSX\n\n\nTo install mosquitto:\n\n\n$ brew install mosquitto\n\n\n\n\nTo add mosquitto to launchd:\n\n\n$ brew services start mosquitto\n\n\n\n\nIf you don't want to run mosquitto as a background service:\n\n\n$ /usr/local/sbin/mosquitto -c /usr/local/etc/mosquitto/mosquitto.conf\n\n\n\n\nDocker\n\n\nTo run mosquitto as a docker service:\n\n\n$ docker run -ti -p 1883:1883 -p 9001:9001 toke/mosquitto\n\n\n\n\nImage details are \nhere\n\n\nRaspberry Pi\n\n\n$ sudo apt-get install mosquitto\n$ sudo apt-get install mosquitto-clients\n\n\n\n\nTesting from CLI\n\n\nSubscribe\n\n\n$ mosquitto_sub -d -h localhost -t /testnode\nClient mosqsub/27524-pleiku.lo sending CONNECT\nClient mosqsub/27524-pleiku.lo received CONNACK\nClient mosqsub/27524-pleiku.lo sending SUBSCRIBE (Mid: 1, Topic: /testnode, QoS: 0)\nClient mosqsub/27524-pleiku.lo received SUBACK\nSubscribed (mid: 1): 0\n\n\n\n\nPublish\n\n\n$ mosquitto_pub -d -h localhost -m \nsimple val\n -t /testnode\nClient mosqpub/27472-pleiku.lo sending CONNECT\nClient mosqpub/27472-pleiku.lo received CONNACK\nClient mosqpub/27472-pleiku.lo sending PUBLISH (d0, q0, r0, m1, '/testnode', ... (10 bytes))\nClient mosqpub/27472-pleiku.lo sending DISCONNECT", 
+            "title": "MQTT"
+        }, 
+        {
+            "location": "/mqtt/#mqtt-broker-installation", 
+            "text": "", 
+            "title": "MQTT Broker Installation"
+        }, 
+        {
+            "location": "/mqtt/#osx", 
+            "text": "To install mosquitto:  $ brew install mosquitto  To add mosquitto to launchd:  $ brew services start mosquitto  If you don't want to run mosquitto as a background service:  $ /usr/local/sbin/mosquitto -c /usr/local/etc/mosquitto/mosquitto.conf", 
+            "title": "OSX"
+        }, 
+        {
+            "location": "/mqtt/#docker", 
+            "text": "To run mosquitto as a docker service:  $ docker run -ti -p 1883:1883 -p 9001:9001 toke/mosquitto  Image details are  here", 
+            "title": "Docker"
+        }, 
+        {
+            "location": "/mqtt/#raspberry-pi", 
+            "text": "$ sudo apt-get install mosquitto\n$ sudo apt-get install mosquitto-clients", 
+            "title": "Raspberry Pi"
+        }, 
+        {
+            "location": "/mqtt/#testing-from-cli", 
+            "text": "", 
+            "title": "Testing from CLI"
+        }, 
+        {
+            "location": "/mqtt/#subscribe", 
+            "text": "$ mosquitto_sub -d -h localhost -t /testnode\nClient mosqsub/27524-pleiku.lo sending CONNECT\nClient mosqsub/27524-pleiku.lo received CONNACK\nClient mosqsub/27524-pleiku.lo sending SUBSCRIBE (Mid: 1, Topic: /testnode, QoS: 0)\nClient mosqsub/27524-pleiku.lo received SUBACK\nSubscribed (mid: 1): 0", 
+            "title": "Subscribe"
+        }, 
+        {
+            "location": "/mqtt/#publish", 
+            "text": "$ mosquitto_pub -d -h localhost -m  simple val  -t /testnode\nClient mosqpub/27472-pleiku.lo sending CONNECT\nClient mosqpub/27472-pleiku.lo received CONNACK\nClient mosqpub/27472-pleiku.lo sending PUBLISH (d0, q0, r0, m1, '/testnode', ... (10 bytes))\nClient mosqpub/27472-pleiku.lo sending DISCONNECT", 
+            "title": "Publish"
+        }, 
+        {
             "location": "/plotly/", 
             "text": "Plot.ly Notes\n\n\nFor full documentation visit \nplot.ly\n.\n\n\nOne-time Setup\n\n\nBefore using plot.ly, follow these steps:\n\n\n1) \nSign up\n and create a plot.ly account. Notice that \nyou can click on the Github logo and use your GitHub credentials to sign up.\n\n\n2) Create your credentials file:\n\n\n$ pip install plotly\n$ python\n\n import plotly\n\n plotly.tools.set_credentials_file(username='YourName', api_key='YourKey')\n\n\n\n\nThis will create a \n~/.plotly/.credentials\n file. \n\n\n3) You will be using \nplot.ly streams\n, \nso create some streaming API tokens\n\nhere\n. You should create 3 to start.\n\n\n4) Manually add the newly created streaming API tokens to \n~/.plotly/.credentials\n: \n\n\n{\n    \nusername\n: \nYourName\n,\n    \nstream_ids\n: [\n        \nid1\n,\n        \nid2\n,\n        \nid3\n\n    ],\n    \napi_key\n: \nYourKey\n,\n    \nproxy_username\n: \n,\n    \nproxy_password\n: \n\n}\n\n\n\n\nPython API\n\n\nOnce your streaming API tokens are added, you can use them in your code without \na hard-coded reference:\n\n\nimport plotly.plotly as py\nimport plotly.tools as tls\n\nstream_ids = tls.get_credentials_file()['stream_ids']\n# Use the first streaming API token\nstream_id = stream_ids[0]\nstream = py.Stream(stream_id)\nstream.open()", 
             "title": "Plot.ly"

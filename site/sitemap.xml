@@ -18,6 +18,12 @@
     </url>
         
     <url>
+     <loc>http://www.athenian-robotics.org/mqtt/</loc>
+     <lastmod>2017-01-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>http://www.athenian-robotics.org/plotly/</loc>
      <lastmod>2017-01-12</lastmod>
      <changefreq>daily</changefreq>
