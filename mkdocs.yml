@@ -9,9 +9,9 @@ pages:
   - MkDocs: mkdocs.md
   - MQTT: mqtt.md
   - Plot.ly: plotly.md
-- SysAdmin:
-   - Python Administration: python-admin.md
-   - EV3 Administration: ev3-admin.md
+- Sys Admin:
+   - Python: python-admin.md
+   - EV3: ev3-admin.md
 
 
 theme: readthedocs
