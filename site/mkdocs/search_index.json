@@ -32,8 +32,13 @@
         }, 
         {
             "location": "/mqtt/", 
-            "text": "MQTT Broker Installation\n\n\nOSX\n\n\nTo install mosquitto:\n\n\n$ brew install mosquitto\n\n\n\n\nTo add mosquitto to launchd:\n\n\n$ brew services start mosquitto\n\n\n\n\nIf you don't want to run mosquitto as a background service:\n\n\n$ /usr/local/sbin/mosquitto -c /usr/local/etc/mosquitto/mosquitto.conf\n\n\n\n\nDocker\n\n\nTo run mosquitto as a docker service:\n\n\n$ docker run -ti -p 1883:1883 -p 9001:9001 toke/mosquitto\n\n\n\n\nImage details are \nhere\n\n\nRaspberry Pi\n\n\n$ sudo apt-get install mosquitto\n$ sudo apt-get install mosquitto-clients\n\n\n\n\nTesting from CLI\n\n\nSubscribe\n\n\n$ mosquitto_sub -d -h localhost -t /testnode\nClient mosqsub/27524-pleiku.lo sending CONNECT\nClient mosqsub/27524-pleiku.lo received CONNACK\nClient mosqsub/27524-pleiku.lo sending SUBSCRIBE (Mid: 1, Topic: /testnode, QoS: 0)\nClient mosqsub/27524-pleiku.lo received SUBACK\nSubscribed (mid: 1): 0\n\n\n\n\nPublish\n\n\n$ mosquitto_pub -d -h localhost -m \nsimple val\n -t /testnode\nClient mosqpub/27472-pleiku.lo sending CONNECT\nClient mosqpub/27472-pleiku.lo received CONNACK\nClient mosqpub/27472-pleiku.lo sending PUBLISH (d0, q0, r0, m1, '/testnode', ... (10 bytes))\nClient mosqpub/27472-pleiku.lo sending DISCONNECT", 
+            "text": "MQTT Notes\n\n\nMQTT Broker Installation\n\n\nOSX\n\n\nTo install mosquitto:\n\n\n$ brew install mosquitto\n\n\n\n\nTo add mosquitto to launchd:\n\n\n$ brew services start mosquitto\n\n\n\n\nIf you don't want to run mosquitto as a background service:\n\n\n$ /usr/local/sbin/mosquitto -c /usr/local/etc/mosquitto/mosquitto.conf\n\n\n\n\nDocker\n\n\nTo run mosquitto as a docker service:\n\n\n$ docker run -ti -p 1883:1883 -p 9001:9001 toke/mosquitto\n\n\n\n\nImage details are \nhere\n\n\nRaspberry Pi\n\n\n$ sudo apt-get install mosquitto\n$ sudo apt-get install mosquitto-clients\n\n\n\n\nTesting from CLI\n\n\nSubscribe\n\n\n$ mosquitto_sub -d -h localhost -t /testnode\nClient mosqsub/27524-pleiku.lo sending CONNECT\nClient mosqsub/27524-pleiku.lo received CONNACK\nClient mosqsub/27524-pleiku.lo sending SUBSCRIBE (Mid: 1, Topic: /testnode, QoS: 0)\nClient mosqsub/27524-pleiku.lo received SUBACK\nSubscribed (mid: 1): 0\n\n\n\n\nPublish\n\n\n$ mosquitto_pub -d -h localhost -m \nsimple val\n -t /testnode\nClient mosqpub/27472-pleiku.lo sending CONNECT\nClient mosqpub/27472-pleiku.lo received CONNACK\nClient mosqpub/27472-pleiku.lo sending PUBLISH (d0, q0, r0, m1, '/testnode', ... (10 bytes))\nClient mosqpub/27472-pleiku.lo sending DISCONNECT", 
             "title": "MQTT"
+        }, 
+        {
+            "location": "/mqtt/#mqtt-notes", 
+            "text": "", 
+            "title": "MQTT Notes"
         }, 
         {
             "location": "/mqtt/#mqtt-broker-installation", 

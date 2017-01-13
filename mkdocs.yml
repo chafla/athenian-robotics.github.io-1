@@ -12,6 +12,8 @@ pages:
 
 theme: readthedocs
 
+extra_css: [extra.css]
+
 google_analytics: ['UA-90285378-1', 'auto']
 
 repo_url: https://github.com/athenian-robotics/athenian-robotics.github.io
