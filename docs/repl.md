@@ -83,7 +83,22 @@ list2[3:-3]
 list2[-3:3:-1]
 
 
-list[2:5] = 15
+list2[2:5] = 15
+
+sorted(list2)
+sorted(list2, reverse=True)
+```
+
+## Loops
+
+```python
+vals = range(10)
+for i in vals:
+    print(i)
+
+vals = range(10)
+for i in vals:
+    print("The val is " + str(i))
 ```
 
 ## Tuples
@@ -101,6 +116,7 @@ val3, val4, val5 = tuple1[1:4]
 ```python
 dict1 = {"a": "moose", "b": 2, "c": "fox"}
 
+dict1
 dict1["c"]
 dict1["c"] = "rat"
 dict1["c"]

@@ -123,6 +123,9 @@
                 <li class="toctree-l3"><a href="#slices">Slices</a></li>
                 
             
+                <li class="toctree-l3"><a href="#loops">Loops</a></li>
+                
+            
                 <li class="toctree-l3"><a href="#tuples">Tuples</a></li>
                 
             
@@ -273,7 +276,20 @@ list2[3:-3]
 list2[-3:3:-1]
 
 
-list[2:5] = 15
+list2[2:5] = 15
+
+sorted(list2)
+sorted(list2, reverse=True)
+</code></pre>
+
+<h2 id="loops">Loops</h2>
+<pre><code class="python">vals = range(10)
+for i in vals:
+    print(i)
+
+vals = range(10)
+for i in vals:
+    print(&quot;The val is &quot; + str(i))
 </code></pre>
 
 <h2 id="tuples">Tuples</h2>
@@ -287,6 +303,7 @@ val3, val4, val5 = tuple1[1:4]
 <h2 id="dictionaries">Dictionaries</h2>
 <pre><code class="python">dict1 = {&quot;a&quot;: &quot;moose&quot;, &quot;b&quot;: 2, &quot;c&quot;: &quot;fox&quot;}
 
+dict1
 dict1[&quot;c&quot;]
 dict1[&quot;c&quot;] = &quot;rat&quot;
 dict1[&quot;c&quot;]
