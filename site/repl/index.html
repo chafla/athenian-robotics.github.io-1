@@ -8,7 +8,7 @@
   
   <meta name="author" content="Athenian Robotics Team">
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Plot.ly - Athenian Robotics</title>
+  <title>REPL - Athenian Robotics</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -18,9 +18,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Plot.ly";
-    var mkdocs_page_input_path = "plotly.md";
-    var mkdocs_page_url = "/plotly/";
+    var mkdocs_page_name = "REPL";
+    var mkdocs_page_input_path = "repl.md";
+    var mkdocs_page_url = "/repl/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -84,19 +84,8 @@
 
         
             
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Plot.ly</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#plotly-notes">Plot.ly Notes</a></li>
-                
-                    <li><a class="toctree-l4" href="#one-time-setup">One-time Setup</a></li>
-                
-                    <li><a class="toctree-l4" href="#python-api">Python API</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l1 ">
+        <a class="" href="../plotly/">Plot.ly</a>
         
     </li>
 
@@ -110,8 +99,26 @@
 
         
             
-    <li class="toctree-l1 ">
-        <a class="" href="../repl/">REPL</a>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">REPL</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#scalar-values">Scalar values</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#lists">Lists</a></li>
+                
+                    <li><a class="toctree-l4" href="#slices">Slices</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#tuples">Tuples</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#dictionaries">Dictionaries</a></li>
+                
+            
+            </ul>
         
     </li>
 
@@ -163,14 +170,14 @@
     
       
         
-          <li>Software Notes &raquo;</li>
+          <li>Python &raquo;</li>
         
       
     
-    <li>Plot.ly</li>
+    <li>REPL</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/athenian-robotics/athenian-robotics.github.io/edit/master/docs/plotly.md"
+        <a href="https://github.com/athenian-robotics/athenian-robotics.github.io/edit/master/docs/repl.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -180,48 +187,71 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="plotly-notes">Plot.ly Notes</h1>
-<p>For full documentation visit <a href="https://plot.ly/python/">plot.ly</a>.</p>
-<h2 id="one-time-setup">One-time Setup</h2>
-<p>Before using plot.ly, follow these steps:</p>
-<p>1) <a href="https://plot.ly/accounts/login/?action=signup">Sign up</a> and create a plot.ly account. Notice that 
-you can click on the Github logo and use your GitHub credentials to sign up.</p>
-<p>2) Create your credentials file:</p>
-<pre><code class="bash">$ pip install plotly
-$ python
-&gt;&gt;&gt; import plotly
-&gt;&gt;&gt; plotly.tools.set_credentials_file(username='YourName', api_key='YourKey')
+                <h1 id="scalar-values">Scalar values</h1>
+<pre><code class="python">int_val = 8
+float_val = 4.3
+string_val = &quot;dog&quot;
+
+int_val
+int_val + 3
+int_val * float_val
+&quot;Watch the &quot; + string_val + &quot; run&quot;
+&quot;Watch the {0} run&quot;.format(string_val)
+&quot;An int value: &quot; + str(int_val)
 </code></pre>
 
-<p>This will create a <strong>~/.plotly/.credentials</strong> file. </p>
-<p>3) You will be using <a href="https://plot.ly/streaming/">plot.ly streams</a>, 
-so create some streaming API tokens
-<a href="https://plot.ly/settings/api">here</a>. You should create 3 to start.</p>
-<p>4) Manually add the newly created streaming API tokens to <strong>~/.plotly/.credentials</strong>: </p>
-<pre><code>{
-    &quot;username&quot;: &quot;YourName&quot;,
-    &quot;stream_ids&quot;: [
-        &quot;id1&quot;,
-        &quot;id2&quot;,
-        &quot;id3&quot;
-    ],
-    &quot;api_key&quot;: &quot;YourKey&quot;,
-    &quot;proxy_username&quot;: &quot;&quot;,
-    &quot;proxy_password&quot;: &quot;&quot;
-}
+<h1 id="lists">Lists</h1>
+<pre><code class="python">list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+list2 = range(10)
+list3 = range(5, 10)
+list4 = range(0, 10, 2)
+list5 = [&quot;goat&quot;, 6, &quot;cow&quot;, 4.2]
+
+list1
+len(list1)
+list1[2]
+list1[-2]
+
+list1[5]
+list1[5] = 99
+list1
+
+list1.append(88)
+list1.insert(3, 44)
+list1.remove(6)
+list1 *= 2
 </code></pre>
 
-<h2 id="python-api">Python API</h2>
-<p>Once your streaming API tokens are added, you can use them in your code without 
-a hard-coded reference:</p>
-<pre><code class="python">import plotly.plotly as py
-import plotly.tools as tls
+<h2 id="slices">Slices</h2>
+<pre><code class="python">list2 = range(20)
+list2[:]
+list2[:5]
+list2[5:]
+list2[::1]
+list2[::2]
+list2[::-1]
+list2[::-2]
+</code></pre>
 
-stream_ids = tls.get_credentials_file()['stream_ids']
-# Use the first streaming API token
-stream_id = stream_ids[0]
-stream = py.Stream(stream_id)
-stream.open()
+<h1 id="tuples">Tuples</h1>
+<pre><code class="python">tuple1 = (1, 2, 3, 4, 5)
+tuple2 = (3.0, &quot;cat&quot;)
+
+val1, val2 = tuple2
+val3, val4, val5 = tuple1[1:4]
+</code></pre>
+
+<h1 id="dictionaries">Dictionaries</h1>
+<pre><code class="python">dict1 = {&quot;a&quot;: &quot;moose&quot;, &quot;b&quot;: 2, &quot;c&quot;: &quot;fox&quot;}
+
+dict1[&quot;c&quot;]
+dict1[&quot;c&quot;] = &quot;rat&quot;
+dict1[&quot;c&quot;]
+
+dict2 = {}
+for i in range(0, 10):
+    dict2[&quot;val&quot; + str(i)] = i
+dict2
 </code></pre>
               
             </div>
@@ -230,10 +260,10 @@ stream.open()
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../repl/" class="btn btn-neutral float-right" title="REPL">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../python-admin/" class="btn btn-neutral float-right" title="Python">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../mqtt/" class="btn btn-neutral" title="MQTT"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../plotly/" class="btn btn-neutral" title="Plot.ly"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -261,10 +291,10 @@ stream.open()
           <a href="https://github.com/athenian-robotics/athenian-robotics.github.io" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../mqtt/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../plotly/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../repl/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../python-admin/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
