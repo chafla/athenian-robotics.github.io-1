@@ -1,21 +1,20 @@
-## Operations
-
-```python
-2 + 4
-7 * 5
-"Hello " + "World"
-```
-
 ## Scalar values
 
 ```python
+# Numbers
+2 + 4
+7 * 5
 int_val = 8
 float_val = 4.3
-string_val = "dog"
 
 int_val
 int_val + 3
 int_val * float_val
+
+#Strings
+"Hello " + "World"
+
+string_val = "dog"
 "Watch the " + string_val + " run"
 ```
 
@@ -37,9 +36,9 @@ animal = "mouse"
 
 ```python
 list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-list2 = range(10)
-list3 = range(5, 10)
-list4 = range(0, 10, 2)
+list2 = range(20)
+list3 = range(5, 12)
+list4 = range(0, 14, 2)
 list5 = ["goat", 6, "cow", 4.2]
 
 list1
@@ -60,15 +59,31 @@ list1 *= 2
 
 ## Slices
 
+**Syntax:** `list[start_index : end_index : step]`
+
 ```python
-list2 = range(20)
-list2[:]
+list2 = range(10)
+
+list2[4]
+list2[2:7]
+
 list2[:5]
 list2[5:]
+list2[:]
+
 list2[::1]
 list2[::2]
+
 list2[::-1]
 list2[::-2]
+
+list2[-1:-6:-1]
+list2[-1:-6:-2]
+list2[3:-3]
+list2[-3:3:-1]
+
+
+list[2:5] = 15
 ```
 
 ## Tuples
