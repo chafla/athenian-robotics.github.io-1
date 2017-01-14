@@ -107,13 +107,23 @@
         }, 
         {
             "location": "/repl/", 
-            "text": "Scalar values\n\n\nint_val = 8\nfloat_val = 4.3\nstring_val = \ndog\n\n\nint_val\nint_val + 3\nint_val * float_val\n\nWatch the \n + string_val + \n run\n\n\nWatch the {0} run\n.format(string_val)\n\nAn int value: \n + str(int_val)\n\n\n\n\nLists\n\n\nlist1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nlist2 = range(10)\nlist3 = range(5, 10)\nlist4 = range(0, 10, 2)\nlist5 = [\ngoat\n, 6, \ncow\n, 4.2]\n\nlist1\nlen(list1)\nlist1[2]\nlist1[-2]\n\nlist1[5]\nlist1[5] = 99\nlist1\n\nlist1.append(88)\nlist1.insert(3, 44)\nlist1.remove(6)\nlist1 *= 2\n\n\n\n\nSlices\n\n\nlist2 = range(20)\nlist2[:]\nlist2[:5]\nlist2[5:]\nlist2[::1]\nlist2[::2]\nlist2[::-1]\nlist2[::-2]\n\n\n\n\nTuples\n\n\ntuple1 = (1, 2, 3, 4, 5)\ntuple2 = (3.0, \ncat\n)\n\nval1, val2 = tuple2\nval3, val4, val5 = tuple1[1:4]\n\n\n\n\nDictionaries\n\n\ndict1 = {\na\n: \nmoose\n, \nb\n: 2, \nc\n: \nfox\n}\n\ndict1[\nc\n]\ndict1[\nc\n] = \nrat\n\ndict1[\nc\n]\n\ndict2 = {}\nfor i in range(0, 10):\n    dict2[\nval\n + str(i)] = i\ndict2", 
+            "text": "Operations\n\n\n2 + 4\n7 * 5\n\nHello \n + \nWorld\n\n\n\n\n\nScalar values\n\n\nint_val = 8\nfloat_val = 4.3\nstring_val = \ndog\n\n\nint_val\nint_val + 3\nint_val * float_val\n\nWatch the \n + string_val + \n run\n\n\n\n\n\nFunctions\n\n\nabs(-3)\nmax(1, 2, 3)\nmin(1, 2, 3)\n\ni = 5\n\nAn int value: \n + str(i)\n\nanimal = \nmouse\n\n\nWatch the {0} run\n.format(animal)\n\n\n\n\nLists\n\n\nlist1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nlist2 = range(10)\nlist3 = range(5, 10)\nlist4 = range(0, 10, 2)\nlist5 = [\ngoat\n, 6, \ncow\n, 4.2]\n\nlist1\nlen(list1)\nlist1[2]\nlist1[-2]\n\nlist1[5]\nlist1[5] = 99\nlist1\n\nlist1.append(88)\nlist1.insert(3, 44)\nlist1.remove(6)\nlist1 *= 2\n\n\n\n\nSlices\n\n\nlist2 = range(20)\nlist2[:]\nlist2[:5]\nlist2[5:]\nlist2[::1]\nlist2[::2]\nlist2[::-1]\nlist2[::-2]\n\n\n\n\nTuples\n\n\ntuple1 = (1, 2, 3, 4, 5)\ntuple2 = (3.0, \ncat\n)\n\nval1, val2 = tuple2\nval3, val4, val5 = tuple1[1:4]\n\n\n\n\nDictionaries\n\n\ndict1 = {\na\n: \nmoose\n, \nb\n: 2, \nc\n: \nfox\n}\n\ndict1[\nc\n]\ndict1[\nc\n] = \nrat\n\ndict1[\nc\n]\n\ndict2 = {}\nfor i in range(0, 10):\n    dict2[\nval\n + str(i)] = i\ndict2", 
             "title": "REPL"
         }, 
         {
+            "location": "/repl/#operations", 
+            "text": "2 + 4\n7 * 5 Hello   +  World", 
+            "title": "Operations"
+        }, 
+        {
             "location": "/repl/#scalar-values", 
-            "text": "int_val = 8\nfloat_val = 4.3\nstring_val =  dog \n\nint_val\nint_val + 3\nint_val * float_val Watch the   + string_val +   run  Watch the {0} run .format(string_val) An int value:   + str(int_val)", 
+            "text": "int_val = 8\nfloat_val = 4.3\nstring_val =  dog \n\nint_val\nint_val + 3\nint_val * float_val Watch the   + string_val +   run", 
             "title": "Scalar values"
+        }, 
+        {
+            "location": "/repl/#functions", 
+            "text": "abs(-3)\nmax(1, 2, 3)\nmin(1, 2, 3)\n\ni = 5 An int value:   + str(i)\n\nanimal =  mouse  Watch the {0} run .format(animal)", 
+            "title": "Functions"
         }, 
         {
             "location": "/repl/#lists", 

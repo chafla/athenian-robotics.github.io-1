@@ -1,3 +1,11 @@
+## Operations
+
+```python
+2 + 4
+7 * 5
+"Hello " + "World"
+```
+
 ## Scalar values
 
 ```python
@@ -9,8 +17,20 @@ int_val
 int_val + 3
 int_val * float_val
 "Watch the " + string_val + " run"
-"Watch the {0} run".format(string_val)
-"An int value: " + str(int_val)
+```
+
+## Functions
+
+```python
+abs(-3)
+max(1, 2, 3)
+min(1, 2, 3)
+
+i = 5
+"An int value: " + str(i)
+
+animal = "mouse"
+"Watch the {0} run".format(animal)
 ```
 
 ## Lists
