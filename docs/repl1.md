@@ -11,11 +11,13 @@ int_val
 int_val + 3
 int_val * float_val
 
-#Strings
+# Strings
 "Hello " + 'World'
 
 string_val = "dog"
 "Watch the " + string_val + " run"
+
+string_val * 10
 ```
 
 ## Functions
@@ -108,6 +110,23 @@ a[0] = 33
 a
 b
 ```
+
+## Strings
+
+```python
+str = "Hello World!"
+len(str)
+str.index("o")
+str.count("l")
+str.upper()
+str.lower()
+
+str[2:8]
+str[2:8:2]
+str[8:2:-1]
+str[8:2:-2]
+```
+
 
 ## Loops
 
