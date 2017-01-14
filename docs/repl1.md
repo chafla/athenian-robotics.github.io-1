@@ -120,9 +120,18 @@ str.index("o")
 str.count("l")
 str.upper()
 str.lower()
+str.startswith("Hello")
+str.endswith("Hello")
+
+
+vals = str.split(" ")
+len(vals)
+vals[1] + " " + vals[0]
+ 
 
 str[2:8]
 str[2:8:2]
+str[::-1]
 str[8:2:-1]
 str[8:2:-2]
 ```
