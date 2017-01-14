@@ -1,4 +1,4 @@
-# Scalar values
+## Scalar values
 
 ```python
 int_val = 8
@@ -13,7 +13,7 @@ int_val * float_val
 "An int value: " + str(int_val)
 ```
 
-# Lists
+## Lists
 
 ```python
 list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -51,7 +51,7 @@ list2[::-1]
 list2[::-2]
 ```
 
-# Tuples
+## Tuples
 
 ```python
 tuple1 = (1, 2, 3, 4, 5)
@@ -61,7 +61,7 @@ val1, val2 = tuple2
 val3, val4, val5 = tuple1[1:4]
 ```
 
-# Dictionaries
+## Dictionaries
 
 ```python
 dict1 = {"a": "moose", "b": 2, "c": "fox"}
