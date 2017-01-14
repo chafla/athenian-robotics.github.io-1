@@ -10,6 +10,7 @@ pages:
   - MQTT: mqtt.md
   - Plot.ly: plotly.md
 - Python:
+  - Links: python-links.md
   - REPL: repl.md
 - Sys Admin:
    - Python: python-admin.md
