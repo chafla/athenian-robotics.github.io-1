@@ -11,7 +11,7 @@ pages:
   - Plot.ly: plotly.md
 - Python:
   - Links: python-links.md
-  - REPL: repl.md
+  - REPL 1: repl1.md
 - Sys Admin:
    - Python: python-admin.md
    - EV3: ev3-admin.md

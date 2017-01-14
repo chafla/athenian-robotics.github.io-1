@@ -12,7 +12,7 @@ int_val + 3
 int_val * float_val
 
 #Strings
-"Hello " + "World"
+"Hello " + 'World'
 
 string_val = "dog"
 "Watch the " + string_val + " run"
@@ -24,6 +24,7 @@ string_val = "dog"
 abs(-3)
 max(1, 2, 3)
 min(1, 2, 3)
+len('this is a string')
 
 i = 5
 "An int value: " + str(i)
@@ -64,6 +65,8 @@ list1 *= 2
 ```python
 list2 = range(10)
 
+len(list2)
+
 list2[4]
 list2[2:7]
 
@@ -82,11 +85,28 @@ list2[-1:-6:-2]
 list2[3:-3]
 list2[-3:3:-1]
 
-
 list2[2:5] = 15
 
+# Sorting Lists
 sorted(list2)
 sorted(list2, reverse=True)
+
+
+# List ssignments
+a = range(5)
+a
+b = a
+b
+a[3] = 99
+a
+b
+
+b = a[:]
+a
+b
+a[0] = 33
+a
+b
 ```
 
 ## Loops
@@ -103,10 +123,16 @@ for i in vals:
 
 ## Tuples
 
+Tuples are very similar to lists, except they are immutable.
+
 ```python
 tuple1 = (1, 2, 3, 4, 5)
 tuple2 = (3.0, "cat")
 
+# This is a no go
+tuple1[1] = 4
+
+# Unpacking 
 val1, val2 = tuple2
 val3, val4, val5 = tuple1[1:4]
 ```

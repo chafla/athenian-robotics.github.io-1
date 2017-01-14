@@ -8,7 +8,7 @@
   
   <meta name="author" content="Athenian Robotics Team">
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>REPL - Athenian Robotics</title>
+  <title>REPL 1 - Athenian Robotics</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -18,9 +18,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "REPL";
-    var mkdocs_page_input_path = "repl.md";
-    var mkdocs_page_url = "/repl/";
+    var mkdocs_page_name = "REPL 1";
+    var mkdocs_page_input_path = "repl1.md";
+    var mkdocs_page_url = "/repl1/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -107,7 +107,7 @@
         
             
     <li class="toctree-l1 current">
-        <a class="current" href="./">REPL</a>
+        <a class="current" href="./">REPL 1</a>
         
             <ul>
             
@@ -188,10 +188,10 @@
         
       
     
-    <li>REPL</li>
+    <li>REPL 1</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/athenian-robotics/athenian-robotics.github.io/edit/master/docs/repl.md"
+        <a href="https://github.com/athenian-robotics/athenian-robotics.github.io/edit/master/docs/repl1.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -213,7 +213,7 @@ int_val + 3
 int_val * float_val
 
 #Strings
-&quot;Hello &quot; + &quot;World&quot;
+&quot;Hello &quot; + 'World'
 
 string_val = &quot;dog&quot;
 &quot;Watch the &quot; + string_val + &quot; run&quot;
@@ -223,6 +223,7 @@ string_val = &quot;dog&quot;
 <pre><code class="python">abs(-3)
 max(1, 2, 3)
 min(1, 2, 3)
+len('this is a string')
 
 i = 5
 &quot;An int value: &quot; + str(i)
@@ -257,6 +258,8 @@ list1 *= 2
 <p><strong>Syntax:</strong> <code>list[start_index : end_index : step]</code></p>
 <pre><code class="python">list2 = range(10)
 
+len(list2)
+
 list2[4]
 list2[2:7]
 
@@ -275,11 +278,28 @@ list2[-1:-6:-2]
 list2[3:-3]
 list2[-3:3:-1]
 
-
 list2[2:5] = 15
 
+# Sorting Lists
 sorted(list2)
 sorted(list2, reverse=True)
+
+
+# List ssignments
+a = range(5)
+a
+b = a
+b
+a[3] = 99
+a
+b
+
+b = a[:]
+a
+b
+a[0] = 33
+a
+b
 </code></pre>
 
 <h2 id="loops">Loops</h2>
@@ -293,9 +313,14 @@ for i in vals:
 </code></pre>
 
 <h2 id="tuples">Tuples</h2>
+<p>Tuples are very similar to lists, except they are immutable.</p>
 <pre><code class="python">tuple1 = (1, 2, 3, 4, 5)
 tuple2 = (3.0, &quot;cat&quot;)
 
+# This is a no go
+tuple1[1] = 4
+
+# Unpacking 
 val1, val2 = tuple2
 val3, val4, val5 = tuple1[1:4]
 </code></pre>

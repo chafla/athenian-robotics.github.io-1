@@ -97,51 +97,71 @@
         }, 
         {
             "location": "/python-links/", 
-            "text": "Python Links\n\n\n\n\nPyCharm\n\n\nPyCharm Edu\n\n\nGoogle Python Course", 
+            "text": "Python Links\n\n\nIDEs\n\n\n\n\nPyCharm\n\n\nPyCharm Edu\n\n\n\n\nCloud REPLs\n\n\n\n\nJupyter\n  (New-\nTerminal)\n\n\n\n\nCourses\n\n\n\n\nGoogle Python Course\n\n\nInteractive Python Tutorial\n\n\n\n\nBooks\n\n\n\n\nThink Python Book", 
             "title": "Links"
         }, 
         {
             "location": "/python-links/#python-links", 
-            "text": "PyCharm  PyCharm Edu  Google Python Course", 
+            "text": "", 
             "title": "Python Links"
         }, 
         {
-            "location": "/repl/", 
-            "text": "Scalar values\n\n\n# Numbers\n2 + 4\n7 * 5\nint_val = 8\nfloat_val = 4.3\n\nint_val\nint_val + 3\nint_val * float_val\n\n#Strings\n\nHello \n + \nWorld\n\n\nstring_val = \ndog\n\n\nWatch the \n + string_val + \n run\n\n\n\n\n\nFunctions\n\n\nabs(-3)\nmax(1, 2, 3)\nmin(1, 2, 3)\n\ni = 5\n\nAn int value: \n + str(i)\n\nanimal = \nmouse\n\n\nWatch the {0} run\n.format(animal)\n\n\n\n\nLists\n\n\nlist1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nlist2 = range(20)\nlist3 = range(5, 12)\nlist4 = range(0, 14, 2)\nlist5 = [\ngoat\n, 6, \ncow\n, 4.2]\n\nlist1\nlen(list1)\nlist1[2]\nlist1[-2]\n\nlist1[5]\nlist1[5] = 99\nlist1\n\nlist1.append(88)\nlist1.insert(3, 44)\nlist1.remove(6)\nlist1 *= 2\n\n\n\n\nSlices\n\n\nSyntax:\n \nlist[start_index : end_index : step]\n\n\nlist2 = range(10)\n\nlist2[4]\nlist2[2:7]\n\nlist2[:5]\nlist2[5:]\nlist2[:]\n\nlist2[::1]\nlist2[::2]\n\nlist2[::-1]\nlist2[::-2]\n\nlist2[-1:-6:-1]\nlist2[-1:-6:-2]\nlist2[3:-3]\nlist2[-3:3:-1]\n\n\nlist2[2:5] = 15\n\nsorted(list2)\nsorted(list2, reverse=True)\n\n\n\n\nLoops\n\n\nvals = range(10)\nfor i in vals:\n    print(i)\n\nvals = range(10)\nfor i in vals:\n    print(\nThe val is \n + str(i))\n\n\n\n\nTuples\n\n\ntuple1 = (1, 2, 3, 4, 5)\ntuple2 = (3.0, \ncat\n)\n\nval1, val2 = tuple2\nval3, val4, val5 = tuple1[1:4]\n\n\n\n\nDictionaries\n\n\ndict1 = {\na\n: \nmoose\n, \nb\n: 2, \nc\n: \nfox\n}\n\ndict1\ndict1[\nc\n]\ndict1[\nc\n] = \nrat\n\ndict1[\nc\n]\n\ndict2 = {}\nfor i in range(0, 10):\n    dict2[\nval\n + str(i)] = i\ndict2", 
-            "title": "REPL"
+            "location": "/python-links/#ides", 
+            "text": "PyCharm  PyCharm Edu", 
+            "title": "IDEs"
         }, 
         {
-            "location": "/repl/#scalar-values", 
-            "text": "# Numbers\n2 + 4\n7 * 5\nint_val = 8\nfloat_val = 4.3\n\nint_val\nint_val + 3\nint_val * float_val\n\n#Strings Hello   +  World \n\nstring_val =  dog  Watch the   + string_val +   run", 
+            "location": "/python-links/#cloud-repls", 
+            "text": "Jupyter   (New- Terminal)", 
+            "title": "Cloud REPLs"
+        }, 
+        {
+            "location": "/python-links/#courses", 
+            "text": "Google Python Course  Interactive Python Tutorial", 
+            "title": "Courses"
+        }, 
+        {
+            "location": "/python-links/#books", 
+            "text": "Think Python Book", 
+            "title": "Books"
+        }, 
+        {
+            "location": "/repl1/", 
+            "text": "Scalar values\n\n\n# Numbers\n2 + 4\n7 * 5\nint_val = 8\nfloat_val = 4.3\n\nint_val\nint_val + 3\nint_val * float_val\n\n#Strings\n\nHello \n + 'World'\n\nstring_val = \ndog\n\n\nWatch the \n + string_val + \n run\n\n\n\n\n\nFunctions\n\n\nabs(-3)\nmax(1, 2, 3)\nmin(1, 2, 3)\nlen('this is a string')\n\ni = 5\n\nAn int value: \n + str(i)\n\nanimal = \nmouse\n\n\nWatch the {0} run\n.format(animal)\n\n\n\n\nLists\n\n\nlist1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nlist2 = range(20)\nlist3 = range(5, 12)\nlist4 = range(0, 14, 2)\nlist5 = [\ngoat\n, 6, \ncow\n, 4.2]\n\nlist1\nlen(list1)\nlist1[2]\nlist1[-2]\n\nlist1[5]\nlist1[5] = 99\nlist1\n\nlist1.append(88)\nlist1.insert(3, 44)\nlist1.remove(6)\nlist1 *= 2\n\n\n\n\nSlices\n\n\nSyntax:\n \nlist[start_index : end_index : step]\n\n\nlist2 = range(10)\n\nlen(list2)\n\nlist2[4]\nlist2[2:7]\n\nlist2[:5]\nlist2[5:]\nlist2[:]\n\nlist2[::1]\nlist2[::2]\n\nlist2[::-1]\nlist2[::-2]\n\nlist2[-1:-6:-1]\nlist2[-1:-6:-2]\nlist2[3:-3]\nlist2[-3:3:-1]\n\nlist2[2:5] = 15\n\n# Sorting Lists\nsorted(list2)\nsorted(list2, reverse=True)\n\n\n# List ssignments\na = range(5)\na\nb = a\nb\na[3] = 99\na\nb\n\nb = a[:]\na\nb\na[0] = 33\na\nb\n\n\n\n\nLoops\n\n\nvals = range(10)\nfor i in vals:\n    print(i)\n\nvals = range(10)\nfor i in vals:\n    print(\nThe val is \n + str(i))\n\n\n\n\nTuples\n\n\nTuples are very similar to lists, except they are immutable.\n\n\ntuple1 = (1, 2, 3, 4, 5)\ntuple2 = (3.0, \ncat\n)\n\n# This is a no go\ntuple1[1] = 4\n\n# Unpacking \nval1, val2 = tuple2\nval3, val4, val5 = tuple1[1:4]\n\n\n\n\nDictionaries\n\n\ndict1 = {\na\n: \nmoose\n, \nb\n: 2, \nc\n: \nfox\n}\n\ndict1\ndict1[\nc\n]\ndict1[\nc\n] = \nrat\n\ndict1[\nc\n]\n\ndict2 = {}\nfor i in range(0, 10):\n    dict2[\nval\n + str(i)] = i\ndict2", 
+            "title": "REPL 1"
+        }, 
+        {
+            "location": "/repl1/#scalar-values", 
+            "text": "# Numbers\n2 + 4\n7 * 5\nint_val = 8\nfloat_val = 4.3\n\nint_val\nint_val + 3\nint_val * float_val\n\n#Strings Hello   + 'World'\n\nstring_val =  dog  Watch the   + string_val +   run", 
             "title": "Scalar values"
         }, 
         {
-            "location": "/repl/#functions", 
-            "text": "abs(-3)\nmax(1, 2, 3)\nmin(1, 2, 3)\n\ni = 5 An int value:   + str(i)\n\nanimal =  mouse  Watch the {0} run .format(animal)", 
+            "location": "/repl1/#functions", 
+            "text": "abs(-3)\nmax(1, 2, 3)\nmin(1, 2, 3)\nlen('this is a string')\n\ni = 5 An int value:   + str(i)\n\nanimal =  mouse  Watch the {0} run .format(animal)", 
             "title": "Functions"
         }, 
         {
-            "location": "/repl/#lists", 
+            "location": "/repl1/#lists", 
             "text": "list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nlist2 = range(20)\nlist3 = range(5, 12)\nlist4 = range(0, 14, 2)\nlist5 = [ goat , 6,  cow , 4.2]\n\nlist1\nlen(list1)\nlist1[2]\nlist1[-2]\n\nlist1[5]\nlist1[5] = 99\nlist1\n\nlist1.append(88)\nlist1.insert(3, 44)\nlist1.remove(6)\nlist1 *= 2", 
             "title": "Lists"
         }, 
         {
-            "location": "/repl/#slices", 
-            "text": "Syntax:   list[start_index : end_index : step]  list2 = range(10)\n\nlist2[4]\nlist2[2:7]\n\nlist2[:5]\nlist2[5:]\nlist2[:]\n\nlist2[::1]\nlist2[::2]\n\nlist2[::-1]\nlist2[::-2]\n\nlist2[-1:-6:-1]\nlist2[-1:-6:-2]\nlist2[3:-3]\nlist2[-3:3:-1]\n\n\nlist2[2:5] = 15\n\nsorted(list2)\nsorted(list2, reverse=True)", 
+            "location": "/repl1/#slices", 
+            "text": "Syntax:   list[start_index : end_index : step]  list2 = range(10)\n\nlen(list2)\n\nlist2[4]\nlist2[2:7]\n\nlist2[:5]\nlist2[5:]\nlist2[:]\n\nlist2[::1]\nlist2[::2]\n\nlist2[::-1]\nlist2[::-2]\n\nlist2[-1:-6:-1]\nlist2[-1:-6:-2]\nlist2[3:-3]\nlist2[-3:3:-1]\n\nlist2[2:5] = 15\n\n# Sorting Lists\nsorted(list2)\nsorted(list2, reverse=True)\n\n\n# List ssignments\na = range(5)\na\nb = a\nb\na[3] = 99\na\nb\n\nb = a[:]\na\nb\na[0] = 33\na\nb", 
             "title": "Slices"
         }, 
         {
-            "location": "/repl/#loops", 
+            "location": "/repl1/#loops", 
             "text": "vals = range(10)\nfor i in vals:\n    print(i)\n\nvals = range(10)\nfor i in vals:\n    print( The val is   + str(i))", 
             "title": "Loops"
         }, 
         {
-            "location": "/repl/#tuples", 
-            "text": "tuple1 = (1, 2, 3, 4, 5)\ntuple2 = (3.0,  cat )\n\nval1, val2 = tuple2\nval3, val4, val5 = tuple1[1:4]", 
+            "location": "/repl1/#tuples", 
+            "text": "Tuples are very similar to lists, except they are immutable.  tuple1 = (1, 2, 3, 4, 5)\ntuple2 = (3.0,  cat )\n\n# This is a no go\ntuple1[1] = 4\n\n# Unpacking \nval1, val2 = tuple2\nval3, val4, val5 = tuple1[1:4]", 
             "title": "Tuples"
         }, 
         {
-            "location": "/repl/#dictionaries", 
+            "location": "/repl1/#dictionaries", 
             "text": "dict1 = { a :  moose ,  b : 2,  c :  fox }\n\ndict1\ndict1[ c ]\ndict1[ c ] =  rat \ndict1[ c ]\n\ndict2 = {}\nfor i in range(0, 10):\n    dict2[ val  + str(i)] = i\ndict2", 
             "title": "Dictionaries"
         }, 
