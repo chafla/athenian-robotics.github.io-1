@@ -12,7 +12,7 @@
         }, 
         {
             "location": "/setup/", 
-            "text": "Machine Setup\n\n\nOSX\n\n\nInstall the following pieces of software: \n\n\n\n\n\n\nXCode\n\n\n\n\n\n\nBrew\n\n\n\n\n\n\n$ /usr/bin/ruby -e \n$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\n\n\n\n\n\n\n\nGit\n\n\n\n\n$ brew install git\n\n\n\n\n\n\nPython 3\n\n\n\n\n$ brew install python3\n\n\n\n\n\n\nMaven\n\n\n\n\n$ brew install maven\n\n\n\n\n\n\nGradle\n\n\n\n\n$ brew install gradle\n\n\n\n\n\n\nhttpie\n\n\n\n\n$ brew install httpie", 
+            "text": "Machine Setup\n\n\nOSX\n\n\nInstall the following pieces of software: \n\n\n\n\n\n\nXCode\n\n\n\n\n\n\nJava 8\n\n\n\n\n\n\nBrew\n\n\n\n\n\n\n$ /usr/bin/ruby -e \n$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\n\n\n\n\n\n\n\nPython 3\n\n\n\n\n$ brew install python3\n\n\n\n\n\n\nGit\n\n\n\n\n$ brew install git\n\n\n\n\n\n\nMaven\n\n\n\n\n$ brew install maven\n\n\n\n\n\n\nGradle\n\n\n\n\n$ brew install gradle\n\n\n\n\n\n\nhttpie\n\n\n\n\n$ brew install httpie", 
             "title": "Setup"
         }, 
         {
@@ -22,7 +22,7 @@
         }, 
         {
             "location": "/setup/#osx", 
-            "text": "Install the following pieces of software:     XCode    Brew    $ /usr/bin/ruby -e  $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)    Git   $ brew install git   Python 3   $ brew install python3   Maven   $ brew install maven   Gradle   $ brew install gradle   httpie   $ brew install httpie", 
+            "text": "Install the following pieces of software:     XCode    Java 8    Brew    $ /usr/bin/ruby -e  $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)    Python 3   $ brew install python3   Git   $ brew install git   Maven   $ brew install maven   Gradle   $ brew install gradle   httpie   $ brew install httpie", 
             "title": "OSX"
         }, 
         {

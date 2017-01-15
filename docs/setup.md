@@ -5,20 +5,23 @@ Install the following pieces of software:
 
 * [XCode](http://developer.apple.com/xcode/)
 
+* [Java 8](https://java.com/en/download/)
+
 * [Brew](http://brew.sh)
 
 ```bash
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-* [Git](https://git-scm.com)
-```bash
-$ brew install git
-```
 
 * [Python 3](https://www.python.org)
 ```bash
 $ brew install python3
+```
+
+* [Git](https://git-scm.com)
+```bash
+$ brew install git
 ```
 
 * [Maven](http://maven.apache.org)
