@@ -7,9 +7,9 @@ pages:
 - Home: index.md
 - Software Notes:
   - Git: git.md
-  - MkDocs: mkdocs.md
   - MQTT: mqtt.md
   - Plot.ly: plotly.md
+  - MkDocs: mkdocs.md
 - Python:
   - Admin: python-admin.md
   - Links: python-links.md
