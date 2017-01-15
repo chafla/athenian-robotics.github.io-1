@@ -11,6 +11,36 @@
             "title": "Athenian Robotics"
         }, 
         {
+            "location": "/git/", 
+            "text": "Git Notes\n\n\nInstallation\n\n\nOSX\n\n\nInstall git on OSX with:\n\n\n$ brew install git\n\n\n\n\nev3dev and Raspberry Pi\n\n\n$ sudo apt-get install git\n\n\n\n\nCloning a Repo\n\n\nClone a repo from \nAthenian Robotics\n with:\n\n\n$ git clone https://github.com/athenian-robotics/ev3dev-python-intro.git\n\n\n\n\nTo find the URL for a particular repo, go to it's Github page and \nclick on the \nClone or download\n button and copy the URL in the pop-up\nwindow. Make sure that the repo URL begins with \nhttps:\n and not \ngit:\n. \nYou can toggle between the two versions by clicking on \nUse HTTPS\n and \nUse SSH\n.", 
+            "title": "Git"
+        }, 
+        {
+            "location": "/git/#git-notes", 
+            "text": "", 
+            "title": "Git Notes"
+        }, 
+        {
+            "location": "/git/#installation", 
+            "text": "", 
+            "title": "Installation"
+        }, 
+        {
+            "location": "/git/#osx", 
+            "text": "Install git on OSX with:  $ brew install git", 
+            "title": "OSX"
+        }, 
+        {
+            "location": "/git/#ev3dev-and-raspberry-pi", 
+            "text": "$ sudo apt-get install git", 
+            "title": "ev3dev and Raspberry Pi"
+        }, 
+        {
+            "location": "/git/#cloning-a-repo", 
+            "text": "Clone a repo from  Athenian Robotics  with:  $ git clone https://github.com/athenian-robotics/ev3dev-python-intro.git  To find the URL for a particular repo, go to it's Github page and \nclick on the  Clone or download  button and copy the URL in the pop-up\nwindow. Make sure that the repo URL begins with  https:  and not  git: . \nYou can toggle between the two versions by clicking on  Use HTTPS  and  Use SSH .", 
+            "title": "Cloning a Repo"
+        }, 
+        {
             "location": "/mkdocs/", 
             "text": "MkDocs Notes\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject Layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.\nsite/         # Generated website", 
             "title": "MkDocs"
@@ -96,6 +126,36 @@
             "title": "Python API"
         }, 
         {
+            "location": "/python-admin/", 
+            "text": "Python Administration\n\n\nInstallation\n\n\nOSX\n\n\nInstallation details are \n\nhere\n.\n\n\nPython3 requires \ngcc\n, which you can get by installing \n\nXCode\n or \n\nCommand Line Tools\n.\n\n\nInstall python3 and pip3 with:\n\n\n$ brew install python3\n\n\n\n\nEV3\n\n\nInstall python3 and pip3:\n\n\n$ sudo apt-get install python3\n$ sudo apt-get install python3-pip\n\n\n\n\nPackage Management\n\n\nDetermine installed packages with:\n\n\n$ pip3 list \n\n\n\n\nDetermine outdated packages with:\n\n\n$ pip3 list --outdated\n\n\n\n\nInstall a package with:\n\n\n$ pip3 install pkg_name\n\n\n\n\nUpdate a package with:\n\n\n$ pip3 install --upgrade pkg_name", 
+            "title": "Admin"
+        }, 
+        {
+            "location": "/python-admin/#python-administration", 
+            "text": "", 
+            "title": "Python Administration"
+        }, 
+        {
+            "location": "/python-admin/#installation", 
+            "text": "", 
+            "title": "Installation"
+        }, 
+        {
+            "location": "/python-admin/#osx", 
+            "text": "Installation details are  here .  Python3 requires  gcc , which you can get by installing  XCode  or  Command Line Tools .  Install python3 and pip3 with:  $ brew install python3", 
+            "title": "OSX"
+        }, 
+        {
+            "location": "/python-admin/#ev3", 
+            "text": "Install python3 and pip3:  $ sudo apt-get install python3\n$ sudo apt-get install python3-pip", 
+            "title": "EV3"
+        }, 
+        {
+            "location": "/python-admin/#package-management", 
+            "text": "Determine installed packages with:  $ pip3 list   Determine outdated packages with:  $ pip3 list --outdated  Install a package with:  $ pip3 install pkg_name  Update a package with:  $ pip3 install --upgrade pkg_name", 
+            "title": "Package Management"
+        }, 
+        {
             "location": "/python-links/", 
             "text": "Python Links\n\n\nIDEs\n\n\n\n\nPyCharm\n\n\nPyCharm Edu\n\n\n\n\nCloud REPLs\n\n\n\n\nJupyter\n  (New-\nTerminal)\n\n\n\n\nCourses\n\n\n\n\nGoogle Python Course\n\n\nInteractive Python Tutorial\n\n\n\n\nBooks\n\n\n\n\nThink Python Book\n\n\n\n\nev3dev\n\n\n\n\nev3dev Python Docs", 
             "title": "Links"
@@ -132,17 +192,17 @@
         }, 
         {
             "location": "/repl1/", 
-            "text": "Primitive values\n\n\n# Numbers\n2 + 4\n7 * 5\ni_val = 8\nf_val = 4.3\n\ni_val\ni_val + 3\ni_val * f_val\n\n# Strings\n\nHello \n + 'World'\n\ns_val = \ndog\n\n\nWatch the \n + s_val + \n run\n\n\ns_val * 10\n\n\n\n\nBuilt-in Functions\n\n\nabs(-3)\nmax(1, 2, 3)\nmin(1, 2, 3)\nlen('this is a string')\n\ni = 5\n\nAn int value: \n + i\n\nAn int value: \n + str(i)\n\nanimal = \nmouse\n\n\nWatch the {0} run\n.format(animal)\n\n\n\n\nLists\n\n\nlist1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nlist2 = range(20)\nlist3 = range(5, 12)\nlist4 = range(0, 14, 2)\nlist5 = [\ngoat\n, 6, \ncow\n, 4.2]\n\nlen(list1)\nlist1[2]\nlist1[-2]\n\nlist1[5]\nlist1[5] = 99\n\nlist1.append(88)\nlist1.insert(3, 44)\nlist1.remove(6)\n\nlist1 = list1 * 2\nlist1 *= 2\n\n\n\n\nLoops\n\n\nvals = range(10)\nfor i in vals:\n    print(i)\n\nvals = range(10)\nfor i in vals:\n    print(\nThe val is \n + str(i))\n\n\n\n\nConditionals\n\n\nvals = range(10)\nfor i in vals:\n    if i%2 == 0:\n        print(str(i) + \n is even\n)\n\nvals = range(10)\nfor i in vals:\n    if i%2 == 0:\n        print(str(i) + \n is even\n)\n    else:\n        print(str(i) + \n is odd\n)\n\n\n\n\nFunctions\n\n\ndef is_even(val):\n    return val%2 == 0\n\ndef is_odd(val):\n    return val%2 != 0\n\nvals = range(10)\nfor i in vals:\n    if is_even(i):\n        print(str(i) + \n is even\n)\n    if is_odd(i):\n        print(str(i) + \n is odd\n)\n\n\n\n\nFunction Exercises:\n\n\n\n\nWrite a function \ndouble_num()\n that doubles a number\n\n\nWrite a function \nstr_len()\n that returns the length of a string\n\n\nWrite a function \nmax_val()\n that returns the maximum value in a list\n\n\nWrite a function \nequal_str()\n that returns true if two strings are equal, regardless of case\n\n\n\n\nStrings\n\n\nstr = \nHello World!\n\nlen(str)\nstr.index(\no\n)\nstr.count(\nl\n)\nstr.upper()\nstr.lower()\nstr.startswith(\nHello\n)\nstr.endswith(\nHello\n)\n\nvals = str.split(\n \n)\nlen(vals)\nvals[1] + \n \n + vals[0]\n\nstr[2:8]\nstr[2:8:2]\nstr[::-1]\nstr[8:2:-1]\nstr[8:2:-2]\n\n\n\n\nSlices\n\n\nSyntax:\n \nlist[start_index : end_index : step]\n\n\nlist2 = range(10)\n\nlen(list2)\n\nlist2[4]\nlist2[2:7]\n\nlist2[:5]\nlist2[5:]\nlist2[:]\n\nlist2[::1]\nlist2[::2]\n\nlist2[::-1]\nlist2[::-2]\n\nlist2[-1:-6:-1]\nlist2[-1:-6:-2]\nlist2[3:-3]\nlist2[-3:3:-1]\n\nlist2[2:5] = [15]\n\n# Sorting Lists\nsorted(list2)\nsorted(list2, reverse=True)\n\n# List assignments\na = range(5)\na\nb = a\nb\na[3] = 99\na\nb\n\nb = a[:]\na\nb\na[0] = 33\na\nb\n\n\n\n\nTuples\n\n\nTuples are very similar to lists, except they are immutable.\n\n\ntuple1 = (1, 2, 3, 4, 5)\ntuple2 = (3.0, \ncat\n)\n\n# This is a no go\ntuple1[1] = 4\n\n# Unpacking \nval1, val2 = tuple2\nval3, val4, val5 = tuple1[1:4]\n\n\n\n\nDictionaries\n\n\ndict1 = {\na\n: \nmoose\n, \nb\n: 2, \nc\n: \nfox\n}\n\ndict1\ndict1[\nc\n]\ndict1[\nc\n] = \nrat\n\ndict1[\nc\n]\n\ndict2 = {}\nfor i in range(0, 10):\n    dict2[\nval\n + str(i)] = i\ndict2", 
+            "text": "Primitive values\n\n\n# Numbers\n2 + 4\n7 * 5\ni_val = 8\nf_val = 4.3\n\ni_val\ni_val + 3\ni_val * f_val\n\n# Strings\n\nHello \n + 'World'\n\ns_val = \ndog\n\n\nWatch the \n + s_val + \n run\n\n\ns_val * 10\n\n# Determining type\ntype(i_val)\ntype(f_val)\n\n\n\n\nBuilt-in Functions\n\n\nabs(-3)\nmax(1, 2, 3)\nmin(5, 6, 3, 4, 8)\nlen('this is a string')\n\ni = 5\n\nAn int value: \n + i\n\nAn int value: \n + str(i)\n\n\n\n\nLists\n\n\nlist1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nlist2 = range(20)\nlist3 = range(5, 12)\nlist4 = range(0, 14, 2)\nlist5 = [\ngoat\n, 6, \ncow\n, 4.2]\n\nlen(list1)\nlist1[2]\nlist1[-2]\n\nlist1[5]\nlist1[5] = 99\n\nlist1.append(88)\nlist1.insert(3, 44)\nlist1.remove(6)\n\nlist1 = list1 * 2\nlist1 *= 2\n\n\n\n\nLoops\n\n\nfor i in range(10):\n    print(\nThe val is \n + str(i))\n\nfor c in \nThis is a sentence\n:\n    print(c)\n\n\n\n\nConditionals\n\n\nfor i in range(10):\n    if i%2 == 0:\n        print(str(i) + \n is even\n)\n\nfor i in range(10):\n    if i%2 == 0:\n        print(str(i) + \n is even\n)\n    else:\n        print(str(i) + \n is odd\n)\n\n\n\n\nFunctions\n\n\ndef is_even(val):\n    return val%2 == 0\n\ndef is_odd(val):\n    return val%2 != 0\n\nvals = range(10)\nfor i in vals:\n    if is_even(i):\n        print(str(i) + \n is even\n)\n    if is_odd(i):\n        print(str(i) + \n is odd\n)\n\n\n\n\nFunction Exercises:\n\n\n\n\nWrite a function \ndouble_num()\n that doubles a number\n\n\nWrite a function \nmy_abs()\n that returns the absolute value of a number\n\n\nWrite a function \nstr_len()\n that returns the length of a string\n\n\nWrite a function \nmax_val()\n that returns the maximum value in a list\n\n\nWrite a function \nequal_str()\n that returns true if two strings are equal, regardless of case\n\n\n\n\nStrings\n\n\nstr = \nHello World!\n\nlen(str)\nstr.index(\no\n)\nstr.count(\nl\n)\nstr.upper()\nstr.lower()\nstr.startswith(\nHello\n)\nstr.endswith(\nHello\n)\n\nvals = str.split(\n \n)\nlen(vals)\nvals[1] + \n \n + vals[0]\n\nanimal = \nmouse\n\n\nWatch the {0} run\n.format(animal)\n\nstr[2:8]\nstr[2:8:2]\nstr[::-1]\nstr[8:2:-1]\nstr[8:2:-2]\n\n\n\n\nSlices\n\n\nSyntax:\n \nlist[start_index : end_index : step]\n\n\nlist2 = range(10)\n\nlen(list2)\n\nlist2[4]\nlist2[2:7]\n\nlist2[:5]\nlist2[5:]\nlist2[:]\n\nlist2[::1]\nlist2[::2]\n\nlist2[::-1]\nlist2[::-2]\n\nlist2[-1:-6:-1]\nlist2[-1:-6:-2]\nlist2[3:-3]\nlist2[-3:3:-1]\n\nlist2[2:5] = [15]\n\n# Sorting Lists\nsorted(list2)\nsorted(list2, reverse=True)\n\n# List assignments\na = range(5)\na\nb = a\nb\na[3] = 99\na\nb\n\nb = a[:]\na\nb\na[0] = 33\na\nb\n\n\n\n\nTuples\n\n\nTuples are very similar to lists, except they are immutable.\n\n\ntuple1 = (1, 2, 3, 4, 5)\ntuple2 = (3.0, \ncat\n)\n\n# This is a no go\ntuple1[1] = 4\n\n# Unpacking \nval1, val2 = tuple2\nval3, val4, val5 = tuple1[1:4]\n\n\n\n\nDictionaries\n\n\ndict1 = {\na\n: \nmoose\n, \nb\n: 2, \nc\n: \nfox\n}\n\ndict1\ndict1[\nc\n]\ndict1[\nc\n] = \nrat\n\ndict1[\nc\n]\n\ndict2 = {}\nfor i in range(0, 10):\n    dict2[\nval\n + str(i)] = i\ndict2", 
             "title": "REPL 1"
         }, 
         {
             "location": "/repl1/#primitive-values", 
-            "text": "# Numbers\n2 + 4\n7 * 5\ni_val = 8\nf_val = 4.3\n\ni_val\ni_val + 3\ni_val * f_val\n\n# Strings Hello   + 'World'\n\ns_val =  dog  Watch the   + s_val +   run \n\ns_val * 10", 
+            "text": "# Numbers\n2 + 4\n7 * 5\ni_val = 8\nf_val = 4.3\n\ni_val\ni_val + 3\ni_val * f_val\n\n# Strings Hello   + 'World'\n\ns_val =  dog  Watch the   + s_val +   run \n\ns_val * 10\n\n# Determining type\ntype(i_val)\ntype(f_val)", 
             "title": "Primitive values"
         }, 
         {
             "location": "/repl1/#built-in-functions", 
-            "text": "abs(-3)\nmax(1, 2, 3)\nmin(1, 2, 3)\nlen('this is a string')\n\ni = 5 An int value:   + i An int value:   + str(i)\n\nanimal =  mouse  Watch the {0} run .format(animal)", 
+            "text": "abs(-3)\nmax(1, 2, 3)\nmin(5, 6, 3, 4, 8)\nlen('this is a string')\n\ni = 5 An int value:   + i An int value:   + str(i)", 
             "title": "Built-in Functions"
         }, 
         {
@@ -152,12 +212,12 @@
         }, 
         {
             "location": "/repl1/#loops", 
-            "text": "vals = range(10)\nfor i in vals:\n    print(i)\n\nvals = range(10)\nfor i in vals:\n    print( The val is   + str(i))", 
+            "text": "for i in range(10):\n    print( The val is   + str(i))\n\nfor c in  This is a sentence :\n    print(c)", 
             "title": "Loops"
         }, 
         {
             "location": "/repl1/#conditionals", 
-            "text": "vals = range(10)\nfor i in vals:\n    if i%2 == 0:\n        print(str(i) +   is even )\n\nvals = range(10)\nfor i in vals:\n    if i%2 == 0:\n        print(str(i) +   is even )\n    else:\n        print(str(i) +   is odd )", 
+            "text": "for i in range(10):\n    if i%2 == 0:\n        print(str(i) +   is even )\n\nfor i in range(10):\n    if i%2 == 0:\n        print(str(i) +   is even )\n    else:\n        print(str(i) +   is odd )", 
             "title": "Conditionals"
         }, 
         {
@@ -167,12 +227,12 @@
         }, 
         {
             "location": "/repl1/#function-exercises", 
-            "text": "Write a function  double_num()  that doubles a number  Write a function  str_len()  that returns the length of a string  Write a function  max_val()  that returns the maximum value in a list  Write a function  equal_str()  that returns true if two strings are equal, regardless of case", 
+            "text": "Write a function  double_num()  that doubles a number  Write a function  my_abs()  that returns the absolute value of a number  Write a function  str_len()  that returns the length of a string  Write a function  max_val()  that returns the maximum value in a list  Write a function  equal_str()  that returns true if two strings are equal, regardless of case", 
             "title": "Function Exercises:"
         }, 
         {
             "location": "/repl1/#strings", 
-            "text": "str =  Hello World! \nlen(str)\nstr.index( o )\nstr.count( l )\nstr.upper()\nstr.lower()\nstr.startswith( Hello )\nstr.endswith( Hello )\n\nvals = str.split(   )\nlen(vals)\nvals[1] +     + vals[0]\n\nstr[2:8]\nstr[2:8:2]\nstr[::-1]\nstr[8:2:-1]\nstr[8:2:-2]", 
+            "text": "str =  Hello World! \nlen(str)\nstr.index( o )\nstr.count( l )\nstr.upper()\nstr.lower()\nstr.startswith( Hello )\nstr.endswith( Hello )\n\nvals = str.split(   )\nlen(vals)\nvals[1] +     + vals[0]\n\nanimal =  mouse  Watch the {0} run .format(animal)\n\nstr[2:8]\nstr[2:8:2]\nstr[::-1]\nstr[8:2:-1]\nstr[8:2:-2]", 
             "title": "Strings"
         }, 
         {
@@ -191,39 +251,9 @@
             "title": "Dictionaries"
         }, 
         {
-            "location": "/python-admin/", 
-            "text": "Python Administration\n\n\nInstallation\n\n\nOSX\n\n\nInstallation details are \n\nhere\n.\n\n\nPython3 requires \ngcc\n, which you can get by installing \n\nXCode\n or \n\nCommand Line Tools\n.\n\n\nInstall python3 and pip3 with:\n\n\n$ brew install python3\n\n\n\n\nEV3\n\n\nInstall python3 and pip3:\n\n\n$ sudo apt-get install python3\n$ sudo apt-get install python3-pip\n\n\n\n\nPackage Management\n\n\nDetermine installed packages with:\n\n\n$ pip3 list \n\n\n\n\nDetermine outdated packages with:\n\n\n$ pip3 list --outdated\n\n\n\n\nInstall a package with:\n\n\n$ pip3 install pkg_name\n\n\n\n\nUpdate a package with:\n\n\n$ pip3 install --upgrade pkg_name", 
-            "title": "Python"
-        }, 
-        {
-            "location": "/python-admin/#python-administration", 
-            "text": "", 
-            "title": "Python Administration"
-        }, 
-        {
-            "location": "/python-admin/#installation", 
-            "text": "", 
-            "title": "Installation"
-        }, 
-        {
-            "location": "/python-admin/#osx", 
-            "text": "Installation details are  here .  Python3 requires  gcc , which you can get by installing  XCode  or  Command Line Tools .  Install python3 and pip3 with:  $ brew install python3", 
-            "title": "OSX"
-        }, 
-        {
-            "location": "/python-admin/#ev3", 
-            "text": "Install python3 and pip3:  $ sudo apt-get install python3\n$ sudo apt-get install python3-pip", 
-            "title": "EV3"
-        }, 
-        {
-            "location": "/python-admin/#package-management", 
-            "text": "Determine installed packages with:  $ pip3 list   Determine outdated packages with:  $ pip3 list --outdated  Install a package with:  $ pip3 install pkg_name  Update a package with:  $ pip3 install --upgrade pkg_name", 
-            "title": "Package Management"
-        }, 
-        {
             "location": "/ev3-admin/", 
             "text": "EV3 Administration\n\n\nFor full ev3dev documentation visit \n\nhere\n.\n\n\nFor full ev3dev Python documentation visit \n\nhere\n.\n\n\nConnecting\n\n\nThe default username/password is: robot/maker\n\n\nConnect to an EV3 named \nev3dev1.local\n with:\n\n\n$ ssh robot@ev3dev1.local\n\n\n\n\nCopy files to an EV3 named \nev3dev1.local\n with a \nsftp\n session:\n\n\n$ sftp robot@ev3dev1.local\nrobot@ev3dev3.local's password: \nConnected to ev3dev3.local.\nsftp\n put file_name\n\n\n\n\nExit from \nsftp\n with ctrl-D.\n\n\nOr you can use \nscp\n:\n\n\n$ scp file_name robot@ev3dev1.local:/home/robot/\n\n\n\n\nUpdate Linux Bits\n\n\n$ sudo apt-get update\n$ sudo apt-get upgrade\n$ sudo apt-get dist-upgrade\n$ sudo reboot now\n\n\n\n\nEV3 Python Bindings\n\n\nInstall the EV3 Python bindings with:\n\n\n@ pip install python-ev3dev", 
-            "title": "EV3"
+            "title": "Admin"
         }, 
         {
             "location": "/ev3-admin/#ev3-administration", 

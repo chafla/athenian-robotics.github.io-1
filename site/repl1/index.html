@@ -71,6 +71,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../git/">Git</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../mkdocs/">MkDocs</a>
         
     </li>
@@ -96,6 +103,13 @@
             <li>
     <ul class="subnav">
     <li><span>Python</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../python-admin/">Admin</a>
+        
+    </li>
 
         
             
@@ -153,19 +167,12 @@
           
             <li>
     <ul class="subnav">
-    <li><span>Sys Admin</span></li>
+    <li><span>EV3</span></li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../python-admin/">Python</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../ev3-admin/">EV3</a>
+        <a class="" href="../ev3-admin/">Admin</a>
         
     </li>
 
@@ -230,20 +237,21 @@ s_val = &quot;dog&quot;
 &quot;Watch the &quot; + s_val + &quot; run&quot;
 
 s_val * 10
+
+# Determining type
+type(i_val)
+type(f_val)
 </code></pre>
 
 <h2 id="built-in-functions">Built-in Functions</h2>
 <pre><code class="python">abs(-3)
 max(1, 2, 3)
-min(1, 2, 3)
+min(5, 6, 3, 4, 8)
 len('this is a string')
 
 i = 5
 &quot;An int value: &quot; + i
 &quot;An int value: &quot; + str(i)
-
-animal = &quot;mouse&quot;
-&quot;Watch the {0} run&quot;.format(animal)
 </code></pre>
 
 <h2 id="lists">Lists</h2>
@@ -269,23 +277,19 @@ list1 *= 2
 </code></pre>
 
 <h2 id="loops">Loops</h2>
-<pre><code class="python">vals = range(10)
-for i in vals:
-    print(i)
-
-vals = range(10)
-for i in vals:
+<pre><code class="python">for i in range(10):
     print(&quot;The val is &quot; + str(i))
+
+for c in &quot;This is a sentence&quot;:
+    print(c)
 </code></pre>
 
 <h2 id="conditionals">Conditionals</h2>
-<pre><code class="python">vals = range(10)
-for i in vals:
+<pre><code class="python">for i in range(10):
     if i%2 == 0:
         print(str(i) + &quot; is even&quot;)
 
-vals = range(10)
-for i in vals:
+for i in range(10):
     if i%2 == 0:
         print(str(i) + &quot; is even&quot;)
     else:
@@ -310,6 +314,7 @@ for i in vals:
 <h3 id="function-exercises">Function Exercises:</h3>
 <ul>
 <li>Write a function <code>double_num()</code> that doubles a number</li>
+<li>Write a function <code>my_abs()</code> that returns the absolute value of a number</li>
 <li>Write a function <code>str_len()</code> that returns the length of a string</li>
 <li>Write a function <code>max_val()</code> that returns the maximum value in a list</li>
 <li>Write a function <code>equal_str()</code> that returns true if two strings are equal, regardless of case</li>
@@ -327,6 +332,9 @@ str.endswith(&quot;Hello&quot;)
 vals = str.split(&quot; &quot;)
 len(vals)
 vals[1] + &quot; &quot; + vals[0]
+
+animal = &quot;mouse&quot;
+&quot;Watch the {0} run&quot;.format(animal)
 
 str[2:8]
 str[2:8:2]
@@ -415,7 +423,7 @@ dict2
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../python-admin/" class="btn btn-neutral float-right" title="Python">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../ev3-admin/" class="btn btn-neutral float-right" title="Admin">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../python-links/" class="btn btn-neutral" title="Links"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -449,7 +457,7 @@ dict2
         <span><a href="../python-links/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../python-admin/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../ev3-admin/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

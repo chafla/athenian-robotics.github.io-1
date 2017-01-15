@@ -6,16 +6,16 @@ site_author: Athenian Robotics Team
 pages:
 - Home: index.md
 - Software Notes:
+  - Git: git.md
   - MkDocs: mkdocs.md
   - MQTT: mqtt.md
   - Plot.ly: plotly.md
 - Python:
+  - Admin: python-admin.md
   - Links: python-links.md
   - REPL 1: repl1.md
-- Sys Admin:
-   - Python: python-admin.md
-   - EV3: ev3-admin.md
-
+- EV3:
+  - Admin: ev3-admin.md
 
 theme: readthedocs
 
