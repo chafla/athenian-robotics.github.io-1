@@ -4,23 +4,23 @@
 # Numbers
 2 + 4
 7 * 5
-int_val = 8
-float_val = 4.3
+i_val = 8
+f_val = 4.3
 
-int_val
-int_val + 3
-int_val * float_val
+i_val
+i_val + 3
+i_val * f_val
 
 # Strings
 "Hello " + 'World'
 
-string_val = "dog"
-"Watch the " + string_val + " run"
+s_val = "dog"
+"Watch the " + s_val + " run"
 
-string_val * 10
+s_val * 10
 ```
 
-## Functions
+## Built-in Functions
 
 ```python
 abs(-3)
@@ -29,6 +29,7 @@ min(1, 2, 3)
 len('this is a string')
 
 i = 5
+"An int value: " + i
 "An int value: " + str(i)
 
 animal = "mouse"
@@ -44,21 +45,95 @@ list3 = range(5, 12)
 list4 = range(0, 14, 2)
 list5 = ["goat", 6, "cow", 4.2]
 
-list1
 len(list1)
 list1[2]
 list1[-2]
 
 list1[5]
 list1[5] = 99
-list1
 
 list1.append(88)
 list1.insert(3, 44)
 list1.remove(6)
+
+list1 = list1 * 2
 list1 *= 2
 ```
 
+## Loops
+
+```python
+vals = range(10)
+for i in vals:
+    print(i)
+
+vals = range(10)
+for i in vals:
+    print("The val is " + str(i))
+```
+
+## Conditionals
+
+```python
+vals = range(10)
+for i in vals:
+    if i%2 == 0:
+        print(str(i) + " is even")
+      
+vals = range(10)
+for i in vals:
+    if i%2 == 0:
+        print(str(i) + " is even")
+    else:
+        print(str(i) + " is odd")
+```
+
+## Functions
+
+```python
+def is_even(val):
+    return val%2 == 0
+      
+def is_odd(val):
+    return val%2 != 0
+       
+vals = range(10)
+for i in vals:
+    if is_even(i):
+        print(str(i) + " is even")
+    if is_odd(i):
+        print(str(i) + " is odd")
+```
+
+### Function Exercises: 
+* Write a function `double_num()` that doubles a number
+* Write a function `str_len()` that returns the length of a string
+* Write a function `max_val()` that returns the maximum value in a list
+* Write a function `equal_str()` that returns true if two strings are equal, regardless of case
+
+
+## Strings
+
+```python
+str = "Hello World!"
+len(str)
+str.index("o")
+str.count("l")
+str.upper()
+str.lower()
+str.startswith("Hello")
+str.endswith("Hello")
+
+vals = str.split(" ")
+len(vals)
+vals[1] + " " + vals[0]
+ 
+str[2:8]
+str[2:8:2]
+str[::-1]
+str[8:2:-1]
+str[8:2:-2]
+```
 
 ## Slices
 
@@ -110,43 +185,6 @@ a
 b
 ```
 
-## Strings
-
-```python
-str = "Hello World!"
-len(str)
-str.index("o")
-str.count("l")
-str.upper()
-str.lower()
-str.startswith("Hello")
-str.endswith("Hello")
-
-
-vals = str.split(" ")
-len(vals)
-vals[1] + " " + vals[0]
- 
-
-str[2:8]
-str[2:8:2]
-str[::-1]
-str[8:2:-1]
-str[8:2:-2]
-```
-
-
-## Loops
-
-```python
-vals = range(10)
-for i in vals:
-    print(i)
-
-vals = range(10)
-for i in vals:
-    print("The val is " + str(i))
-```
 
 ## Tuples
 

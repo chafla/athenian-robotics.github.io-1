@@ -114,19 +114,27 @@
                 <li class="toctree-l3"><a href="#scalar-values">Scalar values</a></li>
                 
             
-                <li class="toctree-l3"><a href="#functions">Functions</a></li>
+                <li class="toctree-l3"><a href="#built-in-functions">Built-in Functions</a></li>
                 
             
                 <li class="toctree-l3"><a href="#lists">Lists</a></li>
                 
             
-                <li class="toctree-l3"><a href="#slices">Slices</a></li>
+                <li class="toctree-l3"><a href="#loops">Loops</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#conditionals">Conditionals</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#functions">Functions</a></li>
+                
+                    <li><a class="toctree-l4" href="#function-exercises">Function Exercises:</a></li>
                 
             
                 <li class="toctree-l3"><a href="#strings">Strings</a></li>
                 
             
-                <li class="toctree-l3"><a href="#loops">Loops</a></li>
+                <li class="toctree-l3"><a href="#slices">Slices</a></li>
                 
             
                 <li class="toctree-l3"><a href="#tuples">Tuples</a></li>
@@ -208,29 +216,30 @@
 <pre><code class="python"># Numbers
 2 + 4
 7 * 5
-int_val = 8
-float_val = 4.3
+i_val = 8
+f_val = 4.3
 
-int_val
-int_val + 3
-int_val * float_val
+i_val
+i_val + 3
+i_val * f_val
 
 # Strings
 &quot;Hello &quot; + 'World'
 
-string_val = &quot;dog&quot;
-&quot;Watch the &quot; + string_val + &quot; run&quot;
+s_val = &quot;dog&quot;
+&quot;Watch the &quot; + s_val + &quot; run&quot;
 
-string_val * 10
+s_val * 10
 </code></pre>
 
-<h2 id="functions">Functions</h2>
+<h2 id="built-in-functions">Built-in Functions</h2>
 <pre><code class="python">abs(-3)
 max(1, 2, 3)
 min(1, 2, 3)
 len('this is a string')
 
 i = 5
+&quot;An int value: &quot; + i
 &quot;An int value: &quot; + str(i)
 
 animal = &quot;mouse&quot;
@@ -244,19 +253,86 @@ list3 = range(5, 12)
 list4 = range(0, 14, 2)
 list5 = [&quot;goat&quot;, 6, &quot;cow&quot;, 4.2]
 
-list1
 len(list1)
 list1[2]
 list1[-2]
 
 list1[5]
 list1[5] = 99
-list1
 
 list1.append(88)
 list1.insert(3, 44)
 list1.remove(6)
+
+list1 = list1 * 2
 list1 *= 2
+</code></pre>
+
+<h2 id="loops">Loops</h2>
+<pre><code class="python">vals = range(10)
+for i in vals:
+    print(i)
+
+vals = range(10)
+for i in vals:
+    print(&quot;The val is &quot; + str(i))
+</code></pre>
+
+<h2 id="conditionals">Conditionals</h2>
+<pre><code class="python">vals = range(10)
+for i in vals:
+    if i%2 == 0:
+        print(str(i) + &quot; is even&quot;)
+
+vals = range(10)
+for i in vals:
+    if i%2 == 0:
+        print(str(i) + &quot; is even&quot;)
+    else:
+        print(str(i) + &quot; is odd&quot;)
+</code></pre>
+
+<h2 id="functions">Functions</h2>
+<pre><code class="python">def is_even(val):
+    return val%2 == 0
+
+def is_odd(val):
+    return val%2 != 0
+
+vals = range(10)
+for i in vals:
+    if is_even(i):
+        print(str(i) + &quot; is even&quot;)
+    if is_odd(i):
+        print(str(i) + &quot; is odd&quot;)
+</code></pre>
+
+<h3 id="function-exercises">Function Exercises:</h3>
+<ul>
+<li>Write a function <code>double_num()</code> that doubles a number</li>
+<li>Write a function <code>str_len()</code> that returns the length of a string</li>
+<li>Write a function <code>max_val()</code> that returns the maximum value in a list</li>
+<li>Write a function <code>equal_str()</code> that returns true if two strings are equal, regardless of case</li>
+</ul>
+<h2 id="strings">Strings</h2>
+<pre><code class="python">str = &quot;Hello World!&quot;
+len(str)
+str.index(&quot;o&quot;)
+str.count(&quot;l&quot;)
+str.upper()
+str.lower()
+str.startswith(&quot;Hello&quot;)
+str.endswith(&quot;Hello&quot;)
+
+vals = str.split(&quot; &quot;)
+len(vals)
+vals[1] + &quot; &quot; + vals[0]
+
+str[2:8]
+str[2:8:2]
+str[::-1]
+str[8:2:-1]
+str[8:2:-2]
 </code></pre>
 
 <h2 id="slices">Slices</h2>
@@ -304,39 +380,6 @@ b
 a[0] = 33
 a
 b
-</code></pre>
-
-<h2 id="strings">Strings</h2>
-<pre><code class="python">str = &quot;Hello World!&quot;
-len(str)
-str.index(&quot;o&quot;)
-str.count(&quot;l&quot;)
-str.upper()
-str.lower()
-str.startswith(&quot;Hello&quot;)
-str.endswith(&quot;Hello&quot;)
-
-
-vals = str.split(&quot; &quot;)
-len(vals)
-vals[1] + &quot; &quot; + vals[0]
-
-
-str[2:8]
-str[2:8:2]
-str[::-1]
-str[8:2:-1]
-str[8:2:-2]
-</code></pre>
-
-<h2 id="loops">Loops</h2>
-<pre><code class="python">vals = range(10)
-for i in vals:
-    print(i)
-
-vals = range(10)
-for i in vals:
-    print(&quot;The val is &quot; + str(i))
 </code></pre>
 
 <h2 id="tuples">Tuples</h2>
