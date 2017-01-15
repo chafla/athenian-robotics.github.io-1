@@ -7,7 +7,7 @@ Install the following pieces of software:
 
 * [Java 8](https://java.com/en/download/)
 
-* [Brew](http://brew.sh)
+* [brew](http://brew.sh)
 
 ```bash
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -19,17 +19,17 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 $ brew install python3
 ```
 
-* [Git](https://git-scm.com)
+* [git](https://git-scm.com)
 ```bash
 $ brew install git
 ```
 
-* [Maven](http://maven.apache.org)
+* [maven](http://maven.apache.org)
 ```bash
 $ brew install maven
 ```
 
-* [Gradle](http://maven.apache.org)
+* [gradle](http://maven.apache.org)
 ```bash
 $ brew install gradle
 ```
