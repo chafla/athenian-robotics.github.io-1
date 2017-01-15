@@ -14,3 +14,6 @@
 ## Books
 * [Think Python Book](http://greenteapress.com/wp/think-python/)
 
+## ev3dev
+* [ev3dev Python Docs](http://ev3dev-lang-python.readthedocs.io/en/latest/)
+
