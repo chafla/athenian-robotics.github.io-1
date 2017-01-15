@@ -12,25 +12,25 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 
 * [Git](https://git-scm.com)
 ```bash
-$ brew install git"
+$ brew install git
 ```
 
 * [Python 3](https://www.python.org)
 ```bash
-$ brew install python3"
+$ brew install python3
 ```
 
 * [Maven](http://maven.apache.org)
 ```bash
-$ brew install maven"
+$ brew install maven
 ```
 
 * [Gradle](http://maven.apache.org)
 ```bash
-$ brew install gradle"
+$ brew install gradle
 ```
 
 * [httpie](https://github.com/jkbrzt/httpie)
 ```bash
-$ brew install httpie"
+$ brew install httpie
 ```
