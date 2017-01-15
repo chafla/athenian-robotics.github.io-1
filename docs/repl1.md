@@ -18,6 +18,10 @@ s_val = "dog"
 "Watch the " + s_val + " run"
 
 s_val * 10
+
+# Determining type
+type(i_val)
+type(f_val)
 ```
 
 ## Built-in Functions
@@ -25,15 +29,12 @@ s_val * 10
 ```python
 abs(-3)
 max(1, 2, 3)
-min(1, 2, 3)
+min(5, 6, 3, 4, 8)
 len('this is a string')
 
 i = 5
 "An int value: " + i
 "An int value: " + str(i)
-
-animal = "mouse"
-"Watch the {0} run".format(animal)
 ```
 
 ## Lists
@@ -63,25 +64,21 @@ list1 *= 2
 ## Loops
 
 ```python
-vals = range(10)
-for i in vals:
-    print(i)
-
-vals = range(10)
-for i in vals:
+for i in range(10):
     print("The val is " + str(i))
+    
+for c in "This is a sentence":
+    print(c)
 ```
 
 ## Conditionals
 
 ```python
-vals = range(10)
-for i in vals:
+for i in range(10):
     if i%2 == 0:
         print(str(i) + " is even")
       
-vals = range(10)
-for i in vals:
+for i in range(10):
     if i%2 == 0:
         print(str(i) + " is even")
     else:
@@ -107,6 +104,7 @@ for i in vals:
 
 ### Function Exercises: 
 * Write a function `double_num()` that doubles a number
+* Write a function `my_abs()` that returns the absolute value of a number
 * Write a function `str_len()` that returns the length of a string
 * Write a function `max_val()` that returns the maximum value in a list
 * Write a function `equal_str()` that returns true if two strings are equal, regardless of case
@@ -128,6 +126,9 @@ vals = str.split(" ")
 len(vals)
 vals[1] + " " + vals[0]
  
+animal = "mouse"
+"Watch the {0} run".format(animal)
+
 str[2:8]
 str[2:8:2]
 str[::-1]
