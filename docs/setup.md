@@ -2,6 +2,7 @@
 
 ## OSX 
 Install the following pieces of software: 
+
 * [XCode](http://developer.apple.com/xcode/)
 
 * [Brew](http://brew.sh)
