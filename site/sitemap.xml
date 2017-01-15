@@ -10,31 +10,11 @@
     
 
     
-        
     <url>
-     <loc>http://www.athenian-robotics.org/git/</loc>
+     <loc>http://www.athenian-robotics.org/setup/</loc>
      <lastmod>2017-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
-    <url>
-     <loc>http://www.athenian-robotics.org/mqtt/</loc>
-     <lastmod>2017-01-15</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>http://www.athenian-robotics.org/plotly/</loc>
-     <lastmod>2017-01-15</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>http://www.athenian-robotics.org/mkdocs/</loc>
-     <lastmod>2017-01-15</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
     
 
     
@@ -69,6 +49,34 @@
         
     <url>
      <loc>http://www.athenian-robotics.org/ev3-python/</loc>
+     <lastmod>2017-01-15</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://www.athenian-robotics.org/git/</loc>
+     <lastmod>2017-01-15</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://www.athenian-robotics.org/mqtt/</loc>
+     <lastmod>2017-01-15</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://www.athenian-robotics.org/plotly/</loc>
+     <lastmod>2017-01-15</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://www.athenian-robotics.org/mkdocs/</loc>
      <lastmod>2017-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>

@@ -5,11 +5,7 @@ site_author: Athenian Robotics Team
 
 pages:
 - Home: index.md
-- Software Notes:
-  - Git: git.md
-  - MQTT: mqtt.md
-  - Plot.ly: plotly.md
-  - MkDocs: mkdocs.md
+- Setup: setup.md
 - Python:
   - Admin: python-admin.md
   - Links: python-links.md
@@ -17,6 +13,11 @@ pages:
 - EV3:
   - Admin: ev3-admin.md
   - Python: ev3-python.md
+- Software Notes:
+  - Git: git.md
+  - MQTT: mqtt.md
+  - Plot.ly: plotly.md
+  - MkDocs: mkdocs.md
 
 theme: readthedocs
 

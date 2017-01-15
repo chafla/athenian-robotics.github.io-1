@@ -17,3 +17,6 @@
 ## ev3dev
 * [ev3dev Python Docs](http://python-ev3dev.readthedocs.io/en/latest/)
 
+## Misc 
+* [Python Cheatsheets](https://www.pythonsheets.com)
+
