@@ -8,7 +8,7 @@
   
   <meta name="author" content="Athenian Robotics Team">
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Admin - Athenian Robotics</title>
+  <title>Python - Athenian Robotics</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -18,9 +18,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Admin";
-    var mkdocs_page_input_path = "python-admin.md";
-    var mkdocs_page_url = "/python-admin/";
+    var mkdocs_page_name = "Python";
+    var mkdocs_page_input_path = "ev3-python.md";
+    var mkdocs_page_url = "/ev3-python/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -106,19 +106,8 @@
 
         
             
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Admin</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#python-administration">Python Administration</a></li>
-                
-                    <li><a class="toctree-l4" href="#installation">Installation</a></li>
-                
-                    <li><a class="toctree-l4" href="#package-management">Package Management</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l1 ">
+        <a class="" href="../python-admin/">Admin</a>
         
     </li>
 
@@ -153,8 +142,15 @@
 
         
             
-    <li class="toctree-l1 ">
-        <a class="" href="../ev3-python/">Python</a>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Python</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#ev3-python">EV3 Python</a></li>
+                
+            
+            </ul>
         
     </li>
 
@@ -184,14 +180,14 @@
     
       
         
-          <li>Python &raquo;</li>
+          <li>EV3 &raquo;</li>
         
       
     
-    <li>Admin</li>
+    <li>Python</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/athenian-robotics/athenian-robotics.github.io/edit/master/docs/python-admin.md"
+        <a href="https://github.com/athenian-robotics/athenian-robotics.github.io/edit/master/docs/ev3-python.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -201,40 +197,10 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="python-administration">Python Administration</h1>
-<h2 id="installation">Installation</h2>
-<h3 id="osx">OSX</h3>
-<p>Installation details are 
-<a href="http://docs.python-guide.org/en/latest/starting/install3/osx/">here</a>.</p>
-<p>Python3 requires <code>gcc</code>, which you can get by installing 
-<a href="http://developer.apple.com/xcode/">XCode</a> or 
-<a href="https://developer.apple.com/downloads/">Command Line Tools</a>.</p>
-<p>Install python3 and pip3 with:</p>
-<pre><code class="bash">$ brew install python3
-</code></pre>
-
-<h3 id="ev3">EV3</h3>
-<p>Install python3 and pip3:</p>
-<pre><code class="bash">$ sudo apt-get install python3
-$ sudo apt-get install python3-pip
-</code></pre>
-
-<h2 id="package-management">Package Management</h2>
-<p>Determine installed packages with:</p>
-<pre><code class="bash">$ pip3 list 
-</code></pre>
-
-<p>Determine outdated packages with:</p>
-<pre><code class="bash">$ pip3 list --outdated
-</code></pre>
-
-<p>Install a package with:</p>
-<pre><code class="bash">$ pip3 install pkg_name
-</code></pre>
-
-<p>Update a package with:</p>
-<pre><code class="bash">$ pip3 install --upgrade pkg_name
-</code></pre>
+                <h1 id="ev3-python">EV3 Python</h1>
+<ul>
+<li>The ev3dev Python API is described <a href="http://ev3dev-lang-python.readthedocs.io/en/latest/">here</a></li>
+</ul>
               
             </div>
           </div>
@@ -242,10 +208,8 @@ $ sudo apt-get install python3-pip
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../python-links/" class="btn btn-neutral float-right" title="Links">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-      
-        <a href="../mkdocs/" class="btn btn-neutral" title="MkDocs"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../ev3-admin/" class="btn btn-neutral" title="Admin"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -273,10 +237,8 @@ $ sudo apt-get install python3-pip
           <a href="https://github.com/athenian-robotics/athenian-robotics.github.io" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../mkdocs/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../ev3-admin/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
-      
-        <span style="margin-left: 15px"><a href="../python-links/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

@@ -16,6 +16,7 @@ pages:
   - REPL 1: repl1.md
 - EV3:
   - Admin: ev3-admin.md
+  - Python: ev3-python.md
 
 theme: readthedocs
 

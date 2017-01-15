@@ -67,6 +67,12 @@
      <changefreq>daily</changefreq>
     </url>
         
+    <url>
+     <loc>http://www.athenian-robotics.org/ev3-python/</loc>
+     <lastmod>2017-01-15</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
 </urlset>

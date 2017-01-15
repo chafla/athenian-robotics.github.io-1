@@ -41,26 +41,6 @@
             "title": "Cloning a Repo"
         }, 
         {
-            "location": "/mkdocs/", 
-            "text": "MkDocs Notes\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject Layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.\nsite/         # Generated website", 
-            "title": "MkDocs"
-        }, 
-        {
-            "location": "/mkdocs/#mkdocs-notes", 
-            "text": "For full documentation visit  mkdocs.org .", 
-            "title": "MkDocs Notes"
-        }, 
-        {
-            "location": "/mkdocs/#commands", 
-            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.", 
-            "title": "Commands"
-        }, 
-        {
-            "location": "/mkdocs/#project-layout", 
-            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.\nsite/         # Generated website", 
-            "title": "Project Layout"
-        }, 
-        {
             "location": "/mqtt/", 
             "text": "MQTT Notes\n\n\nMQTT Broker Installation\n\n\nOSX\n\n\nTo install mosquitto:\n\n\n$ brew install mosquitto\n\n\n\n\nTo add mosquitto to launchd:\n\n\n$ brew services start mosquitto\n\n\n\n\nIf you don't want to run mosquitto as a background service:\n\n\n$ /usr/local/sbin/mosquitto -c /usr/local/etc/mosquitto/mosquitto.conf\n\n\n\n\nDocker\n\n\nTo run mosquitto as a docker service:\n\n\n$ docker run -ti -p 1883:1883 -p 9001:9001 toke/mosquitto\n\n\n\n\nImage details are \nhere\n\n\nRaspberry Pi\n\n\n$ sudo apt-get install mosquitto\n$ sudo apt-get install mosquitto-clients\n\n\n\n\nTesting from CLI\n\n\nSubscribe\n\n\n$ mosquitto_sub -d -h localhost -t /testnode\nClient mosqsub/27524-pleiku.lo sending CONNECT\nClient mosqsub/27524-pleiku.lo received CONNACK\nClient mosqsub/27524-pleiku.lo sending SUBSCRIBE (Mid: 1, Topic: /testnode, QoS: 0)\nClient mosqsub/27524-pleiku.lo received SUBACK\nSubscribed (mid: 1): 0\n\n\n\n\nPublish\n\n\n$ mosquitto_pub -d -h localhost -m \nsimple val\n -t /testnode\nClient mosqpub/27472-pleiku.lo sending CONNECT\nClient mosqpub/27472-pleiku.lo received CONNACK\nClient mosqpub/27472-pleiku.lo sending PUBLISH (d0, q0, r0, m1, '/testnode', ... (10 bytes))\nClient mosqpub/27472-pleiku.lo sending DISCONNECT", 
             "title": "MQTT"
@@ -124,6 +104,26 @@
             "location": "/plotly/#python-api", 
             "text": "Once your streaming API tokens are added, you can use them in your code without \na hard-coded reference:  import plotly.plotly as py\nimport plotly.tools as tls\n\nstream_ids = tls.get_credentials_file()['stream_ids']\n# Use the first streaming API token\nstream_id = stream_ids[0]\nstream = py.Stream(stream_id)\nstream.open()", 
             "title": "Python API"
+        }, 
+        {
+            "location": "/mkdocs/", 
+            "text": "MkDocs Notes\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject Layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.\nsite/         # Generated website", 
+            "title": "MkDocs"
+        }, 
+        {
+            "location": "/mkdocs/#mkdocs-notes", 
+            "text": "For full documentation visit  mkdocs.org .", 
+            "title": "MkDocs Notes"
+        }, 
+        {
+            "location": "/mkdocs/#commands", 
+            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.", 
+            "title": "Commands"
+        }, 
+        {
+            "location": "/mkdocs/#project-layout", 
+            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.\nsite/         # Generated website", 
+            "title": "Project Layout"
         }, 
         {
             "location": "/python-admin/", 
@@ -274,6 +274,16 @@
             "location": "/ev3-admin/#ev3-python-bindings", 
             "text": "Install the EV3 Python bindings with:  @ pip install python-ev3dev", 
             "title": "EV3 Python Bindings"
+        }, 
+        {
+            "location": "/ev3-python/", 
+            "text": "EV3 Python\n\n\n\n\nThe ev3dev Python API is described \nhere", 
+            "title": "Python"
+        }, 
+        {
+            "location": "/ev3-python/#ev3-python", 
+            "text": "The ev3dev Python API is described  here", 
+            "title": "EV3 Python"
         }
     ]
 }
