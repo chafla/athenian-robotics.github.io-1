@@ -87,7 +87,7 @@ list2[-1:-6:-2]
 list2[3:-3]
 list2[-3:3:-1]
 
-list2[2:5] = 15
+list2[2:5] = [15]
 
 # Sorting Lists
 sorted(list2)
