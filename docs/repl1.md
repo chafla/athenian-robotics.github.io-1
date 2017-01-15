@@ -93,8 +93,7 @@ list2[2:5] = [15]
 sorted(list2)
 sorted(list2, reverse=True)
 
-
-# List ssignments
+# List assignments
 a = range(5)
 a
 b = a
