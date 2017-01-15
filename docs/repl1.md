@@ -1,4 +1,4 @@
-## Scalar values
+## Primitive values
 
 ```python
 # Numbers
