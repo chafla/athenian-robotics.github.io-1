@@ -222,7 +222,7 @@
         }, 
         {
             "location": "/mqtt/", 
-            "text": "MQTT Notes\n\n\nMQTT Broker Installation\n\n\nOSX\n\n\nTo install mosquitto:\n\n\n$ brew install mosquitto\n\n\n\n\nTo add mosquitto to launchd:\n\n\n$ brew services start mosquitto\n\n\n\n\nIf you don't want to run mosquitto as a background service:\n\n\n$ /usr/local/sbin/mosquitto -c /usr/local/etc/mosquitto/mosquitto.conf\n\n\n\n\nDocker\n\n\nTo run mosquitto as a docker service:\n\n\n$ docker run -ti -p 1883:1883 -p 9001:9001 toke/mosquitto\n\n\n\n\nImage details are \nhere\n\n\nRaspberry Pi\n\n\n$ sudo apt-get install mosquitto\n$ sudo apt-get install mosquitto-clients\n\n\n\n\nTesting from CLI\n\n\nSubscribe\n\n\n$ mosquitto_sub -d -h localhost -t /testnode\nClient mosqsub/27524-pleiku.lo sending CONNECT\nClient mosqsub/27524-pleiku.lo received CONNACK\nClient mosqsub/27524-pleiku.lo sending SUBSCRIBE (Mid: 1, Topic: /testnode, QoS: 0)\nClient mosqsub/27524-pleiku.lo received SUBACK\nSubscribed (mid: 1): 0\n\n\n\n\nPublish\n\n\n$ mosquitto_pub -d -h localhost -m \nsimple val\n -t /testnode\nClient mosqpub/27472-pleiku.lo sending CONNECT\nClient mosqpub/27472-pleiku.lo received CONNACK\nClient mosqpub/27472-pleiku.lo sending PUBLISH (d0, q0, r0, m1, '/testnode', ... (10 bytes))\nClient mosqpub/27472-pleiku.lo sending DISCONNECT", 
+            "text": "MQTT Notes\n\n\nMQTT Broker Installation\n\n\nOSX\n\n\nInstall mosquitto with:\n\n\n$ brew install mosquitto\n\n\n\n\nAdd mosquitto to launchd with:\n\n\n$ brew services start mosquitto\n\n\n\n\nIf you don't want to run mosquitto as a background service, run it from the command line with:\n\n\n$ /usr/local/sbin/mosquitto -c /usr/local/etc/mosquitto/mosquitto.conf\n\n\n\n\nDocker\n\n\nRun mosquitto as a docker service with:\n\n\n$ docker run -ti -p 1883:1883 -p 9001:9001 toke/mosquitto\n\n\n\n\nImage details are \nhere\n\n\nRaspberry Pi\n\n\n$ sudo apt-get install mosquitto\n$ sudo apt-get install mosquitto-clients\n\n\n\n\nTesting from CLI\n\n\nSubscribe\n\n\n$ mosquitto_sub -d -h localhost -t /testnode\nClient mosqsub/27524-pleiku.lo sending CONNECT\nClient mosqsub/27524-pleiku.lo received CONNACK\nClient mosqsub/27524-pleiku.lo sending SUBSCRIBE (Mid: 1, Topic: /testnode, QoS: 0)\nClient mosqsub/27524-pleiku.lo received SUBACK\nSubscribed (mid: 1): 0\n\n\n\n\nPublish\n\n\n$ mosquitto_pub -d -h localhost -m \nsimple val\n -t /testnode\nClient mosqpub/27472-pleiku.lo sending CONNECT\nClient mosqpub/27472-pleiku.lo received CONNACK\nClient mosqpub/27472-pleiku.lo sending PUBLISH (d0, q0, r0, m1, '/testnode', ... (10 bytes))\nClient mosqpub/27472-pleiku.lo sending DISCONNECT", 
             "title": "MQTT"
         }, 
         {
@@ -237,12 +237,12 @@
         }, 
         {
             "location": "/mqtt/#osx", 
-            "text": "To install mosquitto:  $ brew install mosquitto  To add mosquitto to launchd:  $ brew services start mosquitto  If you don't want to run mosquitto as a background service:  $ /usr/local/sbin/mosquitto -c /usr/local/etc/mosquitto/mosquitto.conf", 
+            "text": "Install mosquitto with:  $ brew install mosquitto  Add mosquitto to launchd with:  $ brew services start mosquitto  If you don't want to run mosquitto as a background service, run it from the command line with:  $ /usr/local/sbin/mosquitto -c /usr/local/etc/mosquitto/mosquitto.conf", 
             "title": "OSX"
         }, 
         {
             "location": "/mqtt/#docker", 
-            "text": "To run mosquitto as a docker service:  $ docker run -ti -p 1883:1883 -p 9001:9001 toke/mosquitto  Image details are  here", 
+            "text": "Run mosquitto as a docker service with:  $ docker run -ti -p 1883:1883 -p 9001:9001 toke/mosquitto  Image details are  here", 
             "title": "Docker"
         }, 
         {
@@ -284,6 +284,26 @@
             "location": "/plotly/#python-api", 
             "text": "Once your streaming API tokens are added, you can use them in your code without \na hard-coded reference:  import plotly.plotly as py\nimport plotly.tools as tls\n\nstream_ids = tls.get_credentials_file()['stream_ids']\n# Use the first streaming API token\nstream_id = stream_ids[0]\nstream = py.Stream(stream_id)\nstream.open()", 
             "title": "Python API"
+        }, 
+        {
+            "location": "/opencv/", 
+            "text": "OpenCV Notes\n\n\nInstallation\n\n\nOSX\n\n\nInstall OpenCV3 with:\n\n\n$ brew tap homebrew/science\n$ brew install opencv3 --with-contrib --with-python3 --with-java --with-examples \n\n\n\n\nAdditional details are \nhere", 
+            "title": "OpenCV"
+        }, 
+        {
+            "location": "/opencv/#opencv-notes", 
+            "text": "", 
+            "title": "OpenCV Notes"
+        }, 
+        {
+            "location": "/opencv/#installation", 
+            "text": "", 
+            "title": "Installation"
+        }, 
+        {
+            "location": "/opencv/#osx", 
+            "text": "Install OpenCV3 with:  $ brew tap homebrew/science\n$ brew install opencv3 --with-contrib --with-python3 --with-java --with-examples   Additional details are  here", 
+            "title": "OSX"
         }, 
         {
             "location": "/mkdocs/", 

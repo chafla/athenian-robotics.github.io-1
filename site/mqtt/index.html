@@ -161,6 +161,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../opencv/">OpenCV</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../mkdocs/">MkDocs</a>
         
     </li>
@@ -211,20 +218,20 @@
                 <h1 id="mqtt-notes">MQTT Notes</h1>
 <h2 id="mqtt-broker-installation">MQTT Broker Installation</h2>
 <h3 id="osx">OSX</h3>
-<p>To install mosquitto:</p>
+<p>Install mosquitto with:</p>
 <pre><code class="bash">$ brew install mosquitto
 </code></pre>
 
-<p>To add mosquitto to launchd:</p>
+<p>Add mosquitto to launchd with:</p>
 <pre><code class="bash">$ brew services start mosquitto
 </code></pre>
 
-<p>If you don't want to run mosquitto as a background service:</p>
+<p>If you don't want to run mosquitto as a background service, run it from the command line with:</p>
 <pre><code class="bash">$ /usr/local/sbin/mosquitto -c /usr/local/etc/mosquitto/mosquitto.conf
 </code></pre>
 
 <h3 id="docker">Docker</h3>
-<p>To run mosquitto as a docker service:</p>
+<p>Run mosquitto as a docker service with:</p>
 <pre><code class="bash">$ docker run -ti -p 1883:1883 -p 9001:9001 toke/mosquitto
 </code></pre>
 

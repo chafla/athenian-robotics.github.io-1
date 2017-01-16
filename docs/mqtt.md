@@ -4,24 +4,24 @@
 
 ### OSX
 
-To install mosquitto:
+Install mosquitto with:
 ```bash
 $ brew install mosquitto
 ```
 
-To add mosquitto to launchd:
+Add mosquitto to launchd with:
 ```bash
 $ brew services start mosquitto
 ```
   
-If you don't want to run mosquitto as a background service:
+If you don't want to run mosquitto as a background service, run it from the command line with:
 ```bash
 $ /usr/local/sbin/mosquitto -c /usr/local/etc/mosquitto/mosquitto.conf
 ```
 
 ### Docker
 
-To run mosquitto as a docker service:
+Run mosquitto as a docker service with:
 ```bash
 $ docker run -ti -p 1883:1883 -p 9001:9001 toke/mosquitto
 ```

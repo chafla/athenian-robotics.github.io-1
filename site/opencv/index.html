@@ -8,7 +8,7 @@
   
   <meta name="author" content="Athenian Robotics Team">
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Git - Athenian Robotics</title>
+  <title>OpenCV - Athenian Robotics</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -18,9 +18,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Git";
-    var mkdocs_page_input_path = "git.md";
-    var mkdocs_page_url = "/git/";
+    var mkdocs_page_name = "OpenCV";
+    var mkdocs_page_input_path = "opencv.md";
+    var mkdocs_page_url = "/opencv/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -128,19 +128,8 @@
 
         
             
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Git</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#git-notes">Git Notes</a></li>
-                
-                    <li><a class="toctree-l4" href="#installation">Installation</a></li>
-                
-                    <li><a class="toctree-l4" href="#cloning-a-repo">Cloning a Repo</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l1 ">
+        <a class="" href="../git/">Git</a>
         
     </li>
 
@@ -160,8 +149,17 @@
 
         
             
-    <li class="toctree-l1 ">
-        <a class="" href="../opencv/">OpenCV</a>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">OpenCV</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#opencv-notes">OpenCV Notes</a></li>
+                
+                    <li><a class="toctree-l4" href="#installation">Installation</a></li>
+                
+            
+            </ul>
         
     </li>
 
@@ -202,10 +200,10 @@
         
       
     
-    <li>Git</li>
+    <li>OpenCV</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/athenian-robotics/athenian-robotics.github.io/edit/master/docs/git.md"
+        <a href="https://github.com/athenian-robotics/athenian-robotics.github.io/edit/master/docs/opencv.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -215,26 +213,15 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="git-notes">Git Notes</h1>
+                <h1 id="opencv-notes">OpenCV Notes</h1>
 <h2 id="installation">Installation</h2>
 <h3 id="osx">OSX</h3>
-<p>Install git on OSX with:</p>
-<pre><code class="bash">$ brew install git
+<p>Install OpenCV3 with:</p>
+<pre><code class="bash">$ brew tap homebrew/science
+$ brew install opencv3 --with-contrib --with-python3 --with-java --with-examples 
 </code></pre>
 
-<h3 id="ev3dev-and-raspberry-pi">ev3dev and Raspberry Pi</h3>
-<pre><code class="bash">$ sudo apt-get install git
-</code></pre>
-
-<h2 id="cloning-a-repo">Cloning a Repo</h2>
-<p>Clone a repo from <a href="https://github.com/athenian-robotics">Athenian Robotics</a> with:</p>
-<pre><code class="bash">$ git clone https://github.com/athenian-robotics/ev3dev-python-intro.git
-</code></pre>
-
-<p>To find the URL for a particular repo, go to it's Github page and 
-click on the <code>Clone or download</code> button and copy the URL in the pop-up
-window. Make sure that the repo URL begins with <code>https:</code> and not <code>git:</code>. 
-You can toggle between the two versions by clicking on <code>Use HTTPS</code> and <code>Use SSH</code>.</p>
+<p>Additional details are <a href="http://www.pyimagesearch.com/2016/12/19/install-opencv-3-on-macos-with-homebrew-the-easy-way/">here</a></p>
               
             </div>
           </div>
@@ -242,10 +229,10 @@ You can toggle between the two versions by clicking on <code>Use HTTPS</code> an
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../mqtt/" class="btn btn-neutral float-right" title="MQTT">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../mkdocs/" class="btn btn-neutral float-right" title="MkDocs">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../ev3-python/" class="btn btn-neutral" title="Python"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../plotly/" class="btn btn-neutral" title="Plot.ly"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -273,10 +260,10 @@ You can toggle between the two versions by clicking on <code>Use HTTPS</code> an
           <a href="https://github.com/athenian-robotics/athenian-robotics.github.io" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../ev3-python/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../plotly/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../mqtt/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../mkdocs/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

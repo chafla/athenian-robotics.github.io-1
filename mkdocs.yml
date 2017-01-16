@@ -17,6 +17,7 @@ pages:
   - Git: git.md
   - MQTT: mqtt.md
   - Plot.ly: plotly.md
+  - OpenCV: opencv.md
   - MkDocs: mkdocs.md
 
 theme: readthedocs
