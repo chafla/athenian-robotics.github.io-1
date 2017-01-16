@@ -13,7 +13,6 @@ Install the following pieces of software:
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-
 * [Python 3](https://www.python.org)
 ```bash
 $ brew install python3
@@ -38,3 +37,8 @@ $ brew install gradle
 ```bash
 $ brew install httpie
 ```
+
+Periodically verify that `brew` is configured properly with:
+ ```bash
+ $ brew doctor
+ ```
