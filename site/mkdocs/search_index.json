@@ -287,7 +287,7 @@
         }, 
         {
             "location": "/opencv/", 
-            "text": "OpenCV Notes\n\n\nInstallation\n\n\nOSX\n\n\nInstall OpenCV3 with:\n\n\n$ brew tap homebrew/science\n$ brew install opencv3 --with-contrib --with-python3 --with-java --with-examples \n\n\n\n\nAdditional details are \nhere", 
+            "text": "OpenCV Notes\n\n\nInstallation\n\n\nOSX\n\n\nInstall OpenCV3 with:\n\n\n$ brew tap homebrew/science\n$ brew install opencv3 --with-contrib --with-python3 --with-java --with-examples \n$ echo /usr/local/opt/opencv3/lib/python2.7/site-packages \n /usr/local/lib/python2.7/site-packages/opencv3.pth\n\n\n\n\nDetailed instructions are \nhere", 
             "title": "OpenCV"
         }, 
         {
@@ -302,7 +302,7 @@
         }, 
         {
             "location": "/opencv/#osx", 
-            "text": "Install OpenCV3 with:  $ brew tap homebrew/science\n$ brew install opencv3 --with-contrib --with-python3 --with-java --with-examples   Additional details are  here", 
+            "text": "Install OpenCV3 with:  $ brew tap homebrew/science\n$ brew install opencv3 --with-contrib --with-python3 --with-java --with-examples \n$ echo /usr/local/opt/opencv3/lib/python2.7/site-packages   /usr/local/lib/python2.7/site-packages/opencv3.pth  Detailed instructions are  here", 
             "title": "OSX"
         }, 
         {
