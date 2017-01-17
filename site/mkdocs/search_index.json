@@ -307,7 +307,7 @@
         }, 
         {
             "location": "/xquartz/", 
-            "text": "XQuartz Notes\n\n\nXQuartz\n is an X server for OSX.\n\n\nInstallation:\n\n\nDownload and install XQuartz from \nhere\n.\n\n\nOn OSX, type:\n\n\n$ xterm + raspberrypi.local\n\n\n\n\nOn the Raspberry Pi, add this line to the .profile:\n\n\nDISPLAY=pleiku.local:0.0 ; export DISPLAY\n\n\n\n\nTo verify the setup, type this on the Raspberry Pi:\n\n\n$ lxsession", 
+            "text": "XQuartz Notes\n\n\nXQuartz\n is an X server for OSX.\n\n\nInstallation:\n\n\nDownload and install XQuartz from \nhere\n.\n\n\nOn OSX, type:\n\n\n$ xterm + raspberrypi.local\n\n\n\n\nOn the Raspberry Pi, add this line to ~/.profile:\n\n\nDISPLAY=pleiku.local:0.0 ; export DISPLAY\n\n\n\n\nTo verify the setup, type this on the Raspberry Pi:\n\n\n$ lxsession", 
             "title": "XQuartz"
         }, 
         {
@@ -317,7 +317,7 @@
         }, 
         {
             "location": "/xquartz/#installation", 
-            "text": "Download and install XQuartz from  here .  On OSX, type:  $ xterm + raspberrypi.local  On the Raspberry Pi, add this line to the .profile:  DISPLAY=pleiku.local:0.0 ; export DISPLAY  To verify the setup, type this on the Raspberry Pi:  $ lxsession", 
+            "text": "Download and install XQuartz from  here .  On OSX, type:  $ xterm + raspberrypi.local  On the Raspberry Pi, add this line to ~/.profile:  DISPLAY=pleiku.local:0.0 ; export DISPLAY  To verify the setup, type this on the Raspberry Pi:  $ lxsession", 
             "title": "Installation:"
         }, 
         {
@@ -347,7 +347,7 @@
         }, 
         {
             "location": "/raspberrypi/", 
-            "text": "Raspberry Pi Notes\n\n\nEnable SSH\n\n\nIn order to enable SSH, create a file named ssh in the boot partition prior to booting.\n\n\nEnable a camera\n\n\nTo enable a Pi camera:\n\n\n$ sudo raspi-config\n\n\n\n\nSelect the \nInterfacing Options\n and then the \nCamera\n option.\n\n\nEnable wifi\n\n\n$ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf\n\n\n\n\nand add a network entry for each SID with which you might want to connect:\n\n\nnetwork={\n    ssid=\nMyWiFiNetwork\n\n    psk=\nthe_password\n\n    key_mgmt=WPA-PSK\n}\n\n\n\n\nInstalling VNC\n\n\nInstall \ntightvncserver\n with:\n ```bash\n $ sudo apt-get install tightvncserver\n\n\n\nStart the server with:\n```bash\n$ tightvncserver\n# or\n$ tightvncserver -geometry 1920x1080 -depth 24\n\n\n\n\nConnect from your Mac by going to Safari and enter URL: \nvnc://pi@raspberrypi.local:5901\n\n\nA more detailed description is \nhere\n.\n\n\nThe Raspian directions are \nhere\n.\n\n\nFile sharing\n\n\nDetails are \nhere\n.\n\n\nEnable file sharing with:\n\n\nsudo apt-get install netatalk", 
+            "text": "Raspberry Pi Notes\n\n\nEnable SSH\n\n\nIn order to enable SSH, create a file named ssh in the boot partition prior to booting.\n\n\nEnable a camera\n\n\nTo enable a Pi camera:\n\n\n$ sudo raspi-config\n\n\n\n\nSelect the \nInterfacing Options\n and then the \nCamera\n option.\n\n\nEnable wifi\n\n\n$ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf\n\n\n\n\nand add a network entry for each SID with which you might want to connect:\n\n\nnetwork={\n    ssid=\nMyWiFiNetwork\n\n    psk=\nthe_password\n\n    key_mgmt=WPA-PSK\n}\n\n\n\n\nInstalling VNC\n\n\nInstall \ntightvncserver\n with:\n\n\n $ sudo apt-get install tightvncserver\n\n\n\n\nStart the server with:\n\n\n$ tightvncserver\n# or\n$ tightvncserver -geometry 1920x1080 -depth 24\n\n\n\n\nConnect from your Mac by going to Safari and enter URL: \nvnc://pi@raspberrypi.local:5901\n\n\nA more detailed description is \nhere\n.\n\n\nThe Raspian directions are \nhere\n.\n\n\nFile sharing\n\n\nDetails are \nhere\n.\n\n\nEnable file sharing with:\n\n\nsudo apt-get install netatalk", 
             "title": "Raspberry Pi"
         }, 
         {
@@ -372,7 +372,7 @@
         }, 
         {
             "location": "/raspberrypi/#installing-vnc", 
-            "text": "Install  tightvncserver  with:\n ```bash\n $ sudo apt-get install tightvncserver  \nStart the server with:\n```bash\n$ tightvncserver\n# or\n$ tightvncserver -geometry 1920x1080 -depth 24  Connect from your Mac by going to Safari and enter URL:  vnc://pi@raspberrypi.local:5901  A more detailed description is  here .  The Raspian directions are  here .", 
+            "text": "Install  tightvncserver  with:   $ sudo apt-get install tightvncserver  Start the server with:  $ tightvncserver\n# or\n$ tightvncserver -geometry 1920x1080 -depth 24  Connect from your Mac by going to Safari and enter URL:  vnc://pi@raspberrypi.local:5901  A more detailed description is  here .  The Raspian directions are  here .", 
             "title": "Installing VNC"
         }, 
         {

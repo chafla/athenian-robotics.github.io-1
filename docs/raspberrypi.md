@@ -29,7 +29,7 @@ network={
 ## Installing VNC
 
 Install `tightvncserver` with:
- ```bash
+```bash
  $ sudo apt-get install tightvncserver
 ```
 

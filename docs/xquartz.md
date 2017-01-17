@@ -10,7 +10,7 @@ On OSX, type:
 $ xterm + raspberrypi.local
 ```
 
-On the Raspberry Pi, add this line to the .profile:
+On the Raspberry Pi, add this line to ~/.profile:
 ```
 DISPLAY=pleiku.local:0.0 ; export DISPLAY
 ```
