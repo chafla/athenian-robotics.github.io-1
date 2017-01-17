@@ -7,7 +7,7 @@ For full documentation visit [plot.ly](https://plot.ly/python/).
 Before using plot.ly, follow these steps:
 
 1) [Sign up](https://plot.ly/accounts/login/?action=signup) and create a plot.ly account. Notice that 
-you can click on the Github logo and use your GitHub credentials to sign up.
+you can click on the github logo and use your GitHub credentials to sign up.
 
 2) Create your credentials file:
 

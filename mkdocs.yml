@@ -22,6 +22,7 @@ pages:
   - MkDocs: mkdocs.md
 - Hardware Notes:
   - Raspberry Pi: raspberrypi.md
+  - Blinkt: blinkt.md
   - Unicorn Hat: unicorn.md
   - Display-O-Tron 3000: displayotron3000.md
   - GoPiGo: gopigo.md
