@@ -306,6 +306,21 @@
             "title": "OSX"
         }, 
         {
+            "location": "/xquartz/", 
+            "text": "XQuartz Notes\n\n\nXQuartz\n is an X server for OSX.\n\n\nInstallation:\n\n\nDownload and install XQuartz from \nhere\n.\n\n\nOn OSX, type:\n\n\n$ xterm + raspberrypi.local\n\n\n\n\nOn the Raspberry Pi, add this line to the .profile:\n\n\nDISPLAY=pleiku.local:0.0 ; export DISPLAY\n\n\n\n\nTo verify the setup, type this on the Raspberry Pi:\n\n\n$ lxsession", 
+            "title": "XQuartz"
+        }, 
+        {
+            "location": "/xquartz/#xquartz-notes", 
+            "text": "XQuartz  is an X server for OSX.", 
+            "title": "XQuartz Notes"
+        }, 
+        {
+            "location": "/xquartz/#installation", 
+            "text": "Download and install XQuartz from  here .  On OSX, type:  $ xterm + raspberrypi.local  On the Raspberry Pi, add this line to the .profile:  DISPLAY=pleiku.local:0.0 ; export DISPLAY  To verify the setup, type this on the Raspberry Pi:  $ lxsession", 
+            "title": "Installation:"
+        }, 
+        {
             "location": "/mkdocs/", 
             "text": "MkDocs Notes\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject Layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.\nsite/         # Generated website\n\n\n\nMarkdown\n\n\nA Markdown cheatsheet is \n\nhere\n.", 
             "title": "MkDocs"
@@ -331,18 +346,68 @@
             "title": "Markdown"
         }, 
         {
+            "location": "/raspberrypi/", 
+            "text": "Raspberry Pi Notes\n\n\nEnable SSH\n\n\nIn order to enable SSH, create a file named ssh in the boot partition prior to booting.\n\n\nEnable a camera\n\n\nTo enable a Pi camera:\n\n\n$ sudo raspi-config\n\n\n\n\nSelect the \nInterfacing Options\n and then the \nCamera\n option.\n\n\nEnable wifi\n\n\n$ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf\n\n\n\n\nand add a network entry for each SID with which you might want to connect:\n\n\nnetwork={\n    ssid=\nMyWiFiNetwork\n\n    psk=\nthe_password\n\n    key_mgmt=WPA-PSK\n}\n\n\n\n\nInstalling VNC\n\n\nInstall \ntightvncserver\n with:\n ```bash\n $ sudo apt-get install tightvncserver\n\n\n\nStart the server with:\n```bash\n$ tightvncserver\n# or\n$ tightvncserver -geometry 1920x1080 -depth 24\n\n\n\n\nConnect from your Mac by going to Safari and enter URL: \nvnc://pi@raspberrypi.local:5901\n\n\nA more detailed description is \nhere\n.\n\n\nThe Raspian directions are \nhere\n.\n\n\nFile sharing\n\n\nDetails are \nhere\n.\n\n\nEnable file sharing with:\n\n\nsudo apt-get install netatalk", 
+            "title": "Raspberry Pi"
+        }, 
+        {
+            "location": "/raspberrypi/#raspberry-pi-notes", 
+            "text": "", 
+            "title": "Raspberry Pi Notes"
+        }, 
+        {
+            "location": "/raspberrypi/#enable-ssh", 
+            "text": "In order to enable SSH, create a file named ssh in the boot partition prior to booting.", 
+            "title": "Enable SSH"
+        }, 
+        {
+            "location": "/raspberrypi/#enable-a-camera", 
+            "text": "To enable a Pi camera:  $ sudo raspi-config  Select the  Interfacing Options  and then the  Camera  option.", 
+            "title": "Enable a camera"
+        }, 
+        {
+            "location": "/raspberrypi/#enable-wifi", 
+            "text": "$ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf  and add a network entry for each SID with which you might want to connect:  network={\n    ssid= MyWiFiNetwork \n    psk= the_password \n    key_mgmt=WPA-PSK\n}", 
+            "title": "Enable wifi"
+        }, 
+        {
+            "location": "/raspberrypi/#installing-vnc", 
+            "text": "Install  tightvncserver  with:\n ```bash\n $ sudo apt-get install tightvncserver  \nStart the server with:\n```bash\n$ tightvncserver\n# or\n$ tightvncserver -geometry 1920x1080 -depth 24  Connect from your Mac by going to Safari and enter URL:  vnc://pi@raspberrypi.local:5901  A more detailed description is  here .  The Raspian directions are  here .", 
+            "title": "Installing VNC"
+        }, 
+        {
+            "location": "/raspberrypi/#file-sharing", 
+            "text": "Details are  here .  Enable file sharing with:  sudo apt-get install netatalk", 
+            "title": "File sharing"
+        }, 
+        {
             "location": "/unicorn/", 
-            "text": "Unicorn Hat Notes\n\n\nA Unicorn Hat can be purchased \n\nhere\n\n\nRaspbery Pi Installation\n\n\nPython 3\n\n\n$ sudo apt-get install python3-pip python3-dev\n$ sudo pip3 install unicornhat\n\n\n\n\nPython 2\n\n\n$ sudo apt-get install python-pip python-dev\n$ sudo pip install unicornhat\n\n\n\n\nThe github repo is \nhere\n.\n\n\nSome examples are \nhere\n.", 
+            "text": "Unicorn Hat Notes\n\n\nA Unicorn Hat can be purchased \n\nhere\n\n\nThe github repo is \nhere\n.\n\n\nExamples are \nhere\n.\n\n\nRaspbery Pi Installation\n\n\nPython 3\n\n\n$ sudo apt-get install python3-pip python3-dev\n$ sudo pip3 install unicornhat\n\n\n\n\nPython 2\n\n\n$ sudo apt-get install python-pip python-dev\n$ sudo pip install unicornhat", 
             "title": "Unicorn Hat"
         }, 
         {
             "location": "/unicorn/#unicorn-hat-notes", 
-            "text": "A Unicorn Hat can be purchased  here", 
+            "text": "A Unicorn Hat can be purchased  here  The github repo is  here .  Examples are  here .", 
             "title": "Unicorn Hat Notes"
         }, 
         {
             "location": "/unicorn/#raspbery-pi-installation", 
-            "text": "Python 3  $ sudo apt-get install python3-pip python3-dev\n$ sudo pip3 install unicornhat  Python 2  $ sudo apt-get install python-pip python-dev\n$ sudo pip install unicornhat  The github repo is  here .  Some examples are  here .", 
+            "text": "Python 3  $ sudo apt-get install python3-pip python3-dev\n$ sudo pip3 install unicornhat  Python 2  $ sudo apt-get install python-pip python-dev\n$ sudo pip install unicornhat", 
+            "title": "Raspbery Pi Installation"
+        }, 
+        {
+            "location": "/displayotron3000/", 
+            "text": "Display-O-Tron 3000 Notes\n\n\nA Display-O-Tron can be purchased from \nhere\n\n\nThe github repo is \nhere\n.\n\n\nA \nGetting Started\n is \nhere\n\n\nA \nReference\n is \nhere\n\n\nTutorials are \nhere\n\n\nExamples are \nhere\n.\n\n\nRaspbery Pi Installation\n\n\nInstall the driver with:\n\n\n$ curl -sS get.pimoroni.com/displayotron | bash", 
+            "title": "Display-O-Tron 3000"
+        }, 
+        {
+            "location": "/displayotron3000/#display-o-tron-3000-notes", 
+            "text": "A Display-O-Tron can be purchased from  here  The github repo is  here .  A  Getting Started  is  here  A  Reference  is  here  Tutorials are  here  Examples are  here .", 
+            "title": "Display-O-Tron 3000 Notes"
+        }, 
+        {
+            "location": "/displayotron3000/#raspbery-pi-installation", 
+            "text": "Install the driver with:  $ curl -sS get.pimoroni.com/displayotron | bash", 
             "title": "Raspbery Pi Installation"
         }, 
         {

@@ -82,6 +82,12 @@
     </url>
         
     <url>
+     <loc>http://www.athenian-robotics.org/xquartz/</loc>
+     <lastmod>2017-01-16</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>http://www.athenian-robotics.org/mkdocs/</loc>
      <lastmod>2017-01-16</lastmod>
      <changefreq>daily</changefreq>
@@ -92,7 +98,19 @@
     
         
     <url>
+     <loc>http://www.athenian-robotics.org/raspberrypi/</loc>
+     <lastmod>2017-01-16</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>http://www.athenian-robotics.org/unicorn/</loc>
+     <lastmod>2017-01-16</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://www.athenian-robotics.org/displayotron3000/</loc>
      <lastmod>2017-01-16</lastmod>
      <changefreq>daily</changefreq>
     </url>

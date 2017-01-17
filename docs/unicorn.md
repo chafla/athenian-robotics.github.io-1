@@ -3,6 +3,10 @@
 A Unicorn Hat can be purchased 
 [here](https://shop.pimoroni.com/products/unicorn-hat)
 
+The github repo is [here](https://github.com/pimoroni/unicorn-hat).
+
+Examples are [here](https://github.com/pimoroni/unicorn-hat/tree/master/examples).
+
 ## Raspbery Pi Installation
 
 Python 3
@@ -16,10 +20,6 @@ Python 2
 $ sudo apt-get install python-pip python-dev
 $ sudo pip install unicornhat
 ```
-
-The github repo is [here](https://github.com/pimoroni/unicorn-hat).
-
-Some examples are [here](https://github.com/pimoroni/unicorn-hat/tree/master/examples).
 
 <iframe src="https://player.vimeo.com/video/105482682" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 

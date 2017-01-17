@@ -8,7 +8,7 @@
   
   <meta name="author" content="Athenian Robotics Team">
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>MQTT - Athenian Robotics</title>
+  <title>XQuartz - Athenian Robotics</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -18,9 +18,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "MQTT";
-    var mkdocs_page_input_path = "mqtt.md";
-    var mkdocs_page_url = "/mqtt/";
+    var mkdocs_page_name = "XQuartz";
+    var mkdocs_page_input_path = "xquartz.md";
+    var mkdocs_page_url = "/xquartz/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -135,19 +135,8 @@
 
         
             
-    <li class="toctree-l1 current">
-        <a class="current" href="./">MQTT</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#mqtt-notes">MQTT Notes</a></li>
-                
-                    <li><a class="toctree-l4" href="#mqtt-broker-installation">MQTT Broker Installation</a></li>
-                
-                    <li><a class="toctree-l4" href="#testing-from-cli">Testing from CLI</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l1 ">
+        <a class="" href="../mqtt/">MQTT</a>
         
     </li>
 
@@ -167,8 +156,17 @@
 
         
             
-    <li class="toctree-l1 ">
-        <a class="" href="../xquartz/">XQuartz</a>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">XQuartz</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#xquartz-notes">XQuartz Notes</a></li>
+                
+                    <li><a class="toctree-l4" href="#installation">Installation:</a></li>
+                
+            
+            </ul>
         
     </li>
 
@@ -245,10 +243,10 @@
         
       
     
-    <li>MQTT</li>
+    <li>XQuartz</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/athenian-robotics/athenian-robotics.github.io/edit/master/docs/mqtt.md"
+        <a href="https://github.com/athenian-robotics/athenian-robotics.github.io/edit/master/docs/xquartz.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -258,53 +256,20 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="mqtt-notes">MQTT Notes</h1>
-<h2 id="mqtt-broker-installation">MQTT Broker Installation</h2>
-<h3 id="osx">OSX</h3>
-<p>Install mosquitto with:</p>
-<pre><code class="bash">$ brew install mosquitto
+                <h1 id="xquartz-notes">XQuartz Notes</h1>
+<p><code>XQuartz</code> is an X server for OSX.</p>
+<h2 id="installation">Installation:</h2>
+<p>Download and install XQuartz from <a href="https://www.xquartz.org">here</a>.</p>
+<p>On OSX, type:</p>
+<pre><code class="bash">$ xterm + raspberrypi.local
 </code></pre>
 
-<p>Add mosquitto to launchd with:</p>
-<pre><code class="bash">$ brew services start mosquitto
+<p>On the Raspberry Pi, add this line to the .profile:</p>
+<pre><code>DISPLAY=pleiku.local:0.0 ; export DISPLAY
 </code></pre>
 
-<p>If you don't want to run mosquitto as a background service, run it from the command line with:</p>
-<pre><code class="bash">$ /usr/local/sbin/mosquitto -c /usr/local/etc/mosquitto/mosquitto.conf
-</code></pre>
-
-<h3 id="docker">Docker</h3>
-<p>Run mosquitto as a docker service with:</p>
-<pre><code class="bash">$ docker run -ti -p 1883:1883 -p 9001:9001 toke/mosquitto
-</code></pre>
-
-<p>Image details are <a href="https://github.com/toke/docker-mosquitto">here</a>.</p>
-<h3 id="raspberry-pi">Raspberry Pi</h3>
-<p>Install mosquitto with:</p>
-<pre><code class="bash">$ sudo apt-get install mosquitto
-$ sudo apt-get install mosquitto-clients
-</code></pre>
-
-<p>Verify that the broker is running with:</p>
-<pre><code class="bash">$ systemctl status mosquitto
-</code></pre>
-
-<h2 id="testing-from-cli">Testing from CLI</h2>
-<h3 id="subscribe">Subscribe</h3>
-<pre><code class="bash">$ mosquitto_sub -d -h localhost -t /testnode
-Client mosqsub/27524-pleiku.lo sending CONNECT
-Client mosqsub/27524-pleiku.lo received CONNACK
-Client mosqsub/27524-pleiku.lo sending SUBSCRIBE (Mid: 1, Topic: /testnode, QoS: 0)
-Client mosqsub/27524-pleiku.lo received SUBACK
-Subscribed (mid: 1): 0
-</code></pre>
-
-<h3 id="publish">Publish</h3>
-<pre><code class="bash">$ mosquitto_pub -d -h localhost -m &quot;simple val&quot; -t /testnode
-Client mosqpub/27472-pleiku.lo sending CONNECT
-Client mosqpub/27472-pleiku.lo received CONNACK
-Client mosqpub/27472-pleiku.lo sending PUBLISH (d0, q0, r0, m1, '/testnode', ... (10 bytes))
-Client mosqpub/27472-pleiku.lo sending DISCONNECT
+<p>To verify the setup, type this on the Raspberry Pi:</p>
+<pre><code class="bash">$ lxsession
 </code></pre>
               
             </div>
@@ -313,10 +278,10 @@ Client mosqpub/27472-pleiku.lo sending DISCONNECT
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../plotly/" class="btn btn-neutral float-right" title="Plot.ly">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../mkdocs/" class="btn btn-neutral float-right" title="MkDocs">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../git/" class="btn btn-neutral" title="Git"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../opencv/" class="btn btn-neutral" title="OpenCV"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -344,10 +309,10 @@ Client mosqpub/27472-pleiku.lo sending DISCONNECT
           <a href="https://github.com/athenian-robotics/athenian-robotics.github.io" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../git/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../opencv/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../plotly/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../mkdocs/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
