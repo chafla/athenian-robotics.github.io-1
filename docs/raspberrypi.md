@@ -83,10 +83,10 @@ pi@raspberrypi:~ $ vncserver :1 -geometry 1024x728 -depth 24
 
 Use `-geometry 2048x1456` for a larger display.
 
-Download a vncviewer client from 
+Download a *VNCViewer* app from 
 [here](https://www.realvnc.com/download/viewer/). 
 
-Start `vncviewer` on the Mac and connect to the Raspi at `raspberrypi.local:1`.
+Start the *VNCViewer* app on the Mac and connect to the Raspi at `raspberrypi.local:1`.
 
 ## Enable a camera
 Enable a Pi camera with `raspi-config`. Select the `Interfacing Options` and then the `Camera` option.
