@@ -347,7 +347,7 @@
         }, 
         {
             "location": "/raspberrypi/", 
-            "text": "Raspberry Pi Notes\n\n\nEnable SSH\n\n\nIn order to enable SSH, create a file named ssh in the boot partition prior to booting.\n\n\nEnable a camera\n\n\nTo enable a Pi camera:\n\n\n$ sudo raspi-config\n\n\n\n\nSelect the \nInterfacing Options\n and then the \nCamera\n option.\n\n\nEnable wifi\n\n\n$ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf\n\n\n\n\nand add a network entry for each SID with which you might want to connect:\n\n\nnetwork={\n    ssid=\nMyWiFiNetwork\n\n    psk=\nthe_password\n\n    key_mgmt=WPA-PSK\n}\n\n\n\n\nInstalling VNC\n\n\nInstall \ntightvncserver\n with:\n\n\n $ sudo apt-get install tightvncserver\n\n\n\n\nStart the server with:\n\n\n$ tightvncserver\n# or\n$ tightvncserver -geometry 1920x1080 -depth 24\n\n\n\n\nConnect from your Mac by going to Safari and enter URL: \nvnc://pi@raspberrypi.local:5901\n\n\nA more detailed description is \nhere\n.\n\n\nThe Raspian directions are \nhere\n.\n\n\nFile sharing\n\n\nDetails are \nhere\n.\n\n\nEnable file sharing with:\n\n\n$ sudo apt-get install netatalk", 
+            "text": "Raspberry Pi Notes\n\n\nInstall Raspian\n\n\nOSX\n\n\n\n\n\n\nDownload the \nRaspbian distro\n.\n\n\n\n\n\n\nBurn the .img file to a SD card with \nEtcher\n.\n\n\n\n\n\n\nImportant:\n Remove and reinsert SD card and add a file named \nssh\n to the SD card boot partition.\nThis will enable \nssh\n on the Raspi.\n\n\n\n\n\n\n$ touch /Volumes/boot/ssh\n\n\n\n\n\n\n\n\nEject the SD card, connect an ethernet cable to the Raspi, and power up the Raspi.\n\n\n\n\n\n\nLogin to the Raspi with \nssh\n using the username \npi\n and password \nraspberry\n.\n\n\n\n\n\n\n$ ssh pi@raspberrypi.local\nAre you sure you want to continue connecting (yes/no)? yes\nPassword: raspberry\npi@raspberrypi:~ \n\n\n\n\nIf you get a \nHost key verification failed\n error when using \nssh\n, \nremove the \nraspberry.local\n entry from ~/.ssh/known_hosts on your Mac with:\n\n\n$ nano ~/.ssh/known_hosts\n\n\n\n\nResize root partition\n\n\n\n\nResize the root partition with \nraspi-config\n.\nChoose \"Expand Filesystem\", tab to \n and then reboot.\n\n\n\n\npi@raspberrypi:~ $ sudo raspi-config\n\n\n\n\nUpdate distro\n\n\nUpdate the Raspbian distro to the latest and greatest bits with:\n\n\npi@raspberrypi:~ $ sudo apt-get update\npi@raspberrypi:~ $ sudo apt-get upgrade\npi@raspberrypi:~ $ sudo apt-get dist-upgrade\npi@raspberrypi:~ $ sudo reboot now\n\n\n\n\nChange hostname\n\n\nMultiple Raspis on your network cannot share the same hostname. Change your hostname with:\n\n\npi@raspberrypi:~ $ nano /etc/hostname\npi@raspberrypi:~ $ sudo reboot now\n\n\n\n\nEnable wifi\n\n\npi@raspberrypi:~ $ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf\n\n\n\n\nAdd a network entry for each SID with which the Raspi will need to connect:\n\n\nnetwork={\n    ssid=\nMyWiFiNetwork\n\n    psk=\nthe_password\n\n    key_mgmt=WPA-PSK\n}\n\n\n\n\nInstall VNC\n\n\nInstall \ntightvncserver\n with:\n\n\npi@raspberrypi:~ $ sudo apt-get install tightvncserver\n\n\n\n\nStart the server with:\n\n\npi@raspberrypi:~ $ tightvncserver\n# or\npi@raspberrypi:~ $ vncserver :1 -geometry 1024x728 -depth 24\n\n\n\n\nConnect from your Mac by going to Safari and enter URL: \nvnc://pi@raspberrypi.local:5901\n\n\nA more detailed description is \nhere\n.\n\n\nThe Raspian directions are \nhere\n.\n\n\nEnable a camera\n\n\nEnable a Pi camera with \nraspi-config\n. Select the \nInterfacing Options\n and then the \nCamera\n option.\n\n\npi@raspberrypi:~ $ sudo raspi-config\n\n\n\n\nInstall File sharing\n\n\nDetails are \nhere\n.\n\n\nEnable file sharing with:\n\n\npi@raspberrypi:~ $ sudo apt-get install netatalk", 
             "title": "Raspberry Pi"
         }, 
         {
@@ -356,29 +356,49 @@
             "title": "Raspberry Pi Notes"
         }, 
         {
-            "location": "/raspberrypi/#enable-ssh", 
-            "text": "In order to enable SSH, create a file named ssh in the boot partition prior to booting.", 
-            "title": "Enable SSH"
+            "location": "/raspberrypi/#install-raspian", 
+            "text": "", 
+            "title": "Install Raspian"
         }, 
         {
-            "location": "/raspberrypi/#enable-a-camera", 
-            "text": "To enable a Pi camera:  $ sudo raspi-config  Select the  Interfacing Options  and then the  Camera  option.", 
-            "title": "Enable a camera"
+            "location": "/raspberrypi/#osx", 
+            "text": "Download the  Raspbian distro .    Burn the .img file to a SD card with  Etcher .    Important:  Remove and reinsert SD card and add a file named  ssh  to the SD card boot partition.\nThis will enable  ssh  on the Raspi.    $ touch /Volumes/boot/ssh    Eject the SD card, connect an ethernet cable to the Raspi, and power up the Raspi.    Login to the Raspi with  ssh  using the username  pi  and password  raspberry .    $ ssh pi@raspberrypi.local\nAre you sure you want to continue connecting (yes/no)? yes\nPassword: raspberry\npi@raspberrypi:~   If you get a  Host key verification failed  error when using  ssh , \nremove the  raspberry.local  entry from ~/.ssh/known_hosts on your Mac with:  $ nano ~/.ssh/known_hosts", 
+            "title": "OSX"
+        }, 
+        {
+            "location": "/raspberrypi/#resize-root-partition", 
+            "text": "Resize the root partition with  raspi-config .\nChoose \"Expand Filesystem\", tab to   and then reboot.   pi@raspberrypi:~ $ sudo raspi-config", 
+            "title": "Resize root partition"
+        }, 
+        {
+            "location": "/raspberrypi/#update-distro", 
+            "text": "Update the Raspbian distro to the latest and greatest bits with:  pi@raspberrypi:~ $ sudo apt-get update\npi@raspberrypi:~ $ sudo apt-get upgrade\npi@raspberrypi:~ $ sudo apt-get dist-upgrade\npi@raspberrypi:~ $ sudo reboot now", 
+            "title": "Update distro"
+        }, 
+        {
+            "location": "/raspberrypi/#change-hostname", 
+            "text": "Multiple Raspis on your network cannot share the same hostname. Change your hostname with:  pi@raspberrypi:~ $ nano /etc/hostname\npi@raspberrypi:~ $ sudo reboot now", 
+            "title": "Change hostname"
         }, 
         {
             "location": "/raspberrypi/#enable-wifi", 
-            "text": "$ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf  and add a network entry for each SID with which you might want to connect:  network={\n    ssid= MyWiFiNetwork \n    psk= the_password \n    key_mgmt=WPA-PSK\n}", 
+            "text": "pi@raspberrypi:~ $ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf  Add a network entry for each SID with which the Raspi will need to connect:  network={\n    ssid= MyWiFiNetwork \n    psk= the_password \n    key_mgmt=WPA-PSK\n}", 
             "title": "Enable wifi"
         }, 
         {
-            "location": "/raspberrypi/#installing-vnc", 
-            "text": "Install  tightvncserver  with:   $ sudo apt-get install tightvncserver  Start the server with:  $ tightvncserver\n# or\n$ tightvncserver -geometry 1920x1080 -depth 24  Connect from your Mac by going to Safari and enter URL:  vnc://pi@raspberrypi.local:5901  A more detailed description is  here .  The Raspian directions are  here .", 
-            "title": "Installing VNC"
+            "location": "/raspberrypi/#install-vnc", 
+            "text": "Install  tightvncserver  with:  pi@raspberrypi:~ $ sudo apt-get install tightvncserver  Start the server with:  pi@raspberrypi:~ $ tightvncserver\n# or\npi@raspberrypi:~ $ vncserver :1 -geometry 1024x728 -depth 24  Connect from your Mac by going to Safari and enter URL:  vnc://pi@raspberrypi.local:5901  A more detailed description is  here .  The Raspian directions are  here .", 
+            "title": "Install VNC"
         }, 
         {
-            "location": "/raspberrypi/#file-sharing", 
-            "text": "Details are  here .  Enable file sharing with:  $ sudo apt-get install netatalk", 
-            "title": "File sharing"
+            "location": "/raspberrypi/#enable-a-camera", 
+            "text": "Enable a Pi camera with  raspi-config . Select the  Interfacing Options  and then the  Camera  option.  pi@raspberrypi:~ $ sudo raspi-config", 
+            "title": "Enable a camera"
+        }, 
+        {
+            "location": "/raspberrypi/#install-file-sharing", 
+            "text": "Details are  here .  Enable file sharing with:  pi@raspberrypi:~ $ sudo apt-get install netatalk", 
+            "title": "Install File sharing"
         }, 
         {
             "location": "/blinkt/", 

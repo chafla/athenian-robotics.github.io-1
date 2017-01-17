@@ -185,15 +185,21 @@
             
                 <li class="toctree-l3"><a href="#raspberry-pi-notes">Raspberry Pi Notes</a></li>
                 
-                    <li><a class="toctree-l4" href="#enable-ssh">Enable SSH</a></li>
+                    <li><a class="toctree-l4" href="#install-raspian">Install Raspian</a></li>
                 
-                    <li><a class="toctree-l4" href="#enable-a-camera">Enable a camera</a></li>
+                    <li><a class="toctree-l4" href="#resize-root-partition">Resize root partition</a></li>
+                
+                    <li><a class="toctree-l4" href="#update-distro">Update distro</a></li>
+                
+                    <li><a class="toctree-l4" href="#change-hostname">Change hostname</a></li>
                 
                     <li><a class="toctree-l4" href="#enable-wifi">Enable wifi</a></li>
                 
-                    <li><a class="toctree-l4" href="#installing-vnc">Installing VNC</a></li>
+                    <li><a class="toctree-l4" href="#install-vnc">Install VNC</a></li>
                 
-                    <li><a class="toctree-l4" href="#file-sharing">File sharing</a></li>
+                    <li><a class="toctree-l4" href="#enable-a-camera">Enable a camera</a></li>
+                
+                    <li><a class="toctree-l4" href="#install-file-sharing">Install File sharing</a></li>
                 
             
             </ul>
@@ -272,19 +278,69 @@
             <div class="section">
               
                 <h1 id="raspberry-pi-notes">Raspberry Pi Notes</h1>
-<h2 id="enable-ssh">Enable SSH</h2>
-<p>In order to enable SSH, create a file named ssh in the boot partition prior to booting.</p>
-<h2 id="enable-a-camera">Enable a camera</h2>
-<p>To enable a Pi camera:</p>
-<pre><code class="bash">$ sudo raspi-config
+<h2 id="install-raspian">Install Raspian</h2>
+<h3 id="osx">OSX</h3>
+<ul>
+<li>
+<p>Download the <a href="https://www.raspberrypi.org/downloads/raspbian/">Raspbian distro</a>.</p>
+</li>
+<li>
+<p>Burn the .img file to a SD card with <a href="https://etcher.io">Etcher</a>.</p>
+</li>
+<li>
+<p><strong>Important:</strong> Remove and reinsert SD card and add a file named <code>ssh</code> to the SD card boot partition.
+This will enable <code>ssh</code> on the Raspi.</p>
+</li>
+</ul>
+<pre><code class="bash">$ touch /Volumes/boot/ssh
 </code></pre>
 
-<p>Select the <code>Interfacing Options</code> and then the <code>Camera</code> option.</p>
+<ul>
+<li>
+<p>Eject the SD card, connect an ethernet cable to the Raspi, and power up the Raspi.</p>
+</li>
+<li>
+<p>Login to the Raspi with <code>ssh</code> using the username <code>pi</code> and password <code>raspberry</code>.</p>
+</li>
+</ul>
+<pre><code class="bash">$ ssh pi@raspberrypi.local
+Are you sure you want to continue connecting (yes/no)? yes
+Password: raspberry
+pi@raspberrypi:~ 
+</code></pre>
+
+<p>If you get a <em>Host key verification failed</em> error when using <code>ssh</code>, 
+remove the <em>raspberry.local</em> entry from ~/.ssh/known_hosts on your Mac with:</p>
+<pre><code class="bash">$ nano ~/.ssh/known_hosts
+</code></pre>
+
+<h2 id="resize-root-partition">Resize root partition</h2>
+<ul>
+<li>Resize the root partition with <code>raspi-config</code>.
+Choose "Expand Filesystem", tab to <Finish> and then reboot.</li>
+</ul>
+<pre><code class="bash">pi@raspberrypi:~ $ sudo raspi-config
+</code></pre>
+
+<h2 id="update-distro">Update distro</h2>
+<p>Update the Raspbian distro to the latest and greatest bits with:</p>
+<pre><code class="bash">pi@raspberrypi:~ $ sudo apt-get update
+pi@raspberrypi:~ $ sudo apt-get upgrade
+pi@raspberrypi:~ $ sudo apt-get dist-upgrade
+pi@raspberrypi:~ $ sudo reboot now
+</code></pre>
+
+<h2 id="change-hostname">Change hostname</h2>
+<p>Multiple Raspis on your network cannot share the same hostname. Change your hostname with:</p>
+<pre><code class="bash">pi@raspberrypi:~ $ nano /etc/hostname
+pi@raspberrypi:~ $ sudo reboot now
+</code></pre>
+
 <h2 id="enable-wifi">Enable wifi</h2>
-<pre><code class="bash">$ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+<pre><code class="bash">pi@raspberrypi:~ $ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 </code></pre>
 
-<p>and add a network entry for each SID with which you might want to connect:</p>
+<p>Add a network entry for each SID with which the Raspi will need to connect:</p>
 <pre><code class="snakeyaml">network={
     ssid=&quot;MyWiFiNetwork&quot;
     psk=&quot;the_password&quot;
@@ -292,24 +348,29 @@
 }
 </code></pre>
 
-<h2 id="installing-vnc">Installing VNC</h2>
+<h2 id="install-vnc">Install VNC</h2>
 <p>Install <code>tightvncserver</code> with:</p>
-<pre><code class="bash"> $ sudo apt-get install tightvncserver
+<pre><code class="bash">pi@raspberrypi:~ $ sudo apt-get install tightvncserver
 </code></pre>
 
 <p>Start the server with:</p>
-<pre><code class="bash">$ tightvncserver
+<pre><code class="bash">pi@raspberrypi:~ $ tightvncserver
 # or
-$ tightvncserver -geometry 1920x1080 -depth 24
+pi@raspberrypi:~ $ vncserver :1 -geometry 1024x728 -depth 24
 </code></pre>
 
 <p>Connect from your Mac by going to Safari and enter URL: <code>vnc://pi@raspberrypi.local:5901</code></p>
 <p>A more detailed description is <a href="https://smittytone.wordpress.com/2016/03/02/mac_remote_desktop_pi/">here</a>.</p>
 <p>The Raspian directions are <a href="https://www.raspberrypi.org/documentation/remote-access/vnc/">here</a>.</p>
-<h2 id="file-sharing">File sharing</h2>
+<h2 id="enable-a-camera">Enable a camera</h2>
+<p>Enable a Pi camera with <code>raspi-config</code>. Select the <code>Interfacing Options</code> and then the <code>Camera</code> option.</p>
+<pre><code class="bash">pi@raspberrypi:~ $ sudo raspi-config
+</code></pre>
+
+<h2 id="install-file-sharing">Install File sharing</h2>
 <p>Details are <a href="http://www.instructables.com/id/How-to-share-files-between-Mac-OSX-and-Raspberry-P/?ALLSTEPS">here</a>.</p>
 <p>Enable file sharing with:</p>
-<pre><code class="bash">$ sudo apt-get install netatalk
+<pre><code class="bash">pi@raspberrypi:~ $ sudo apt-get install netatalk
 </code></pre>
               
             </div>
