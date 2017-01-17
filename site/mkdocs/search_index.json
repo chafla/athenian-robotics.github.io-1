@@ -182,12 +182,12 @@
         }, 
         {
             "location": "/ev3-python/", 
-            "text": "EV3 Python\n\n\n\n\nThe ev3dev Python API is described \nhere", 
+            "text": "EV3 Python\n\n\n\n\nThe ev3dev Python API is described \nhere\n.", 
             "title": "Python"
         }, 
         {
             "location": "/ev3-python/#ev3-python", 
-            "text": "The ev3dev Python API is described  here", 
+            "text": "The ev3dev Python API is described  here .", 
             "title": "EV3 Python"
         }, 
         {
@@ -222,7 +222,7 @@
         }, 
         {
             "location": "/mqtt/", 
-            "text": "MQTT Notes\n\n\nMQTT Broker Installation\n\n\nOSX\n\n\nInstall mosquitto with:\n\n\n$ brew install mosquitto\n\n\n\n\nAdd mosquitto to launchd with:\n\n\n$ brew services start mosquitto\n\n\n\n\nIf you don't want to run mosquitto as a background service, run it from the command line with:\n\n\n$ /usr/local/sbin/mosquitto -c /usr/local/etc/mosquitto/mosquitto.conf\n\n\n\n\nDocker\n\n\nRun mosquitto as a docker service with:\n\n\n$ docker run -ti -p 1883:1883 -p 9001:9001 toke/mosquitto\n\n\n\n\nImage details are \nhere\n\n\nRaspberry Pi\n\n\nInstall mosquitto with:\n\n\n$ sudo apt-get install mosquitto\n$ sudo apt-get install mosquitto-clients\n\n\n\n\nVerify that the broker is running with:\n\n\n$ systemctl status mosquitto\n\n\n\n\nTesting from CLI\n\n\nSubscribe\n\n\n$ mosquitto_sub -d -h localhost -t /testnode\nClient mosqsub/27524-pleiku.lo sending CONNECT\nClient mosqsub/27524-pleiku.lo received CONNACK\nClient mosqsub/27524-pleiku.lo sending SUBSCRIBE (Mid: 1, Topic: /testnode, QoS: 0)\nClient mosqsub/27524-pleiku.lo received SUBACK\nSubscribed (mid: 1): 0\n\n\n\n\nPublish\n\n\n$ mosquitto_pub -d -h localhost -m \nsimple val\n -t /testnode\nClient mosqpub/27472-pleiku.lo sending CONNECT\nClient mosqpub/27472-pleiku.lo received CONNACK\nClient mosqpub/27472-pleiku.lo sending PUBLISH (d0, q0, r0, m1, '/testnode', ... (10 bytes))\nClient mosqpub/27472-pleiku.lo sending DISCONNECT", 
+            "text": "MQTT Notes\n\n\nMQTT Broker Installation\n\n\nOSX\n\n\nInstall mosquitto with:\n\n\n$ brew install mosquitto\n\n\n\n\nAdd mosquitto to launchd with:\n\n\n$ brew services start mosquitto\n\n\n\n\nIf you don't want to run mosquitto as a background service, run it from the command line with:\n\n\n$ /usr/local/sbin/mosquitto -c /usr/local/etc/mosquitto/mosquitto.conf\n\n\n\n\nDocker\n\n\nRun mosquitto as a docker service with:\n\n\n$ docker run -ti -p 1883:1883 -p 9001:9001 toke/mosquitto\n\n\n\n\nImage details are \nhere\n.\n\n\nRaspberry Pi\n\n\nInstall mosquitto with:\n\n\n$ sudo apt-get install mosquitto\n$ sudo apt-get install mosquitto-clients\n\n\n\n\nVerify that the broker is running with:\n\n\n$ systemctl status mosquitto\n\n\n\n\nTesting from CLI\n\n\nSubscribe\n\n\n$ mosquitto_sub -d -h localhost -t /testnode\nClient mosqsub/27524-pleiku.lo sending CONNECT\nClient mosqsub/27524-pleiku.lo received CONNACK\nClient mosqsub/27524-pleiku.lo sending SUBSCRIBE (Mid: 1, Topic: /testnode, QoS: 0)\nClient mosqsub/27524-pleiku.lo received SUBACK\nSubscribed (mid: 1): 0\n\n\n\n\nPublish\n\n\n$ mosquitto_pub -d -h localhost -m \nsimple val\n -t /testnode\nClient mosqpub/27472-pleiku.lo sending CONNECT\nClient mosqpub/27472-pleiku.lo received CONNACK\nClient mosqpub/27472-pleiku.lo sending PUBLISH (d0, q0, r0, m1, '/testnode', ... (10 bytes))\nClient mosqpub/27472-pleiku.lo sending DISCONNECT", 
             "title": "MQTT"
         }, 
         {
@@ -242,7 +242,7 @@
         }, 
         {
             "location": "/mqtt/#docker", 
-            "text": "Run mosquitto as a docker service with:  $ docker run -ti -p 1883:1883 -p 9001:9001 toke/mosquitto  Image details are  here", 
+            "text": "Run mosquitto as a docker service with:  $ docker run -ti -p 1883:1883 -p 9001:9001 toke/mosquitto  Image details are  here .", 
             "title": "Docker"
         }, 
         {
@@ -287,7 +287,7 @@
         }, 
         {
             "location": "/opencv/", 
-            "text": "OpenCV Notes\n\n\nInstallation\n\n\nOSX\n\n\nInstall OpenCV 3 with:\n\n\n$ brew tap homebrew/science\n$ brew install opencv3 --with-contrib --with-python3 --with-java --with-examples \n$ echo /usr/local/opt/opencv3/lib/python2.7/site-packages \n /usr/local/lib/python2.7/site-packages/opencv3.pth\n\n\n\n\nDetailed instructions are \n\nhere\n\n\n\nWarning: As of OpenCV 3.2.0, the --with-python3 option does not seem to work. Until this is \naddressed, use Python 2.7 with OpenCV 3.", 
+            "text": "OpenCV Notes\n\n\nInstallation\n\n\nOSX\n\n\nInstall OpenCV 3 with:\n\n\n$ brew tap homebrew/science\n$ brew install opencv3 --with-contrib --with-python3 --with-java --with-examples \n$ echo /usr/local/opt/opencv3/lib/python2.7/site-packages \n /usr/local/lib/python2.7/site-packages/opencv3.pth\n\n\n\n\nDetailed instructions are \n\nhere\n.\n\n\n\nWarning: As of OpenCV 3.2.0, the --with-python3 option does not seem to work. Until this is \naddressed, use Python 2.7 with OpenCV 3.", 
             "title": "OpenCV"
         }, 
         {
@@ -302,7 +302,7 @@
         }, 
         {
             "location": "/opencv/#osx", 
-            "text": "Install OpenCV 3 with:  $ brew tap homebrew/science\n$ brew install opencv3 --with-contrib --with-python3 --with-java --with-examples \n$ echo /usr/local/opt/opencv3/lib/python2.7/site-packages   /usr/local/lib/python2.7/site-packages/opencv3.pth  Detailed instructions are  here  \nWarning: As of OpenCV 3.2.0, the --with-python3 option does not seem to work. Until this is \naddressed, use Python 2.7 with OpenCV 3.", 
+            "text": "Install OpenCV 3 with:  $ brew tap homebrew/science\n$ brew install opencv3 --with-contrib --with-python3 --with-java --with-examples \n$ echo /usr/local/opt/opencv3/lib/python2.7/site-packages   /usr/local/lib/python2.7/site-packages/opencv3.pth  Detailed instructions are  here .  \nWarning: As of OpenCV 3.2.0, the --with-python3 option does not seem to work. Until this is \naddressed, use Python 2.7 with OpenCV 3.", 
             "title": "OSX"
         }, 
         {
@@ -324,6 +324,21 @@
             "location": "/mkdocs/#project-layout", 
             "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.\nsite/         # Generated website", 
             "title": "Project Layout"
+        }, 
+        {
+            "location": "/unicorn/", 
+            "text": "Unicorn Hat Notes\n\n\nRaspbery Pi Installation\n\n\nPython 3\n\n\n$ sudo apt-get install python3-pip python3-dev\n$ sudo pip3 install unicornhat\n\n\n\n\nPython 2\n\n\n$ sudo apt-get install python-pip python-dev\n$ sudo pip install unicornhat\n\n\n\n\nThe github repo is \nhere\n.\n\n\nSome examples are \nhere\n.", 
+            "title": "Unicorn Hat"
+        }, 
+        {
+            "location": "/unicorn/#unicorn-hat-notes", 
+            "text": "", 
+            "title": "Unicorn Hat Notes"
+        }, 
+        {
+            "location": "/unicorn/#raspbery-pi-installation", 
+            "text": "Python 3  $ sudo apt-get install python3-pip python3-dev\n$ sudo pip3 install unicornhat  Python 2  $ sudo apt-get install python-pip python-dev\n$ sudo pip install unicornhat  The github repo is  here .  Some examples are  here .", 
+            "title": "Raspbery Pi Installation"
         }
     ]
 }

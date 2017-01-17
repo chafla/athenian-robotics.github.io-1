@@ -19,6 +19,8 @@ pages:
   - Plot.ly: plotly.md
   - OpenCV: opencv.md
   - MkDocs: mkdocs.md
+- Hardware Notes:
+  - Unicorn Hat: unicorn.md
 
 theme: readthedocs
 

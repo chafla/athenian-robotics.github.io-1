@@ -26,7 +26,7 @@ Run mosquitto as a docker service with:
 $ docker run -ti -p 1883:1883 -p 9001:9001 toke/mosquitto
 ```
 
-Image details are [here](https://github.com/toke/docker-mosquitto)
+Image details are [here](https://github.com/toke/docker-mosquitto).
 
 ### Raspberry Pi
 
