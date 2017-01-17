@@ -30,9 +30,15 @@ Image details are [here](https://github.com/toke/docker-mosquitto)
 
 ### Raspberry Pi
 
+Install mosquitto with:
 ```bash
 $ sudo apt-get install mosquitto
 $ sudo apt-get install mosquitto-clients
+```
+
+Verify that the broker is running with:
+```bash
+$ systemctl status mosquitto
 ```
 
 ## Testing from CLI

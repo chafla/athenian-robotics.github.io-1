@@ -237,8 +237,13 @@
 
 <p>Image details are <a href="https://github.com/toke/docker-mosquitto">here</a></p>
 <h3 id="raspberry-pi">Raspberry Pi</h3>
+<p>Install mosquitto with:</p>
 <pre><code class="bash">$ sudo apt-get install mosquitto
 $ sudo apt-get install mosquitto-clients
+</code></pre>
+
+<p>Verify that the broker is running with:</p>
+<pre><code class="bash">$ systemctl status mosquitto
 </code></pre>
 
 <h2 id="testing-from-cli">Testing from CLI</h2>

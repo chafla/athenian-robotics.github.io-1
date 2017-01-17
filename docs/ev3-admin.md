@@ -41,8 +41,14 @@ $ sudo reboot now
 
 ## EV3 Python Bindings
 
-Install the EV3 Python bindings with:
+Install the EV3 Python bindings on the EV3 with:
 ```bash
-@ pip install python-ev3dev
+$ pip install python-ev3dev
 ```
+
+To avoid warnings within PyCharm, install the EV3 Python bindings on the 
+host machine with:
+ ```bash
+ $ pip3 install python-ev3dev
+ ```
 
