@@ -347,12 +347,12 @@
         }, 
         {
             "location": "/gopigo/", 
-            "text": "GoPiGo Notes\n\n\nA GoPiGo can be purchased \n\nhere\n.\n\n\nAn overview is \n\nhere\n.", 
+            "text": "GoPiGo Notes\n\n\nA GoPiGo can be purchased \n\nhere\n.\n\n\nA GoPiGo intro is \n\nhere\n.\n\n\nA GoPiGo overview is \n\nhere\n.", 
             "title": "GoPiGo"
         }, 
         {
             "location": "/gopigo/#gopigo-notes", 
-            "text": "A GoPiGo can be purchased  here .  An overview is  here .", 
+            "text": "A GoPiGo can be purchased  here .  A GoPiGo intro is  here .  A GoPiGo overview is  here .", 
             "title": "GoPiGo Notes"
         }
     ]
