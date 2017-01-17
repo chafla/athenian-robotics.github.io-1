@@ -382,7 +382,7 @@
         }, 
         {
             "location": "/unicorn/", 
-            "text": "Unicorn Hat Notes\n\n\nA Unicorn Hat can be purchased \n\nhere\n\n\nThe github repo is \nhere\n.\n\n\nExamples are \nhere\n.\n\n\nRaspbery Pi Installation\n\n\nPython 3\n\n\n$ sudo apt-get install python3-pip python3-dev\n$ sudo pip3 install unicornhat\n\n\n\n\nPython 2\n\n\n$ sudo apt-get install python-pip python-dev\n$ sudo pip install unicornhat", 
+            "text": "Unicorn Hat Notes\n\n\nA Unicorn Hat can be purchased \n\nhere\n\n\nThe github repo is \nhere\n.\n\n\nExamples are \nhere\n.\n\n\nRaspbery Pi Installation\n\n\nPython 3\n\n\n$ sudo apt-get install python3-pip python3-dev\n$ sudo pip3 install unicornhat\n\n\n\n\nPython 2\n\n\n$ sudo apt-get install python-pip python-dev\n$ sudo pip install unicornhat\n\n\n\n\nIf you get an error message \nCan't open /dev/mem: Permission denied\n, then run the program with \nsudo\n.", 
             "title": "Unicorn Hat"
         }, 
         {
@@ -392,7 +392,7 @@
         }, 
         {
             "location": "/unicorn/#raspbery-pi-installation", 
-            "text": "Python 3  $ sudo apt-get install python3-pip python3-dev\n$ sudo pip3 install unicornhat  Python 2  $ sudo apt-get install python-pip python-dev\n$ sudo pip install unicornhat", 
+            "text": "Python 3  $ sudo apt-get install python3-pip python3-dev\n$ sudo pip3 install unicornhat  Python 2  $ sudo apt-get install python-pip python-dev\n$ sudo pip install unicornhat  If you get an error message  Can't open /dev/mem: Permission denied , then run the program with  sudo .", 
             "title": "Raspbery Pi Installation"
         }, 
         {

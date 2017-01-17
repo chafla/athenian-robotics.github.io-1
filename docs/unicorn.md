@@ -21,5 +21,7 @@ $ sudo apt-get install python-pip python-dev
 $ sudo pip install unicornhat
 ```
 
+If you get an error message *Can't open /dev/mem: Permission denied*, then run the program with `sudo`.
+
 <iframe src="https://player.vimeo.com/video/105482682" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
