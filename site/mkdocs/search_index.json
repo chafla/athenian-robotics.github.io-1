@@ -182,12 +182,12 @@
         }, 
         {
             "location": "/ev3-python/", 
-            "text": "EV3 Python\n\n\n\n\nThe ev3dev Python API is described \nhere\n.", 
+            "text": "EV3 Python\n\n\n\n\n\n\nThe ev3dev Python API is described \nhere\n.\n\n\n\n\n\n\nA great overview is \nhere\n.", 
             "title": "Python"
         }, 
         {
             "location": "/ev3-python/#ev3-python", 
-            "text": "The ev3dev Python API is described  here .", 
+            "text": "The ev3dev Python API is described  here .    A great overview is  here .", 
             "title": "EV3 Python"
         }, 
         {
