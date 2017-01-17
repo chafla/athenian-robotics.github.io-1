@@ -1,5 +1,8 @@
 # Unicorn Hat Notes
 
+A Unicorn Hat can be purchased 
+[here](https://shop.pimoroni.com/products/unicorn-hat)
+
 ## Raspbery Pi Installation
 
 Python 3

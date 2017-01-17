@@ -332,18 +332,28 @@
         }, 
         {
             "location": "/unicorn/", 
-            "text": "Unicorn Hat Notes\n\n\nRaspbery Pi Installation\n\n\nPython 3\n\n\n$ sudo apt-get install python3-pip python3-dev\n$ sudo pip3 install unicornhat\n\n\n\n\nPython 2\n\n\n$ sudo apt-get install python-pip python-dev\n$ sudo pip install unicornhat\n\n\n\n\nThe github repo is \nhere\n.\n\n\nSome examples are \nhere\n.", 
+            "text": "Unicorn Hat Notes\n\n\nA Unicorn Hat can be purchased \n\nhere\n\n\nRaspbery Pi Installation\n\n\nPython 3\n\n\n$ sudo apt-get install python3-pip python3-dev\n$ sudo pip3 install unicornhat\n\n\n\n\nPython 2\n\n\n$ sudo apt-get install python-pip python-dev\n$ sudo pip install unicornhat\n\n\n\n\nThe github repo is \nhere\n.\n\n\nSome examples are \nhere\n.", 
             "title": "Unicorn Hat"
         }, 
         {
             "location": "/unicorn/#unicorn-hat-notes", 
-            "text": "", 
+            "text": "A Unicorn Hat can be purchased  here", 
             "title": "Unicorn Hat Notes"
         }, 
         {
             "location": "/unicorn/#raspbery-pi-installation", 
             "text": "Python 3  $ sudo apt-get install python3-pip python3-dev\n$ sudo pip3 install unicornhat  Python 2  $ sudo apt-get install python-pip python-dev\n$ sudo pip install unicornhat  The github repo is  here .  Some examples are  here .", 
             "title": "Raspbery Pi Installation"
+        }, 
+        {
+            "location": "/gopigo/", 
+            "text": "GoPiGo Notes\n\n\nA GoPiGo can be purchased \n\nhere\n.\n\n\nAn overview is \n\nhere\n.", 
+            "title": "GoPiGo"
+        }, 
+        {
+            "location": "/gopigo/#gopigo-notes", 
+            "text": "A GoPiGo can be purchased  here .  An overview is  here .", 
+            "title": "GoPiGo Notes"
         }
     ]
 }

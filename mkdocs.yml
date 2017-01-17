@@ -21,6 +21,7 @@ pages:
   - MkDocs: mkdocs.md
 - Hardware Notes:
   - Unicorn Hat: unicorn.md
+  - GoPiGo: gopigo.md
 
 theme: readthedocs
 
