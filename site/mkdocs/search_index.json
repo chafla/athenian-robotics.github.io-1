@@ -192,7 +192,7 @@
         }, 
         {
             "location": "/git/", 
-            "text": "Git Notes\n\n\nInstallation\n\n\nOSX\n\n\nInstall git on OSX with:\n\n\n$ brew install git\n\n\n\n\nev3dev and Raspberry Pi\n\n\n$ sudo apt-get install git\n\n\n\n\nCloning a Repo\n\n\nClone a repo from \nAthenian Robotics\n with:\n\n\n$ git clone https://github.com/athenian-robotics/ev3dev-python-intro.git\n\n\n\n\nTo find the URL for a particular repo, go to it's github page and \nclick on the \nClone or download\n button and copy the URL in the pop-up\nwindow. Make sure that the repo URL begins with \nhttps:\n and not \ngit:\n. \nYou can toggle between the two versions by clicking on \nUse HTTPS\n and \nUse SSH\n.", 
+            "text": "Git Notes\n\n\nInstallation\n\n\nOSX\n\n\nInstall git on OSX with:\n\n\n$ brew install git\n\n\n\n\nev3dev and Raspi\n\n\n$ sudo apt-get install git\n\n\n\n\nCloning a Repo\n\n\nClone a repo from \nAthenian Robotics\n with:\n\n\n$ git clone https://github.com/athenian-robotics/ev3dev-python-intro.git\n\n\n\n\nTo find the URL for a particular repo, go to it's github page and \nclick on the \nClone or download\n button and copy the URL in the pop-up\nwindow. Make sure that the repo URL begins with \nhttps:\n and not \ngit:\n. \nYou can toggle between the two versions by clicking on \nUse HTTPS\n and \nUse SSH\n.", 
             "title": "Git"
         }, 
         {
@@ -211,14 +211,24 @@
             "title": "OSX"
         }, 
         {
-            "location": "/git/#ev3dev-and-raspberry-pi", 
+            "location": "/git/#ev3dev-and-raspi", 
             "text": "$ sudo apt-get install git", 
-            "title": "ev3dev and Raspberry Pi"
+            "title": "ev3dev and Raspi"
         }, 
         {
             "location": "/git/#cloning-a-repo", 
             "text": "Clone a repo from  Athenian Robotics  with:  $ git clone https://github.com/athenian-robotics/ev3dev-python-intro.git  To find the URL for a particular repo, go to it's github page and \nclick on the  Clone or download  button and copy the URL in the pop-up\nwindow. Make sure that the repo URL begins with  https:  and not  git: . \nYou can toggle between the two versions by clicking on  Use HTTPS  and  Use SSH .", 
             "title": "Cloning a Repo"
+        }, 
+        {
+            "location": "/brew/", 
+            "text": "Brew Notes\n\n\nUpgrade installed packages with:\n\n\n$ brew update\n$ brew upgrade\n\n\n\n\nList installed packages with:\n\n\n$ brew list\n\n\n\n\nCheck the health of your \nbrew\n configuration with:\n\n\n$ brew doctor\n\n\n\n\nCleanup old files with:\n\n\n$ brew prune", 
+            "title": "Brew"
+        }, 
+        {
+            "location": "/brew/#brew-notes", 
+            "text": "Upgrade installed packages with:  $ brew update\n$ brew upgrade  List installed packages with:  $ brew list  Check the health of your  brew  configuration with:  $ brew doctor  Cleanup old files with:  $ brew prune", 
+            "title": "Brew Notes"
         }, 
         {
             "location": "/mqtt/", 
@@ -312,7 +322,7 @@
         }, 
         {
             "location": "/xquartz/", 
-            "text": "XQuartz Notes\n\n\nXQuartz\n is an X server for OSX.\n\n\nInstallation:\n\n\nDownload and install XQuartz from \nhere\n.\n\n\nOn OSX, type:\n\n\n$ xterm + raspberrypi.local\n\n\n\n\nOn the Raspberry Pi, add this line to ~/.profile:\n\n\nDISPLAY=pleiku.local:0.0 ; export DISPLAY\n\n\n\n\nTo verify the setup, type this on the Raspberry Pi:\n\n\n$ lxsession", 
+            "text": "XQuartz Notes\n\n\nXQuartz\n is an X server for OSX.\n\n\nInstallation:\n\n\nDownload and install XQuartz from \nhere\n.\n\n\nOn OSX, type:\n\n\n$ xterm + raspberrypi\n\n\n\n\nAdd this line to ~/.profile on the Raspi:\n\n\nDISPLAY=pleiku.local:0.0 ; export DISPLAY\n\n\n\n\nVerify the setup on the Raspi with:\n\n\n$ lxsession", 
             "title": "XQuartz"
         }, 
         {
@@ -322,7 +332,7 @@
         }, 
         {
             "location": "/xquartz/#installation", 
-            "text": "Download and install XQuartz from  here .  On OSX, type:  $ xterm + raspberrypi.local  On the Raspberry Pi, add this line to ~/.profile:  DISPLAY=pleiku.local:0.0 ; export DISPLAY  To verify the setup, type this on the Raspberry Pi:  $ lxsession", 
+            "text": "Download and install XQuartz from  here .  On OSX, type:  $ xterm + raspberrypi  Add this line to ~/.profile on the Raspi:  DISPLAY=pleiku.local:0.0 ; export DISPLAY  Verify the setup on the Raspi with:  $ lxsession", 
             "title": "Installation:"
         }, 
         {
@@ -352,7 +362,7 @@
         }, 
         {
             "location": "/raspberrypi/", 
-            "text": "Raspberry Pi Notes\n\n\nInstall Raspian\n\n\nOSX\n\n\n\n\n\n\nDownload the \nRaspbian distro\n.\n\n\n\n\n\n\nBurn the .img file to a SD card with \nEtcher\n.\n\n\n\n\n\n\nImportant:\n Remove and reinsert SD card and add a file named \nssh\n to the SD card boot partition.\nThis will enable \nssh\n on the Raspi.\n\n\n\n\n\n\n$ touch /Volumes/boot/ssh\n\n\n\n\n\n\n\n\nEject the SD card from the Mac, connect an ethernet cable to the Raspi, and power up the Raspi.\n\n\n\n\n\n\nLogin to the Raspi with \nssh\n using the username \npi\n and password \nraspberry\n.\n\n\n\n\n\n\n$ ssh pi@raspberrypi.local\nAre you sure you want to continue connecting (yes/no)? yes\nPassword: raspberry\npi@raspberrypi:~ \n\n\n\n\nIf you get a \nHost key verification failed\n error when using \nssh\n, \nremove the \nraspberry.local\n entry from ~/.ssh/known_hosts on your Mac with:\n\n\n$ nano ~/.ssh/known_hosts\n\n\n\n\nResize root partition\n\n\nResize the root partition with \nraspi-config\n.\nChoose \"Expand Filesystem\", tab to \n and then reboot.\n\n\npi@raspberrypi:~ $ sudo raspi-config\n\n\n\n\nUpdate distro\n\n\nUpdate the Raspbian distro to the latest and greatest bits with:\n\n\npi@raspberrypi:~ $ sudo apt-get update\npi@raspberrypi:~ $ sudo apt-get upgrade\npi@raspberrypi:~ $ sudo apt-get dist-upgrade\npi@raspberrypi:~ $ sudo reboot now\n\n\n\n\nChange hostname\n\n\nMultiple Raspis on your network cannot share the same hostname. Change your hostname with:\n\n\npi@raspberrypi:~ $ nano /etc/hostname\npi@raspberrypi:~ $ sudo reboot now\n\n\n\n\nEnable wifi\n\n\npi@raspberrypi:~ $ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf\n\n\n\n\nAdd a network entry for each SID with which the Raspi will need to connect:\n\n\nnetwork={\n    ssid=\nMyWiFiNetwork\n\n    psk=\nthe_password\n\n    key_mgmt=WPA-PSK\n}\n\n\n\n\nEnable VNC\n\n\nEnable VNC with \nraspi-config\n. Choose the \nInterfacing Options\n and then \nthe \nVNC\n option. Tab to \n and then reboot.\n\n\nStart the VNC server with:\n\n\npi@raspberrypi:~ $ vncserver :1 -geometry 1024x728 -depth 24\n\n\n\n\nUse \n-geometry 2048x1456\n for a larger display.\n\n\nDownload a \nVNCViewer\n app from \n\nhere\n. \n\n\nStart the \nVNCViewer\n app on the Mac and connect to the Raspi at \nraspberrypi.local:1\n.\n\n\nEnable a camera\n\n\nEnable a Pi camera with \nraspi-config\n. Select the \nInterfacing Options\n and then the \nCamera\n option.\nTab to \n and then reboot.\n\n\npi@raspberrypi:~ $ sudo raspi-config\n\n\n\n\nInstall File sharing\n\n\nDetails are \nhere\n.\n\n\nEnable file sharing with:\n\n\npi@raspberrypi:~ $ sudo apt-get install netatalk", 
+            "text": "Raspberry Pi Notes\n\n\nInstall Raspian\n\n\nOSX\n\n\n\n\n\n\nDownload the \nRaspbian distro\n.\n\n\n\n\n\n\nBurn the .img file to a SD card with \nEtcher\n.\n\n\n\n\n\n\nImportant:\n Remove and reinsert SD card and add a file named \nssh\n to the SD card boot partition.\nThis will enable \nssh\n on the Raspi.\n\n\n\n\n\n\n$ touch /Volumes/boot/ssh\n\n\n\n\n\n\n\n\nEject the SD card from the Mac, connect an ethernet cable to the Raspi, and power up the Raspi.\n\n\n\n\n\n\nLogin to the Raspi with \nssh\n using the username \npi\n and password \nraspberry\n.\n\n\n\n\n\n\n$ ssh pi@raspberrypi\nAre you sure you want to continue connecting (yes/no)? yes\nPassword: raspberry\npi@raspberrypi:~ \n\n\n\n\nIf you get a \nHost key verification failed\n error when using \nssh\n, \nremove the \nraspberry.local\n entry from ~/.ssh/known_hosts on your Mac with:\n\n\n$ nano ~/.ssh/known_hosts\n\n\n\n\nResize root partition\n\n\nResize the root partition with \nraspi-config\n.\nChoose \"Expand Filesystem\", tab to \n and then reboot.\n\n\npi@raspberrypi:~ $ sudo raspi-config\n\n\n\n\nUpdate distro\n\n\nUpdate the Raspbian distro to the latest and greatest bits with:\n\n\npi@raspberrypi:~ $ sudo apt-get update\npi@raspberrypi:~ $ sudo apt-get upgrade\npi@raspberrypi:~ $ sudo apt-get dist-upgrade\npi@raspberrypi:~ $ sudo reboot now\n\n\n\n\nChange hostname\n\n\nMultiple Raspis on your network cannot share the same hostname. Change your hostname with:\n\n\npi@raspberrypi:~ $ nano /etc/hostname\npi@raspberrypi:~ $ sudo reboot now\n\n\n\n\nEnable wifi\n\n\npi@raspberrypi:~ $ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf\n\n\n\n\nAdd a network entry for each SID with which the Raspi will need to connect:\n\n\nnetwork={\n    ssid=\nMyWiFiNetwork\n\n    psk=\nthe_password\n\n    key_mgmt=WPA-PSK\n}\n\n\n\n\nEnable VNC\n\n\nEnable VNC with \nraspi-config\n. Choose the \nInterfacing Options\n and then \nthe \nVNC\n option. Tab to \n and then reboot.\n\n\nStart the VNC server with:\n\n\npi@raspberrypi:~ $ vncserver :1 -geometry 1024x728 -depth 24\n\n\n\n\nUse \n-geometry 2048x1456\n for a larger display.\n\n\nDownload a \nVNCViewer\n app from \n\nhere\n. \n\n\nStart the \nVNCViewer\n app on the Mac and connect to the Raspi at \nraspberrypi:1\n.\n\n\nEnable a camera\n\n\nEnable a Pi camera with \nraspi-config\n. Select the \nInterfacing Options\n and then the \nCamera\n option.\nTab to \n and then reboot.\n\n\npi@raspberrypi:~ $ sudo raspi-config\n\n\n\n\nInstall File sharing\n\n\nDetails are \nhere\n.\n\n\nEnable file sharing with:\n\n\npi@raspberrypi:~ $ sudo apt-get install netatalk", 
             "title": "Raspberry Pi"
         }, 
         {
@@ -367,7 +377,7 @@
         }, 
         {
             "location": "/raspberrypi/#osx", 
-            "text": "Download the  Raspbian distro .    Burn the .img file to a SD card with  Etcher .    Important:  Remove and reinsert SD card and add a file named  ssh  to the SD card boot partition.\nThis will enable  ssh  on the Raspi.    $ touch /Volumes/boot/ssh    Eject the SD card from the Mac, connect an ethernet cable to the Raspi, and power up the Raspi.    Login to the Raspi with  ssh  using the username  pi  and password  raspberry .    $ ssh pi@raspberrypi.local\nAre you sure you want to continue connecting (yes/no)? yes\nPassword: raspberry\npi@raspberrypi:~   If you get a  Host key verification failed  error when using  ssh , \nremove the  raspberry.local  entry from ~/.ssh/known_hosts on your Mac with:  $ nano ~/.ssh/known_hosts", 
+            "text": "Download the  Raspbian distro .    Burn the .img file to a SD card with  Etcher .    Important:  Remove and reinsert SD card and add a file named  ssh  to the SD card boot partition.\nThis will enable  ssh  on the Raspi.    $ touch /Volumes/boot/ssh    Eject the SD card from the Mac, connect an ethernet cable to the Raspi, and power up the Raspi.    Login to the Raspi with  ssh  using the username  pi  and password  raspberry .    $ ssh pi@raspberrypi\nAre you sure you want to continue connecting (yes/no)? yes\nPassword: raspberry\npi@raspberrypi:~   If you get a  Host key verification failed  error when using  ssh , \nremove the  raspberry.local  entry from ~/.ssh/known_hosts on your Mac with:  $ nano ~/.ssh/known_hosts", 
             "title": "OSX"
         }, 
         {
@@ -392,7 +402,7 @@
         }, 
         {
             "location": "/raspberrypi/#enable-vnc", 
-            "text": "Enable VNC with  raspi-config . Choose the  Interfacing Options  and then \nthe  VNC  option. Tab to   and then reboot.  Start the VNC server with:  pi@raspberrypi:~ $ vncserver :1 -geometry 1024x728 -depth 24  Use  -geometry 2048x1456  for a larger display.  Download a  VNCViewer  app from  here .   Start the  VNCViewer  app on the Mac and connect to the Raspi at  raspberrypi.local:1 .", 
+            "text": "Enable VNC with  raspi-config . Choose the  Interfacing Options  and then \nthe  VNC  option. Tab to   and then reboot.  Start the VNC server with:  pi@raspberrypi:~ $ vncserver :1 -geometry 1024x728 -depth 24  Use  -geometry 2048x1456  for a larger display.  Download a  VNCViewer  app from  here .   Start the  VNCViewer  app on the Mac and connect to the Raspi at  raspberrypi:1 .", 
             "title": "Enable VNC"
         }, 
         {

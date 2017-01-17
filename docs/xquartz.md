@@ -7,15 +7,14 @@ Download and install XQuartz from [here](https://www.xquartz.org).
 
 On OSX, type:
 ```bash
-$ xterm + raspberrypi.local
+$ xterm + raspberrypi
 ```
-
-On the Raspberry Pi, add this line to ~/.profile:
+Add this line to ~/.profile on the Raspi:
 ```
 DISPLAY=pleiku.local:0.0 ; export DISPLAY
 ```
 
-To verify the setup, type this on the Raspberry Pi:
+Verify the setup on the Raspi with:
 ```bash
 $ lxsession
 ```

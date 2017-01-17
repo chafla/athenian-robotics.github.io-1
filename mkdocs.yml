@@ -15,6 +15,7 @@ pages:
   - Python: ev3-python.md
 - Software Notes:
   - Git: git.md
+  - Brew: brew.md
   - MQTT: mqtt.md
   - Plot.ly: plotly.md
   - OpenCV: opencv.md

@@ -18,7 +18,7 @@ $ touch /Volumes/boot/ssh
 
 *  Login to the Raspi with `ssh` using the username *pi* and password *raspberry*.
 ```bash
-$ ssh pi@raspberrypi.local
+$ ssh pi@raspberrypi
 Are you sure you want to continue connecting (yes/no)? yes
 Password: raspberry
 pi@raspberrypi:~ 
@@ -86,7 +86,7 @@ Use `-geometry 2048x1456` for a larger display.
 Download a *VNCViewer* app from 
 [here](https://www.realvnc.com/download/viewer/). 
 
-Start the *VNCViewer* app on the Mac and connect to the Raspi at `raspberrypi.local:1`.
+Start the *VNCViewer* app on the Mac and connect to the Raspi at `raspberrypi:1`.
 
 ## Enable a camera
 Enable a Pi camera with `raspi-config`. Select the `Interfacing Options` and then the `Camera` option.

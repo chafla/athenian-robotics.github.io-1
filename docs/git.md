@@ -9,7 +9,7 @@ Install git on OSX with:
 $ brew install git
 ```
 
-### ev3dev and Raspberry Pi
+### ev3dev and Raspi
 ````bash
 $ sudo apt-get install git
 ````
