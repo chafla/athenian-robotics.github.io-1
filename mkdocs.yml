@@ -25,7 +25,7 @@ pages:
   - Raspberry Pi: raspberrypi.md
   - Blinkt: blinkt.md
   - Unicorn Hat: unicorn.md
-  - Display-O-Tron 3000: displayotron3000.md
+  - Display-O-Tron Hat: displayotron.md
   - GoPiGo: gopigo.md
 
 theme: readthedocs

@@ -1,6 +1,6 @@
-# Display-O-Tron 3000 Notes
+# Display-O-Tron Hat Notes
 
-A Display-O-Tron can be purchased from [here](https://shop.pimoroni.com/products/displayotron-3000)
+A Display-O-Tron can be purchased from [here](https://www.adafruit.com/products/2694)
 
 The github repo is [here](https://github.com/pimoroni/dot3k).
 

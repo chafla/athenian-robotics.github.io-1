@@ -461,17 +461,17 @@
             "title": "Raspbery Pi Installation"
         }, 
         {
-            "location": "/displayotron3000/", 
-            "text": "Display-O-Tron 3000 Notes\n\n\nA Display-O-Tron can be purchased from \nhere\n\n\nThe github repo is \nhere\n.\n\n\nA \nGetting Started\n is \nhere\n\n\nA \nReference\n is \nhere\n\n\nTutorials are \nhere\n\n\nExamples are \nhere\n.\n\n\nRaspbery Pi Installation\n\n\nInstall the driver with:\n\n\n$ curl -sS get.pimoroni.com/displayotron | bash", 
-            "title": "Display-O-Tron 3000"
+            "location": "/displayotron/", 
+            "text": "Display-O-Tron Hat Notes\n\n\nA Display-O-Tron can be purchased from \nhere\n\n\nThe github repo is \nhere\n.\n\n\nA \nGetting Started\n is \nhere\n\n\nA \nReference\n is \nhere\n\n\nTutorials are \nhere\n\n\nExamples are \nhere\n.\n\n\nRaspbery Pi Installation\n\n\nInstall the driver with:\n\n\n$ curl -sS get.pimoroni.com/displayotron | bash", 
+            "title": "Display-O-Tron Hat"
         }, 
         {
-            "location": "/displayotron3000/#display-o-tron-3000-notes", 
+            "location": "/displayotron/#display-o-tron-hat-notes", 
             "text": "A Display-O-Tron can be purchased from  here  The github repo is  here .  A  Getting Started  is  here  A  Reference  is  here  Tutorials are  here  Examples are  here .", 
-            "title": "Display-O-Tron 3000 Notes"
+            "title": "Display-O-Tron Hat Notes"
         }, 
         {
-            "location": "/displayotron3000/#raspbery-pi-installation", 
+            "location": "/displayotron/#raspbery-pi-installation", 
             "text": "Install the driver with:  $ curl -sS get.pimoroni.com/displayotron | bash", 
             "title": "Raspbery Pi Installation"
         }, 
