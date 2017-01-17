@@ -302,7 +302,7 @@
         }, 
         {
             "location": "/opencv/", 
-            "text": "OpenCV Notes\n\n\nInstallation\n\n\nOSX\n\n\nInstall OpenCV 3 with:\n\n\n$ brew tap homebrew/science\n$ brew install opencv3 --with-contrib --with-python3 --with-java --with-examples \n$ echo /usr/local/opt/opencv3/lib/python2.7/site-packages \n /usr/local/lib/python2.7/site-packages/opencv3.pth\n\n\n\n\nDetailed instructions are \n\nhere\n.\n\n\n\nWarning: As of OpenCV 3.2.0, the --with-python3 option does not seem to work. Until this is \naddressed, use Python 2.7 with OpenCV 3.", 
+            "text": "OpenCV Notes\n\n\nInstallation\n\n\nOSX\n\n\nInstall OpenCV 3 with:\n\n\n$ brew tap homebrew/science\n$ brew install opencv3 --with-contrib --with-python3 --with-java --with-examples \n$ echo /usr/local/opt/opencv3/lib/python2.7/site-packages \n /usr/local/lib/python2.7/site-packages/opencv3.pth\n\n\n\n\nDetailed instructions are \n\nhere\n.\n\n\n\nWarning: As of OpenCV 3.2.0, the --with-python3 option does not seem to work. Until this is \naddressed, use Python 2.7 with OpenCV 3.\n\n\n\n\nRaspi\n\n\nDetailed instructions are \n\nhere\n.\nMake sure to use version \n3.2.0\n instead of \n3.1.0\n.", 
             "title": "OpenCV"
         }, 
         {
@@ -319,6 +319,11 @@
             "location": "/opencv/#osx", 
             "text": "Install OpenCV 3 with:  $ brew tap homebrew/science\n$ brew install opencv3 --with-contrib --with-python3 --with-java --with-examples \n$ echo /usr/local/opt/opencv3/lib/python2.7/site-packages   /usr/local/lib/python2.7/site-packages/opencv3.pth  Detailed instructions are  here .  \nWarning: As of OpenCV 3.2.0, the --with-python3 option does not seem to work. Until this is \naddressed, use Python 2.7 with OpenCV 3.", 
             "title": "OSX"
+        }, 
+        {
+            "location": "/opencv/#raspi", 
+            "text": "Detailed instructions are  here .\nMake sure to use version  3.2.0  instead of  3.1.0 .", 
+            "title": "Raspi"
         }, 
         {
             "location": "/xquartz/", 

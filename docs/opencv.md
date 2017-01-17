@@ -19,3 +19,9 @@ Detailed instructions are
 Warning: As of OpenCV 3.2.0, the --with-python3 option does not seem to work. Until this is 
 addressed, use Python 2.7 with OpenCV 3.
 </aside>
+
+### Raspi
+
+Detailed instructions are 
+[here](http://www.pyimagesearch.com/2016/04/18/install-guide-raspberry-pi-3-raspbian-jessie-opencv-3/).
+Make sure to use version `3.2.0` instead of `3.1.0`.
