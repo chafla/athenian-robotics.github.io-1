@@ -13,7 +13,7 @@ $ echo /usr/local/opt/opencv3/lib/python2.7/site-packages >> /usr/local/lib/pyth
 ```
 
 Detailed instructions are 
-[here](http://www.pyimagesearch.com/2016/12/19/install-opencv-3-on-macos-with-homebrew-the-easy-way/)
+[here](http://www.pyimagesearch.com/2016/12/19/install-opencv-3-on-macos-with-homebrew-the-easy-way/).
 
 <aside class="warning">
 Warning: As of OpenCV 3.2.0, the --with-python3 option does not seem to work. Until this is 

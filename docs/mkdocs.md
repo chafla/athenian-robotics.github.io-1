@@ -17,3 +17,8 @@ For full documentation visit [mkdocs.org](http://mkdocs.org).
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
     site/         # Generated website
+
+## Markdown
+
+A Markdown cheatsheet is 
+[here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).

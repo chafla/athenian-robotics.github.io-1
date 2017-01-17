@@ -8,7 +8,7 @@
   
   <meta name="author" content="Athenian Robotics Team">
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>MkDocs - Athenian Robotics</title>
+  <title>Raspberry Pi - Athenian Robotics</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -18,9 +18,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "MkDocs";
-    var mkdocs_page_input_path = "mkdocs.md";
-    var mkdocs_page_url = "/mkdocs/";
+    var mkdocs_page_name = "Raspberry Pi";
+    var mkdocs_page_input_path = "raspberrypi.md";
+    var mkdocs_page_url = "/raspberrypi/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -163,21 +163,8 @@
 
         
             
-    <li class="toctree-l1 current">
-        <a class="current" href="./">MkDocs</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#mkdocs-notes">MkDocs Notes</a></li>
-                
-                    <li><a class="toctree-l4" href="#commands">Commands</a></li>
-                
-                    <li><a class="toctree-l4" href="#project-layout">Project Layout</a></li>
-                
-                    <li><a class="toctree-l4" href="#markdown">Markdown</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l1 ">
+        <a class="" href="../mkdocs/">MkDocs</a>
         
     </li>
 
@@ -191,8 +178,31 @@
 
         
             
-    <li class="toctree-l1 ">
-        <a class="" href="../raspberrypi/">Raspberry Pi</a>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Raspberry Pi</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#raspberry-pi-notes">Raspberry Pi Notes</a></li>
+                
+                    <li><a class="toctree-l4" href="#install-raspian">Install Raspian</a></li>
+                
+                    <li><a class="toctree-l4" href="#resize-root-partition">Resize root partition</a></li>
+                
+                    <li><a class="toctree-l4" href="#update-distro">Update distro</a></li>
+                
+                    <li><a class="toctree-l4" href="#change-hostname">Change hostname</a></li>
+                
+                    <li><a class="toctree-l4" href="#enable-wifi">Enable wifi</a></li>
+                
+                    <li><a class="toctree-l4" href="#enable-vnc">Enable VNC</a></li>
+                
+                    <li><a class="toctree-l4" href="#enable-a-camera">Enable a camera</a></li>
+                
+                    <li><a class="toctree-l4" href="#install-file-sharing">Install File sharing</a></li>
+                
+            
+            </ul>
         
     </li>
 
@@ -250,14 +260,14 @@
     
       
         
-          <li>Software Notes &raquo;</li>
+          <li>Hardware Notes &raquo;</li>
         
       
     
-    <li>MkDocs</li>
+    <li>Raspberry Pi</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/athenian-robotics/athenian-robotics.github.io/edit/master/docs/mkdocs.md"
+        <a href="https://github.com/athenian-robotics/athenian-robotics.github.io/edit/master/docs/raspberrypi.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -267,25 +277,97 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="mkdocs-notes">MkDocs Notes</h1>
-<p>For full documentation visit <a href="http://mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
+                <h1 id="raspberry-pi-notes">Raspberry Pi Notes</h1>
+<h2 id="install-raspian">Install Raspian</h2>
+<h3 id="osx">OSX</h3>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs help</code> - Print this help message.</li>
+<li>
+<p>Download the <a href="https://www.raspberrypi.org/downloads/raspbian/">Raspbian distro</a>.</p>
+</li>
+<li>
+<p>Burn the .img file to a SD card with <a href="https://etcher.io">Etcher</a>.</p>
+</li>
+<li>
+<p><strong>Important:</strong> Remove and reinsert SD card and add a file named <code>ssh</code> to the SD card boot partition.
+This will enable <code>ssh</code> on the Raspi.</p>
+</li>
 </ul>
-<h2 id="project-layout">Project Layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-site/         # Generated website
+<pre><code class="bash">$ touch /Volumes/boot/ssh
 </code></pre>
-<h2 id="markdown">Markdown</h2>
-<p>A Markdown cheatsheet is 
-<a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">here</a>.</p>
+
+<ul>
+<li>
+<p>Eject the SD card from the Mac, connect an ethernet cable to the Raspi, and power up the Raspi.</p>
+</li>
+<li>
+<p>Login to the Raspi with <code>ssh</code> using the username <em>pi</em> and password <em>raspberry</em>.</p>
+</li>
+</ul>
+<pre><code class="bash">$ ssh pi@raspberrypi.local
+Are you sure you want to continue connecting (yes/no)? yes
+Password: raspberry
+pi@raspberrypi:~ 
+</code></pre>
+
+<p>If you get a <em>Host key verification failed</em> error when using <code>ssh</code>, 
+remove the <em>raspberry.local</em> entry from ~/.ssh/known_hosts on your Mac with:</p>
+<pre><code class="bash">$ nano ~/.ssh/known_hosts
+</code></pre>
+
+<h2 id="resize-root-partition">Resize root partition</h2>
+<p>Resize the root partition with <code>raspi-config</code>.
+Choose "Expand Filesystem", tab to <Finish> and then reboot.</p>
+<pre><code class="bash">pi@raspberrypi:~ $ sudo raspi-config
+</code></pre>
+
+<h2 id="update-distro">Update distro</h2>
+<p>Update the Raspbian distro to the latest and greatest bits with:</p>
+<pre><code class="bash">pi@raspberrypi:~ $ sudo apt-get update
+pi@raspberrypi:~ $ sudo apt-get upgrade
+pi@raspberrypi:~ $ sudo apt-get dist-upgrade
+pi@raspberrypi:~ $ sudo reboot now
+</code></pre>
+
+<h2 id="change-hostname">Change hostname</h2>
+<p>Multiple Raspis on your network cannot share the same hostname. Change your hostname with:</p>
+<pre><code class="bash">pi@raspberrypi:~ $ nano /etc/hostname
+pi@raspberrypi:~ $ sudo reboot now
+</code></pre>
+
+<h2 id="enable-wifi">Enable wifi</h2>
+<pre><code class="bash">pi@raspberrypi:~ $ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+</code></pre>
+
+<p>Add a network entry for each SID with which the Raspi will need to connect:</p>
+<pre><code class="snakeyaml">network={
+    ssid=&quot;MyWiFiNetwork&quot;
+    psk=&quot;the_password&quot;
+    key_mgmt=WPA-PSK
+}
+</code></pre>
+
+<h2 id="enable-vnc">Enable VNC</h2>
+<p>Enable VNC with <code>raspi-config</code>. Choose the <code>Interfacing Options</code> and then 
+the <code>VNC</code> option. Tab to <Finish> and then reboot.</p>
+<p>Start the VNC server with:</p>
+<pre><code class="bash">pi@raspberrypi:~ $ vncserver :1 -geometry 1024x728 -depth 24
+</code></pre>
+
+<p>Use <code>-geometry 2048x1456</code> for a larger display.</p>
+<p>Download a <em>VNCViewer</em> app from 
+<a href="https://www.realvnc.com/download/viewer/">here</a>. </p>
+<p>Start the <em>VNCViewer</em> app on the Mac and connect to the Raspi at <code>raspberrypi.local:1</code>.</p>
+<h2 id="enable-a-camera">Enable a camera</h2>
+<p>Enable a Pi camera with <code>raspi-config</code>. Select the <code>Interfacing Options</code> and then the <code>Camera</code> option.
+Tab to <Finish> and then reboot.</p>
+<pre><code class="bash">pi@raspberrypi:~ $ sudo raspi-config
+</code></pre>
+
+<h2 id="install-file-sharing">Install File sharing</h2>
+<p>Details are <a href="http://www.instructables.com/id/How-to-share-files-between-Mac-OSX-and-Raspberry-P/?ALLSTEPS">here</a>.</p>
+<p>Enable file sharing with:</p>
+<pre><code class="bash">pi@raspberrypi:~ $ sudo apt-get install netatalk
+</code></pre>
               
             </div>
           </div>
@@ -293,10 +375,10 @@ site/         # Generated website
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../raspberrypi/" class="btn btn-neutral float-right" title="Raspberry Pi">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../blinkt/" class="btn btn-neutral float-right" title="Blinkt">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../xquartz/" class="btn btn-neutral" title="XQuartz"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../mkdocs/" class="btn btn-neutral" title="MkDocs"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -324,10 +406,10 @@ site/         # Generated website
           <a href="https://github.com/athenian-robotics/athenian-robotics.github.io" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../xquartz/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../mkdocs/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../raspberrypi/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../blinkt/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

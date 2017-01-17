@@ -1,13 +1,6 @@
 {
     "docs": [
         {
-            "location": "/",
-            "text": "Athenian Robotics\n\n\nThe Athenian Robotics Github home is \nhere\n.",
-            "title": "Home"
-        },
-        {
-            "location": "/#athenian-robotics",
-            "text": "The Athenian Robotics Github home is  here .",
             "title": "Athenian Robotics"
         },
         {
@@ -181,18 +174,9 @@
             "title": "EV3 Python Bindings"
         },
         {
-            "location": "/ev3-python/",
-            "text": "EV3 Python\n\n\n\n\nThe ev3dev Python API is described \nhere",
             "title": "Python"
         },
         {
-            "location": "/ev3-python/#ev3-python",
-            "text": "The ev3dev Python API is described  here",
-            "title": "EV3 Python"
-        },
-        {
-            "location": "/git/",
-            "text": "Git Notes\n\n\nInstallation\n\n\nOSX\n\n\nInstall git on OSX with:\n\n\n$ brew install git\n\n\n\n\nev3dev and Raspberry Pi\n\n\n$ sudo apt-get install git\n\n\n\n\nCloning a Repo\n\n\nClone a repo from \nAthenian Robotics\n with:\n\n\n$ git clone https://github.com/athenian-robotics/ev3dev-python-intro.git\n\n\n\n\nTo find the URL for a particular repo, go to it's Github page and \nclick on the \nClone or download\n button and copy the URL in the pop-up\nwindow. Make sure that the repo URL begins with \nhttps:\n and not \ngit:\n. \nYou can toggle between the two versions by clicking on \nUse HTTPS\n and \nUse SSH\n.",
             "title": "Git"
         },
         {
@@ -216,13 +200,6 @@
             "title": "ev3dev and Raspberry Pi"
         },
         {
-            "location": "/git/#cloning-a-repo",
-            "text": "Clone a repo from  Athenian Robotics  with:  $ git clone https://github.com/athenian-robotics/ev3dev-python-intro.git  To find the URL for a particular repo, go to it's Github page and \nclick on the  Clone or download  button and copy the URL in the pop-up\nwindow. Make sure that the repo URL begins with  https:  and not  git: . \nYou can toggle between the two versions by clicking on  Use HTTPS  and  Use SSH .",
-            "title": "Cloning a Repo"
-        },
-        {
-            "location": "/mqtt/",
-            "text": "MQTT Notes\n\n\nMQTT Broker Installation\n\n\nOSX\n\n\nInstall mosquitto with:\n\n\n$ brew install mosquitto\n\n\n\n\nAdd mosquitto to launchd with:\n\n\n$ brew services start mosquitto\n\n\n\n\nIf you don't want to run mosquitto as a background service, run it from the command line with:\n\n\n$ /usr/local/sbin/mosquitto -c /usr/local/etc/mosquitto/mosquitto.conf\n\n\n\n\nWindows\n\n\nCreate a folder named \nmosquitto\n in \nC:\\Program Files (x86)\n\n\nDownload and install \nWin32 OpenSSL v.1.0.2j Light\n. Select the option to save the binaries to /bin. Find \nlibeay32.dll\n and \nssleay32.dll\n, move them to \nmosquitto\n.\n\n\nDownload \npthreadVC2.dll\n, move it to \nmosquitto\n.\n\n\nDownload and install \nmosquitto\n to the default directory (should be the folder created earlier).\n\n\nOpen Services, find \nMosquitto Broker\n and start it.\n\n\nTo be able to run it from the command line, open System Properties, go to the Advanced tab, and open Environment Variables. Add the path to \nmosquitto\n to the user Path variable, followed by ;.\ne.g.\n\n\nC:\\Program Files (x86)\\mosquitto;\n\n\n\n\nCommands are run in cmd like osx/linux.\n\n\nDocker\n\n\nRun mosquitto as a docker service with:\n\n\n$ docker run -ti -p 1883:1883 -p 9001:9001 toke/mosquitto\n\n\n\n\nImage details are \nhere\n\n\nRaspberry Pi\n\n\nInstall mosquitto with:\n\n\n$ sudo apt-get install mosquitto\n$ sudo apt-get install mosquitto-clients\n\n\n\n\nVerify that the broker is running with:\n\n\n$ systemctl status mosquitto\n\n\n\n\nTesting from CLI\n\n\nSubscribe\n\n\n$ mosquitto_sub -d -h localhost -t /testnode\nClient mosqsub/27524-pleiku.lo sending CONNECT\nClient mosqsub/27524-pleiku.lo received CONNACK\nClient mosqsub/27524-pleiku.lo sending SUBSCRIBE (Mid: 1, Topic: /testnode, QoS: 0)\nClient mosqsub/27524-pleiku.lo received SUBACK\nSubscribed (mid: 1): 0\n\n\n\n\nPublish\n\n\n$ mosquitto_pub -d -h localhost -m \"simple val\" -t /testnode\nClient mosqpub/27472-pleiku.lo sending CONNECT\nClient mosqpub/27472-pleiku.lo received CONNACK\nClient mosqpub/27472-pleiku.lo sending PUBLISH (d0, q0, r0, m1, '/testnode', ... (10 bytes))\nClient mosqpub/27472-pleiku.lo sending DISCONNECT",
             "title": "MQTT"
         },
         {
@@ -241,20 +218,9 @@
             "title": "OSX"
         },
         {
-            "location": "/mqtt/#windows",
-            "text": "Create a folder named  mosquitto  in  C:\\Program Files (x86)  Download and install  Win32 OpenSSL v.1.0.2j Light . Select the option to save the binaries to /bin. Find  libeay32.dll  and  ssleay32.dll , move them to  mosquitto .  Download  pthreadVC2.dll , move it to  mosquitto .  Download and install  mosquitto  to the default directory (should be the folder created earlier).  Open Services, find  Mosquitto Broker  and start it.  To be able to run it from the command line, open System Properties, go to the Advanced tab, and open Environment Variables. Add the path to  mosquitto  to the user Path variable, followed by ;.\ne.g.  C:\\Program Files (x86)\\mosquitto;  Commands are run in cmd like osx/linux.",
-            "title": "Windows"
-        },
-        {
-            "location": "/mqtt/#docker",
-            "text": "Run mosquitto as a docker service with:  $ docker run -ti -p 1883:1883 -p 9001:9001 toke/mosquitto  Image details are  here",
             "title": "Docker"
         },
         {
-            "location": "/mqtt/#raspberry-pi",
-            "text": "Install mosquitto with:  $ sudo apt-get install mosquitto\n$ sudo apt-get install mosquitto-clients  Verify that the broker is running with:  $ systemctl status mosquitto",
-            "title": "Raspberry Pi"
-        },
         {
             "location": "/mqtt/#testing-from-cli",
             "text": "",
@@ -271,8 +237,6 @@
             "title": "Publish"
         },
         {
-            "location": "/plotly/",
-            "text": "Plot.ly Notes\n\n\nFor full documentation visit \nplot.ly\n.\n\n\nOne-time Setup\n\n\nBefore using plot.ly, follow these steps:\n\n\n1) \nSign up\n and create a plot.ly account. Notice that \nyou can click on the Github logo and use your GitHub credentials to sign up.\n\n\n2) Create your credentials file:\n\n\n$ pip install plotly\n$ python\n>>> import plotly\n>>> plotly.tools.set_credentials_file(username='YourName', api_key='YourKey')\n\n\n\n\nThis will create a \n~/.plotly/.credentials\n file. \n\n\n3) You will be using \nplot.ly streams\n, \nso create some streaming API tokens\n\nhere\n. You should create 3 to start.\n\n\n4) Manually add the newly created streaming API tokens to \n~/.plotly/.credentials\n: \n\n\n{\n    \"username\": \"YourName\",\n    \"stream_ids\": [\n        \"id1\",\n        \"id2\",\n        \"id3\"\n    ],\n    \"api_key\": \"YourKey\",\n    \"proxy_username\": \"\",\n    \"proxy_password\": \"\"\n}\n\n\n\n\nPython API\n\n\nOnce your streaming API tokens are added, you can use them in your code without \na hard-coded reference:\n\n\nimport plotly.plotly as py\nimport plotly.tools as tls\n\nstream_ids = tls.get_credentials_file()['stream_ids']\n# Use the first streaming API token\nstream_id = stream_ids[0]\nstream = py.Stream(stream_id)\nstream.open()",
             "title": "Plot.ly"
         },
         {
@@ -281,8 +245,6 @@
             "title": "Plot.ly Notes"
         },
         {
-            "location": "/plotly/#one-time-setup",
-            "text": "Before using plot.ly, follow these steps:  1)  Sign up  and create a plot.ly account. Notice that \nyou can click on the Github logo and use your GitHub credentials to sign up.  2) Create your credentials file:  $ pip install plotly\n$ python\n>>> import plotly\n>>> plotly.tools.set_credentials_file(username='YourName', api_key='YourKey')  This will create a  ~/.plotly/.credentials  file.   3) You will be using  plot.ly streams , \nso create some streaming API tokens here . You should create 3 to start.  4) Manually add the newly created streaming API tokens to  ~/.plotly/.credentials :   {\n    \"username\": \"YourName\",\n    \"stream_ids\": [\n        \"id1\",\n        \"id2\",\n        \"id3\"\n    ],\n    \"api_key\": \"YourKey\",\n    \"proxy_username\": \"\",\n    \"proxy_password\": \"\"\n}",
             "title": "One-time Setup"
         },
         {
@@ -291,8 +253,6 @@
             "title": "Python API"
         },
         {
-            "location": "/opencv/",
-            "text": "OpenCV Notes\n\n\nInstallation\n\n\nOSX\n\n\nInstall OpenCV 3 with:\n\n\n$ brew tap homebrew/science\n$ brew install opencv3 --with-contrib --with-python3 --with-java --with-examples \n$ echo /usr/local/opt/opencv3/lib/python2.7/site-packages >> /usr/local/lib/python2.7/site-packages/opencv3.pth\n\n\n\n\nDetailed instructions are \n\nhere\n\n\n\nWarning: As of OpenCV 3.2.0, the --with-python3 option does not seem to work. Until this is \naddressed, use Python 2.7 with OpenCV 3.",
             "title": "OpenCV"
         },
         {
@@ -306,13 +266,10 @@
             "title": "Installation"
         },
         {
-            "location": "/opencv/#osx",
-            "text": "Install OpenCV 3 with:  $ brew tap homebrew/science\n$ brew install opencv3 --with-contrib --with-python3 --with-java --with-examples \n$ echo /usr/local/opt/opencv3/lib/python2.7/site-packages >> /usr/local/lib/python2.7/site-packages/opencv3.pth  Detailed instructions are  here  \nWarning: As of OpenCV 3.2.0, the --with-python3 option does not seem to work. Until this is \naddressed, use Python 2.7 with OpenCV 3.",
             "title": "OSX"
         },
         {
-            "location": "/mkdocs/",
-            "text": "MkDocs Notes\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject Layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.\nsite/         # Generated website",
+
             "title": "MkDocs"
         },
         {
@@ -329,6 +286,131 @@
             "location": "/mkdocs/#project-layout",
             "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.\nsite/         # Generated website",
             "title": "Project Layout"
+        }, 
+        {
+            "location": "/mkdocs/#markdown", 
+            "text": "A Markdown cheatsheet is  here .", 
+            "title": "Markdown"
+        }, 
+        {
+            "location": "/raspberrypi/", 
+            "text": "Raspberry Pi Notes\n\n\nInstall Raspian\n\n\nOSX\n\n\n\n\n\n\nDownload the \nRaspbian distro\n.\n\n\n\n\n\n\nBurn the .img file to a SD card with \nEtcher\n.\n\n\n\n\n\n\nImportant:\n Remove and reinsert SD card and add a file named \nssh\n to the SD card boot partition.\nThis will enable \nssh\n on the Raspi.\n\n\n\n\n\n\n$ touch /Volumes/boot/ssh\n\n\n\n\n\n\n\n\nEject the SD card from the Mac, connect an ethernet cable to the Raspi, and power up the Raspi.\n\n\n\n\n\n\nLogin to the Raspi with \nssh\n using the username \npi\n and password \nraspberry\n.\n\n\n\n\n\n\n$ ssh pi@raspberrypi.local\nAre you sure you want to continue connecting (yes/no)? yes\nPassword: raspberry\npi@raspberrypi:~ \n\n\n\n\nIf you get a \nHost key verification failed\n error when using \nssh\n, \nremove the \nraspberry.local\n entry from ~/.ssh/known_hosts on your Mac with:\n\n\n$ nano ~/.ssh/known_hosts\n\n\n\n\nResize root partition\n\n\nResize the root partition with \nraspi-config\n.\nChoose \"Expand Filesystem\", tab to \n and then reboot.\n\n\npi@raspberrypi:~ $ sudo raspi-config\n\n\n\n\nUpdate distro\n\n\nUpdate the Raspbian distro to the latest and greatest bits with:\n\n\npi@raspberrypi:~ $ sudo apt-get update\npi@raspberrypi:~ $ sudo apt-get upgrade\npi@raspberrypi:~ $ sudo apt-get dist-upgrade\npi@raspberrypi:~ $ sudo reboot now\n\n\n\n\nChange hostname\n\n\nMultiple Raspis on your network cannot share the same hostname. Change your hostname with:\n\n\npi@raspberrypi:~ $ nano /etc/hostname\npi@raspberrypi:~ $ sudo reboot now\n\n\n\n\nEnable wifi\n\n\npi@raspberrypi:~ $ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf\n\n\n\n\nAdd a network entry for each SID with which the Raspi will need to connect:\n\n\nnetwork={\n    ssid=\nMyWiFiNetwork\n\n    psk=\nthe_password\n\n    key_mgmt=WPA-PSK\n}\n\n\n\n\nEnable VNC\n\n\nEnable VNC with \nraspi-config\n. Choose the \nInterfacing Options\n and then \nthe \nVNC\n option. Tab to \n and then reboot.\n\n\nStart the VNC server with:\n\n\npi@raspberrypi:~ $ vncserver :1 -geometry 1024x728 -depth 24\n\n\n\n\nUse \n-geometry 2048x1456\n for a larger display.\n\n\nDownload a \nVNCViewer\n app from \n\nhere\n. \n\n\nStart the \nVNCViewer\n app on the Mac and connect to the Raspi at \nraspberrypi.local:1\n.\n\n\nEnable a camera\n\n\nEnable a Pi camera with \nraspi-config\n. Select the \nInterfacing Options\n and then the \nCamera\n option.\nTab to \n and then reboot.\n\n\npi@raspberrypi:~ $ sudo raspi-config\n\n\n\n\nInstall File sharing\n\n\nDetails are \nhere\n.\n\n\nEnable file sharing with:\n\n\npi@raspberrypi:~ $ sudo apt-get install netatalk", 
+            "title": "Raspberry Pi"
+        }, 
+        {
+            "location": "/raspberrypi/#raspberry-pi-notes", 
+            "text": "", 
+            "title": "Raspberry Pi Notes"
+        }, 
+        {
+            "location": "/raspberrypi/#install-raspian", 
+            "text": "", 
+            "title": "Install Raspian"
+        }, 
+        {
+            "location": "/raspberrypi/#osx", 
+            "text": "Download the  Raspbian distro .    Burn the .img file to a SD card with  Etcher .    Important:  Remove and reinsert SD card and add a file named  ssh  to the SD card boot partition.\nThis will enable  ssh  on the Raspi.    $ touch /Volumes/boot/ssh    Eject the SD card from the Mac, connect an ethernet cable to the Raspi, and power up the Raspi.    Login to the Raspi with  ssh  using the username  pi  and password  raspberry .    $ ssh pi@raspberrypi.local\nAre you sure you want to continue connecting (yes/no)? yes\nPassword: raspberry\npi@raspberrypi:~   If you get a  Host key verification failed  error when using  ssh , \nremove the  raspberry.local  entry from ~/.ssh/known_hosts on your Mac with:  $ nano ~/.ssh/known_hosts", 
+            "title": "OSX"
+        }, 
+        {
+            "location": "/raspberrypi/#resize-root-partition", 
+            "text": "Resize the root partition with  raspi-config .\nChoose \"Expand Filesystem\", tab to   and then reboot.  pi@raspberrypi:~ $ sudo raspi-config", 
+            "title": "Resize root partition"
+        }, 
+        {
+            "location": "/raspberrypi/#update-distro", 
+            "text": "Update the Raspbian distro to the latest and greatest bits with:  pi@raspberrypi:~ $ sudo apt-get update\npi@raspberrypi:~ $ sudo apt-get upgrade\npi@raspberrypi:~ $ sudo apt-get dist-upgrade\npi@raspberrypi:~ $ sudo reboot now", 
+            "title": "Update distro"
+        }, 
+        {
+            "location": "/raspberrypi/#change-hostname", 
+            "text": "Multiple Raspis on your network cannot share the same hostname. Change your hostname with:  pi@raspberrypi:~ $ nano /etc/hostname\npi@raspberrypi:~ $ sudo reboot now", 
+            "title": "Change hostname"
+        }, 
+        {
+            "location": "/raspberrypi/#enable-wifi", 
+            "text": "pi@raspberrypi:~ $ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf  Add a network entry for each SID with which the Raspi will need to connect:  network={\n    ssid= MyWiFiNetwork \n    psk= the_password \n    key_mgmt=WPA-PSK\n}", 
+            "title": "Enable wifi"
+        }, 
+        {
+            "location": "/raspberrypi/#enable-vnc", 
+            "text": "Enable VNC with  raspi-config . Choose the  Interfacing Options  and then \nthe  VNC  option. Tab to   and then reboot.  Start the VNC server with:  pi@raspberrypi:~ $ vncserver :1 -geometry 1024x728 -depth 24  Use  -geometry 2048x1456  for a larger display.  Download a  VNCViewer  app from  here .   Start the  VNCViewer  app on the Mac and connect to the Raspi at  raspberrypi.local:1 .", 
+            "title": "Enable VNC"
+        }, 
+        {
+            "location": "/raspberrypi/#enable-a-camera", 
+            "text": "Enable a Pi camera with  raspi-config . Select the  Interfacing Options  and then the  Camera  option.\nTab to   and then reboot.  pi@raspberrypi:~ $ sudo raspi-config", 
+            "title": "Enable a camera"
+        }, 
+        {
+            "location": "/raspberrypi/#install-file-sharing", 
+            "text": "Details are  here .  Enable file sharing with:  pi@raspberrypi:~ $ sudo apt-get install netatalk", 
+            "title": "Install File sharing"
+        }, 
+        {
+            "location": "/blinkt/", 
+            "text": "Blinkt Notes\n\n\nA Blinkt! can be purchased \nhere\n.\n\n\nThe Blinkt github repo is \nhere\n.\n\n\nInstallation\n\n\nRaspbian\n\n\nPython 3:\n\n\n$ sudo apt-get install python3-blinkt\n\n\n\n\nPython 2:\n\n\n$ sudo apt-get install python-blinkt\n\n\n\n\nOSX\n\n\nPython 3:\n\n\n$ pip3 install blinkt\n\n\n\n\nPython 2:\n\n\n$ pip install blinkt", 
+            "title": "Blinkt"
+        }, 
+        {
+            "location": "/blinkt/#blinkt-notes", 
+            "text": "A Blinkt! can be purchased  here .  The Blinkt github repo is  here .", 
+            "title": "Blinkt Notes"
+        }, 
+        {
+            "location": "/blinkt/#installation", 
+            "text": "", 
+            "title": "Installation"
+        }, 
+        {
+            "location": "/blinkt/#raspbian", 
+            "text": "Python 3:  $ sudo apt-get install python3-blinkt  Python 2:  $ sudo apt-get install python-blinkt", 
+            "title": "Raspbian"
+        }, 
+        {
+            "location": "/blinkt/#osx", 
+            "text": "Python 3:  $ pip3 install blinkt  Python 2:  $ pip install blinkt", 
+            "title": "OSX"
+        }, 
+        {
+            "location": "/unicorn/", 
+            "text": "Unicorn Hat Notes\n\n\nA Unicorn Hat can be purchased \n\nhere\n\n\nThe github repo is \nhere\n.\n\n\nExamples are \nhere\n.\n\n\nRaspbery Pi Installation\n\n\nPython 3\n\n\n$ sudo apt-get install python3-pip python3-dev\n$ sudo pip3 install unicornhat\n\n\n\n\nPython 2\n\n\n$ sudo apt-get install python-pip python-dev\n$ sudo pip install unicornhat\n\n\n\n\nIf you get an error message \nCan't open /dev/mem: Permission denied\n, then run the program with \nsudo\n.", 
+            "title": "Unicorn Hat"
+        }, 
+        {
+            "location": "/unicorn/#unicorn-hat-notes", 
+            "text": "A Unicorn Hat can be purchased  here  The github repo is  here .  Examples are  here .", 
+            "title": "Unicorn Hat Notes"
+        }, 
+        {
+            "location": "/unicorn/#raspbery-pi-installation", 
+            "text": "Python 3  $ sudo apt-get install python3-pip python3-dev\n$ sudo pip3 install unicornhat  Python 2  $ sudo apt-get install python-pip python-dev\n$ sudo pip install unicornhat  If you get an error message  Can't open /dev/mem: Permission denied , then run the program with  sudo .", 
+            "title": "Raspbery Pi Installation"
+        }, 
+        {
+            "location": "/displayotron3000/", 
+            "text": "Display-O-Tron 3000 Notes\n\n\nA Display-O-Tron can be purchased from \nhere\n\n\nThe github repo is \nhere\n.\n\n\nA \nGetting Started\n is \nhere\n\n\nA \nReference\n is \nhere\n\n\nTutorials are \nhere\n\n\nExamples are \nhere\n.\n\n\nRaspbery Pi Installation\n\n\nInstall the driver with:\n\n\n$ curl -sS get.pimoroni.com/displayotron | bash", 
+            "title": "Display-O-Tron 3000"
+        }, 
+        {
+            "location": "/displayotron3000/#display-o-tron-3000-notes", 
+            "text": "A Display-O-Tron can be purchased from  here  The github repo is  here .  A  Getting Started  is  here  A  Reference  is  here  Tutorials are  here  Examples are  here .", 
+            "title": "Display-O-Tron 3000 Notes"
+        }, 
+        {
+            "location": "/displayotron3000/#raspbery-pi-installation", 
+            "text": "Install the driver with:  $ curl -sS get.pimoroni.com/displayotron | bash", 
+            "title": "Raspbery Pi Installation"
+        }, 
+        {
+            "location": "/gopigo/", 
+            "text": "GoPiGo Notes\n\n\nA GoPiGo can be purchased \n\nhere\n.\n\n\nA GoPiGo intro is \n\nhere\n.\n\n\nA GoPiGo overview is \n\nhere\n.", 
+            "title": "GoPiGo"
+        }, 
+        {
+            "location": "/gopigo/#gopigo-notes", 
+            "text": "A GoPiGo can be purchased  here .  A GoPiGo intro is  here .  A GoPiGo overview is  here .", 
+            "title": "GoPiGo Notes"
         }
     ]
 }
