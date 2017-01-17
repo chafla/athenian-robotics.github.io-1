@@ -347,7 +347,7 @@
         }, 
         {
             "location": "/raspberrypi/", 
-            "text": "Raspberry Pi Notes\n\n\nEnable SSH\n\n\nIn order to enable SSH, create a file named ssh in the boot partition prior to booting.\n\n\nEnable a camera\n\n\nTo enable a Pi camera:\n\n\n$ sudo raspi-config\n\n\n\n\nSelect the \nInterfacing Options\n and then the \nCamera\n option.\n\n\nEnable wifi\n\n\n$ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf\n\n\n\n\nand add a network entry for each SID with which you might want to connect:\n\n\nnetwork={\n    ssid=\nMyWiFiNetwork\n\n    psk=\nthe_password\n\n    key_mgmt=WPA-PSK\n}\n\n\n\n\nInstalling VNC\n\n\nInstall \ntightvncserver\n with:\n\n\n $ sudo apt-get install tightvncserver\n\n\n\n\nStart the server with:\n\n\n$ tightvncserver\n# or\n$ tightvncserver -geometry 1920x1080 -depth 24\n\n\n\n\nConnect from your Mac by going to Safari and enter URL: \nvnc://pi@raspberrypi.local:5901\n\n\nA more detailed description is \nhere\n.\n\n\nThe Raspian directions are \nhere\n.\n\n\nFile sharing\n\n\nDetails are \nhere\n.\n\n\nEnable file sharing with:\n\n\nsudo apt-get install netatalk", 
+            "text": "Raspberry Pi Notes\n\n\nEnable SSH\n\n\nIn order to enable SSH, create a file named ssh in the boot partition prior to booting.\n\n\nEnable a camera\n\n\nTo enable a Pi camera:\n\n\n$ sudo raspi-config\n\n\n\n\nSelect the \nInterfacing Options\n and then the \nCamera\n option.\n\n\nEnable wifi\n\n\n$ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf\n\n\n\n\nand add a network entry for each SID with which you might want to connect:\n\n\nnetwork={\n    ssid=\nMyWiFiNetwork\n\n    psk=\nthe_password\n\n    key_mgmt=WPA-PSK\n}\n\n\n\n\nInstalling VNC\n\n\nInstall \ntightvncserver\n with:\n\n\n $ sudo apt-get install tightvncserver\n\n\n\n\nStart the server with:\n\n\n$ tightvncserver\n# or\n$ tightvncserver -geometry 1920x1080 -depth 24\n\n\n\n\nConnect from your Mac by going to Safari and enter URL: \nvnc://pi@raspberrypi.local:5901\n\n\nA more detailed description is \nhere\n.\n\n\nThe Raspian directions are \nhere\n.\n\n\nFile sharing\n\n\nDetails are \nhere\n.\n\n\nEnable file sharing with:\n\n\n$ sudo apt-get install netatalk", 
             "title": "Raspberry Pi"
         }, 
         {
@@ -377,7 +377,7 @@
         }, 
         {
             "location": "/raspberrypi/#file-sharing", 
-            "text": "Details are  here .  Enable file sharing with:  sudo apt-get install netatalk", 
+            "text": "Details are  here .  Enable file sharing with:  $ sudo apt-get install netatalk", 
             "title": "File sharing"
         }, 
         {

@@ -52,6 +52,6 @@ Details are [here](http://www.instructables.com/id/How-to-share-files-between-Ma
 
 Enable file sharing with:
 ```bash
-sudo apt-get install netatalk
+$ sudo apt-get install netatalk
 ```
 
