@@ -14,9 +14,9 @@ This will enable `ssh` on the Raspi.
 $ touch /Volumes/boot/ssh
 ```
 
-*  Eject the SD card, connect an ethernet cable to the Raspi, and power up the Raspi.
+*  Eject the SD card from the Mac, connect an ethernet cable to the Raspi, and power up the Raspi.
 
-*  Login to the Raspi with `ssh` using the username `pi` and password `raspberry`.
+*  Login to the Raspi with `ssh` using the username *pi* and password *raspberry*.
 ```bash
 $ ssh pi@raspberrypi.local
 Are you sure you want to continue connecting (yes/no)? yes
@@ -33,7 +33,7 @@ $ nano ~/.ssh/known_hosts
 
 ## Resize root partition
 
-* Resize the root partition with `raspi-config`.
+Resize the root partition with `raspi-config`.
 Choose "Expand Filesystem", tab to <Finish> and then reboot.
 
 ```bash
@@ -71,28 +71,26 @@ network={
 }
 ```
 
-## Install VNC
+## Enable VNC
 
-Install `tightvncserver` with:
-```bash
-pi@raspberrypi:~ $ sudo apt-get install tightvncserver
-```
+Enable VNC with `raspi-config`. Choose the `Interfacing Options` and then 
+the `VNC` option. Tab to <Finish> and then reboot.
 
-Start the server with:
+Start the VNC server with:
 ```bash
-pi@raspberrypi:~ $ tightvncserver
-# or
 pi@raspberrypi:~ $ vncserver :1 -geometry 1024x728 -depth 24
 ```
 
-Connect from your Mac by going to Safari and enter URL: `vnc://pi@raspberrypi.local:5901`
+Use `-geometry 2048x1456` for a larger display.
 
-A more detailed description is [here](https://smittytone.wordpress.com/2016/03/02/mac_remote_desktop_pi/).
+Download a vncviewer client from 
+[here](https://www.realvnc.com/download/viewer/). 
 
-The Raspian directions are [here](https://www.raspberrypi.org/documentation/remote-access/vnc/).
+Start `vncviewer` on the Mac and connect to the Raspi at `raspberrypi.local:1`.
 
 ## Enable a camera
 Enable a Pi camera with `raspi-config`. Select the `Interfacing Options` and then the `Camera` option.
+Tab to <Finish> and then reboot.
 ```bash
 pi@raspberrypi:~ $ sudo raspi-config
 ```
