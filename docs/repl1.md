@@ -102,11 +102,12 @@ for i in range(10):
 ```
 
 ### Function Exercises: 
-* Write a function `triple_num()` that returns the argument multiplied times 3.
-* Write a function `my_abs()` that returns the absolute value of a number
-* Write a function `str_len()` that returns the length of a string
-* Write a function `max_val()` that returns the maximum value in a list
-* Write a function `equal_str()` that returns true if two strings are equal, regardless of case
+* Write `triple_num()` that triples a number.
+* Write `greet()` that accepts a name and returns string saying "Hello name".
+* Write `my_abs()` that returns the absolute value of a number.
+* Write `str_len()` that returns the length of a string.
+* Write `max_val()` that returns the maximum value in a list.
+* Write `equal_str()` that returns true if two strings are equal, regardless of case.
 
 
 ## Strings
