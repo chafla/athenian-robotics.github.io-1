@@ -1,5 +1,9 @@
 # OpenCV Notes
 
+OpenCV is described in detail [here](http://opencv.org).
+
+A great OpenCV resource is [pyimagesearch](http://www.pyimagesearch.com).
+
 ## Installation
 
 ### OSX

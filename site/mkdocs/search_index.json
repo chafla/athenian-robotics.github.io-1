@@ -357,12 +357,12 @@
         }, 
         {
             "location": "/opencv/", 
-            "text": "OpenCV Notes\n\n\nInstallation\n\n\nOSX\n\n\nInstall OpenCV 3 with:\n\n\n$ brew tap homebrew/science\n$ brew install opencv3 --with-contrib --with-python3 --with-java --with-examples \n$ echo /usr/local/opt/opencv3/lib/python2.7/site-packages \n /usr/local/lib/python2.7/site-packages/opencv3.pth\n\n\n\n\nDetailed instructions are \n\nhere\n.\n\n\n\nWarning: As of OpenCV 3.2.0, the --with-python3 option does not seem to work. Until this is \naddressed, use Python 2.7 with OpenCV 3.\n\n\n\n\nRaspi\n\n\nDetailed instructions are \n\nhere\n.\nMake sure to use version \n3.2.0\n instead of \n3.1.0\n.", 
+            "text": "OpenCV Notes\n\n\nOpenCV is described in detail \nhere\n.\n\n\nA great OpenCV resource is \npyimagesearch\n.\n\n\nInstallation\n\n\nOSX\n\n\nInstall OpenCV 3 with:\n\n\n$ brew tap homebrew/science\n$ brew install opencv3 --with-contrib --with-python3 --with-java --with-examples \n$ echo /usr/local/opt/opencv3/lib/python2.7/site-packages \n /usr/local/lib/python2.7/site-packages/opencv3.pth\n\n\n\n\nDetailed instructions are \n\nhere\n.\n\n\n\nWarning: As of OpenCV 3.2.0, the --with-python3 option does not seem to work. Until this is \naddressed, use Python 2.7 with OpenCV 3.\n\n\n\n\nRaspi\n\n\nDetailed instructions are \n\nhere\n.\nMake sure to use version \n3.2.0\n instead of \n3.1.0\n.", 
             "title": "OpenCV"
         }, 
         {
             "location": "/opencv/#opencv-notes", 
-            "text": "", 
+            "text": "OpenCV is described in detail  here .  A great OpenCV resource is  pyimagesearch .", 
             "title": "OpenCV Notes"
         }, 
         {
