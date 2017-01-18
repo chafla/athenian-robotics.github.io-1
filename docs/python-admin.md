@@ -29,21 +29,21 @@ $ sudo apt-get install python3-pip
 
 Determine installed packages with:
 ```bash
-$ pip3 list 
+$ pip list 
 ```
 
 Determine outdated packages with:
 ```bash
-$ pip3 list --outdated
+$ pip list --outdated
 ```
 
 Install a package with:
 ```bash
-$ pip3 install pkg_name
+$ pip install pkg_name
 ```
 
 Update a package with:
 ```bash
-$ pip3 install --upgrade pkg_name
+$ pip install --upgrade pkg_name
 ```
 
