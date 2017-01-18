@@ -140,33 +140,33 @@ str[8:2:-2]
 **Syntax:** `list[start_index : end_index : step]`
 
 ```python
-list2 = range(10)
+list = range(10)
 
-len(list2)
+len(list)
 
-list2[4]
-list2[2:7]
+list[4]
+list[2:7]
 
-list2[:5]
-list2[5:]
-list2[:]
+list[:5]
+list[5:]
+list[:]
 
-list2[::1]
-list2[::2]
+list[::1]
+list[::2]
 
-list2[::-1]
-list2[::-2]
+list[::-1]
+list[::-2]
 
-list2[-1:-6:-1]
-list2[-1:-6:-2]
-list2[3:-3]
-list2[-3:3:-1]
+list[-1:-6:-1]
+list[-1:-6:-2]
+list[3:-3]
+list[-3:3:-1]
 
-list2[2:5] = [15]
+list[2:5] = [15]
 
 # Sorting Lists
-sorted(list2)
-sorted(list2, reverse=True)
+sorted(list)
+sorted(list, reverse=True)
 
 # List assignments
 a = range(5)
@@ -205,15 +205,15 @@ val3, val4, val5 = tuple1[1:4]
 ## Dictionaries
 
 ```python
-dict1 = {"a": "moose", "b": 2, "c": "fox"}
+dict = {"a": "moose", "b": 2, "c": "fox"}
 
-dict1
-dict1["c"]
-dict1["c"] = "rat"
-dict1["c"]
+dict
+dict["c"]
+dict["c"] = "rat"
+dict["c"]
 
 dict2 = {}
 for i in range(0, 10):
-    dict2["val" + str(i)] = i
-dict2
+    dict["val" + str(i)] = i
+dict
 ```
