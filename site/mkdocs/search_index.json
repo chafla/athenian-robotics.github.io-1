@@ -11,19 +11,64 @@
             "title": "Athenian Robotics"
         }, 
         {
-            "location": "/setup/", 
-            "text": "Machine Setup\n\n\nOSX\n\n\nInstall the following pieces of software: \n\n\n\n\n\n\nXCode\n\n\n\n\n\n\nJava 8\n\n\n\n\n\n\nbrew\n\n\n\n\n\n\n$ /usr/bin/ruby -e \n$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\n\n\n\n\n\n\n\nPython 3\n\n\n\n\n$ brew install python3\n\n\n\n\n\n\ngit\n\n\n\n\n$ brew install git\n\n\n\n\n\n\nmaven\n\n\n\n\n$ brew install maven\n\n\n\n\n\n\ngradle\n\n\n\n\n$ brew install gradle\n\n\n\n\n\n\nhttpie\n\n\n\n\n$ brew install httpie\n\n\n\n\nPeriodically verify that \nbrew\n is configured properly with:\n \nbash\n $ brew doctor", 
-            "title": "Setup"
-        }, 
-        {
-            "location": "/setup/#machine-setup", 
-            "text": "", 
-            "title": "Machine Setup"
-        }, 
-        {
-            "location": "/setup/#osx", 
-            "text": "Install the following pieces of software:     XCode    Java 8    brew    $ /usr/bin/ruby -e  $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)    Python 3   $ brew install python3   git   $ brew install git   maven   $ brew install maven   gradle   $ brew install gradle   httpie   $ brew install httpie  Periodically verify that  brew  is configured properly with:\n  bash\n $ brew doctor", 
+            "location": "/osx-setup/", 
+            "text": "OSX Setup\n\n\nInstall the following pieces of software: \n\n\nXCode\n\n\nJava 8\n\n\nHomebrew\n\n\n$ /usr/bin/ruby -e \n$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\n\n\n\n\n\nPython 3\n\n\n$ brew install python3\n\n\n\n\ngit\n\n\n$ brew install git\n\n\n\n\nmaven\n\n\n$ brew install maven\n\n\n\n\ngradle\n\n\n$ brew install gradle\n\n\n\n\nhttpie\n\n\n$ brew install httpie", 
             "title": "OSX"
+        }, 
+        {
+            "location": "/osx-setup/#osx-setup", 
+            "text": "Install the following pieces of software:", 
+            "title": "OSX Setup"
+        }, 
+        {
+            "location": "/osx-setup/#xcode", 
+            "text": "", 
+            "title": "XCode"
+        }, 
+        {
+            "location": "/osx-setup/#java-8", 
+            "text": "", 
+            "title": "Java 8"
+        }, 
+        {
+            "location": "/osx-setup/#homebrew", 
+            "text": "$ /usr/bin/ruby -e  $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)", 
+            "title": "Homebrew"
+        }, 
+        {
+            "location": "/osx-setup/#python-3", 
+            "text": "$ brew install python3", 
+            "title": "Python 3"
+        }, 
+        {
+            "location": "/osx-setup/#git", 
+            "text": "$ brew install git", 
+            "title": "git"
+        }, 
+        {
+            "location": "/osx-setup/#maven", 
+            "text": "$ brew install maven", 
+            "title": "maven"
+        }, 
+        {
+            "location": "/osx-setup/#gradle", 
+            "text": "$ brew install gradle", 
+            "title": "gradle"
+        }, 
+        {
+            "location": "/osx-setup/#httpie", 
+            "text": "$ brew install httpie", 
+            "title": "httpie"
+        }, 
+        {
+            "location": "/windows-setup/", 
+            "text": "Windows Setup", 
+            "title": "Windows"
+        }, 
+        {
+            "location": "/windows-setup/#windows-setup", 
+            "text": "", 
+            "title": "Windows Setup"
         }, 
         {
             "location": "/python-admin/", 
@@ -221,14 +266,24 @@
             "title": "Cloning a Repo"
         }, 
         {
-            "location": "/brew/", 
-            "text": "Brew Notes\n\n\nUpgrade installed packages with:\n\n\n$ brew update\n$ brew upgrade\n\n\n\n\nList installed packages with:\n\n\n$ brew list\n\n\n\n\nCheck the health of your \nbrew\n configuration with:\n\n\n$ brew doctor\n\n\n\n\nCleanup old files with:\n\n\n$ brew prune", 
-            "title": "Brew"
+            "location": "/homebrew/", 
+            "text": "Homebrew Notes\n\n\nThe Homebrew homepage is \nhere\n.\n\n\nInstallation\n\n\nInstall Homebrew on OSX with:\n\n\n$ /usr/bin/ruby -e \n$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\n\n\n\n\n\nUsage\n\n\nUpgrade installed packages with:\n\n\n$ brew update\n$ brew upgrade\n\n\n\n\nList installed packages with:\n\n\n$ brew list\n\n\n\n\nCheck the health of your \nbrew\n configuration with:\n\n\n$ brew doctor\n\n\n\n\nCleanup old files with:\n\n\n$ brew prune", 
+            "title": "Homebrew"
         }, 
         {
-            "location": "/brew/#brew-notes", 
+            "location": "/homebrew/#homebrew-notes", 
+            "text": "The Homebrew homepage is  here .", 
+            "title": "Homebrew Notes"
+        }, 
+        {
+            "location": "/homebrew/#installation", 
+            "text": "Install Homebrew on OSX with:  $ /usr/bin/ruby -e  $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)", 
+            "title": "Installation"
+        }, 
+        {
+            "location": "/homebrew/#usage", 
             "text": "Upgrade installed packages with:  $ brew update\n$ brew upgrade  List installed packages with:  $ brew list  Check the health of your  brew  configuration with:  $ brew doctor  Cleanup old files with:  $ brew prune", 
-            "title": "Brew Notes"
+            "title": "Usage"
         }, 
         {
             "location": "/mqtt/", 
@@ -302,12 +357,12 @@
         }, 
         {
             "location": "/opencv/", 
-            "text": "OpenCV Notes\n\n\nInstallation\n\n\nOSX\n\n\nInstall OpenCV 3 with:\n\n\n$ brew tap homebrew/science\n$ brew install opencv3 --with-contrib --with-python3 --with-java --with-examples \n$ echo /usr/local/opt/opencv3/lib/python2.7/site-packages \n /usr/local/lib/python2.7/site-packages/opencv3.pth\n\n\n\n\nDetailed instructions are \n\nhere\n.\n\n\n\nWarning: As of OpenCV 3.2.0, the --with-python3 option does not seem to work. Until this is \naddressed, use Python 2.7 with OpenCV 3.\n\n\n\n\nRaspi\n\n\nDetailed instructions are \n\nhere\n.\nMake sure to use version \n3.2.0\n instead of \n3.1.0\n.", 
+            "text": "OpenCV Notes\n\n\nOpenCV is described in detail \nhere\n.\n\n\nA great OpenCV resource is \npyimagesearch\n.\n\n\nInstallation\n\n\nOSX\n\n\nInstall OpenCV 3 with:\n\n\n$ brew tap homebrew/science\n$ brew install opencv3 --with-contrib --with-python3 --with-java --with-examples \n$ echo /usr/local/opt/opencv3/lib/python2.7/site-packages \n /usr/local/lib/python2.7/site-packages/opencv3.pth\n\n\n\n\nDetailed instructions are \n\nhere\n.\n\n\n\nWarning: As of OpenCV 3.2.0, the --with-python3 option does not seem to work. Until this is \naddressed, use Python 2.7 with OpenCV 3.\n\n\n\n\nRaspi\n\n\nDetailed instructions are \n\nhere\n.\nMake sure to use version \n3.2.0\n instead of \n3.1.0\n.", 
             "title": "OpenCV"
         }, 
         {
             "location": "/opencv/#opencv-notes", 
-            "text": "", 
+            "text": "OpenCV is described in detail  here .  A great OpenCV resource is  pyimagesearch .", 
             "title": "OpenCV Notes"
         }, 
         {
@@ -327,7 +382,7 @@
         }, 
         {
             "location": "/xquartz/", 
-            "text": "XQuartz Notes\n\n\nXQuartz\n is an X server for OSX.\n\n\nInstallation:\n\n\nDownload and install XQuartz from \nhere\n.\n\n\nOn OSX, type:\n\n\n$ xterm + raspberrypi\n\n\n\n\nAdd this line to ~/.profile on the Raspi:\n\n\nDISPLAY=pleiku.local:0.0 ; export DISPLAY\n\n\n\n\nVerify the setup on the Raspi with:\n\n\n$ lxsession", 
+            "text": "XQuartz Notes\n\n\nXQuartz\n is an X server for OSX.\n\n\nInstallation\n\n\nDownload and install XQuartz from \nhere\n.\n\n\nType this on the Mac:\n\n\n$ xterm + raspberrypi\n\n\n\n\nAdd this line to ~/.profile on the Raspi:\n\n\nDISPLAY=pleiku.local:0.0 ; export DISPLAY\n\n\n\n\nVerify the setup on the Raspi with:\n\n\n$ lxsession", 
             "title": "XQuartz"
         }, 
         {
@@ -337,8 +392,8 @@
         }, 
         {
             "location": "/xquartz/#installation", 
-            "text": "Download and install XQuartz from  here .  On OSX, type:  $ xterm + raspberrypi  Add this line to ~/.profile on the Raspi:  DISPLAY=pleiku.local:0.0 ; export DISPLAY  Verify the setup on the Raspi with:  $ lxsession", 
-            "title": "Installation:"
+            "text": "Download and install XQuartz from  here .  Type this on the Mac:  $ xterm + raspberrypi  Add this line to ~/.profile on the Raspi:  DISPLAY=pleiku.local:0.0 ; export DISPLAY  Verify the setup on the Raspi with:  $ lxsession", 
+            "title": "Installation"
         }, 
         {
             "location": "/mkdocs/", 

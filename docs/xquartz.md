@@ -2,10 +2,10 @@
 
 `XQuartz` is an X server for OSX.
 
-## Installation:
+## Installation
 Download and install XQuartz from [here](https://www.xquartz.org).
 
-On OSX, type:
+Type this on the Mac:
 ```bash
 $ xterm + raspberrypi
 ```

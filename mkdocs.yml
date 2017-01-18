@@ -5,7 +5,9 @@ site_author: Athenian Robotics Team
 
 pages:
 - Home: index.md
-- Setup: setup.md
+- Machine Setup:
+  - OSX: osx-setup.md
+  - Windows: windows-setup.md
 - Python:
   - Admin: python-admin.md
   - Links: python-links.md
@@ -15,7 +17,7 @@ pages:
   - Python: ev3-python.md
 - Software Notes:
   - Git: git.md
-  - Brew: brew.md
+  - Homebrew: homebrew.md
   - MQTT: mqtt.md
   - Plot.ly: plotly.md
   - OpenCV: opencv.md
