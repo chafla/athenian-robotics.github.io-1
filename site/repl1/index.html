@@ -437,33 +437,33 @@ str[8:2:-2]
 
 <h2 id="slices">Slices</h2>
 <p><strong>Syntax:</strong> <code>list[start_index : end_index : step]</code></p>
-<pre><code class="python">list2 = range(10)
+<pre><code class="python">list = range(10)
 
-len(list2)
+len(list)
 
-list2[4]
-list2[2:7]
+list[4]
+list[2:7]
 
-list2[:5]
-list2[5:]
-list2[:]
+list[:5]
+list[5:]
+list[:]
 
-list2[::1]
-list2[::2]
+list[::1]
+list[::2]
 
-list2[::-1]
-list2[::-2]
+list[::-1]
+list[::-2]
 
-list2[-1:-6:-1]
-list2[-1:-6:-2]
-list2[3:-3]
-list2[-3:3:-1]
+list[-1:-6:-1]
+list[-1:-6:-2]
+list[3:-3]
+list[-3:3:-1]
 
-list2[2:5] = [15]
+list[2:5] = [15]
 
 # Sorting Lists
-sorted(list2)
-sorted(list2, reverse=True)
+sorted(list)
+sorted(list, reverse=True)
 
 # List assignments
 a = range(5)
@@ -496,17 +496,17 @@ val3, val4, val5 = tuple1[1:4]
 </code></pre>
 
 <h2 id="dictionaries">Dictionaries</h2>
-<pre><code class="python">dict1 = {&quot;a&quot;: &quot;moose&quot;, &quot;b&quot;: 2, &quot;c&quot;: &quot;fox&quot;}
+<pre><code class="python">dict = {&quot;a&quot;: &quot;moose&quot;, &quot;b&quot;: 2, &quot;c&quot;: &quot;fox&quot;}
 
-dict1
-dict1[&quot;c&quot;]
-dict1[&quot;c&quot;] = &quot;rat&quot;
-dict1[&quot;c&quot;]
+dict
+dict[&quot;c&quot;]
+dict[&quot;c&quot;] = &quot;rat&quot;
+dict[&quot;c&quot;]
 
 dict2 = {}
 for i in range(0, 10):
-    dict2[&quot;val&quot; + str(i)] = i
-dict2
+    dict[&quot;val&quot; + str(i)] = i
+dict
 </code></pre>
               
             </div>
