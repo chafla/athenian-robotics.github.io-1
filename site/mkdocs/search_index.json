@@ -221,14 +221,24 @@
             "title": "Cloning a Repo"
         }, 
         {
-            "location": "/brew/", 
-            "text": "Brew Notes\n\n\nUpgrade installed packages with:\n\n\n$ brew update\n$ brew upgrade\n\n\n\n\nList installed packages with:\n\n\n$ brew list\n\n\n\n\nCheck the health of your \nbrew\n configuration with:\n\n\n$ brew doctor\n\n\n\n\nCleanup old files with:\n\n\n$ brew prune", 
-            "title": "Brew"
+            "location": "/homebrew/", 
+            "text": "Homebrew Notes\n\n\nThe Homebrew homepage is \nhere\n.\n\n\nInstallation\n\n\nInstall Homebrew with:\n\n\n$ /usr/bin/ruby -e \n$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\n\n\n\n\n\nUsage\n\n\nUpgrade installed packages with:\n\n\n$ brew update\n$ brew upgrade\n\n\n\n\nList installed packages with:\n\n\n$ brew list\n\n\n\n\nCheck the health of your \nbrew\n configuration with:\n\n\n$ brew doctor\n\n\n\n\nCleanup old files with:\n\n\n$ brew prune", 
+            "title": "Homebrew"
         }, 
         {
-            "location": "/brew/#brew-notes", 
+            "location": "/homebrew/#homebrew-notes", 
+            "text": "The Homebrew homepage is  here .", 
+            "title": "Homebrew Notes"
+        }, 
+        {
+            "location": "/homebrew/#installation", 
+            "text": "Install Homebrew with:  $ /usr/bin/ruby -e  $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)", 
+            "title": "Installation"
+        }, 
+        {
+            "location": "/homebrew/#usage", 
             "text": "Upgrade installed packages with:  $ brew update\n$ brew upgrade  List installed packages with:  $ brew list  Check the health of your  brew  configuration with:  $ brew doctor  Cleanup old files with:  $ brew prune", 
-            "title": "Brew Notes"
+            "title": "Usage"
         }, 
         {
             "location": "/mqtt/", 

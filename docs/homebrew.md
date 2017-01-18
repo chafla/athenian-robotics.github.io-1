@@ -1,4 +1,15 @@
-# Brew Notes
+# Homebrew Notes
+
+The Homebrew homepage is [here](http://brew.sh).
+
+## Installation
+
+Install Homebrew with:
+```bash
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+## Usage
 
 Upgrade installed packages with:
 ```bash
