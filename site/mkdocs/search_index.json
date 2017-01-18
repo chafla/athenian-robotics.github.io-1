@@ -11,19 +11,24 @@
             "title": "Athenian Robotics"
         }, 
         {
-            "location": "/setup/", 
-            "text": "Machine Setup\n\n\nOSX\n\n\nInstall the following pieces of software: \n\n\n\n\n\n\nXCode\n\n\n\n\n\n\nJava 8\n\n\n\n\n\n\nbrew\n\n\n\n\n\n\n$ /usr/bin/ruby -e \n$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\n\n\n\n\n\n\n\nPython 3\n\n\n\n\n$ brew install python3\n\n\n\n\n\n\ngit\n\n\n\n\n$ brew install git\n\n\n\n\n\n\nmaven\n\n\n\n\n$ brew install maven\n\n\n\n\n\n\ngradle\n\n\n\n\n$ brew install gradle\n\n\n\n\n\n\nhttpie\n\n\n\n\n$ brew install httpie\n\n\n\n\nPeriodically verify that \nbrew\n is configured properly with:\n \nbash\n $ brew doctor", 
-            "title": "Setup"
-        }, 
-        {
-            "location": "/setup/#machine-setup", 
-            "text": "", 
-            "title": "Machine Setup"
-        }, 
-        {
-            "location": "/setup/#osx", 
-            "text": "Install the following pieces of software:     XCode    Java 8    brew    $ /usr/bin/ruby -e  $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)    Python 3   $ brew install python3   git   $ brew install git   maven   $ brew install maven   gradle   $ brew install gradle   httpie   $ brew install httpie  Periodically verify that  brew  is configured properly with:\n  bash\n $ brew doctor", 
+            "location": "/osx-setup/", 
+            "text": "OSX Setup\n\n\nInstall the following pieces of software: \n\n\n\n\n\n\nXCode\n\n\n\n\n\n\nJava 8\n\n\n\n\n\n\nbrew\n\n\n\n\n\n\n$ /usr/bin/ruby -e \n$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\n\n\n\n\n\n\n\nPython 3\n\n\n\n\n$ brew install python3\n\n\n\n\n\n\ngit\n\n\n\n\n$ brew install git\n\n\n\n\n\n\nmaven\n\n\n\n\n$ brew install maven\n\n\n\n\n\n\ngradle\n\n\n\n\n$ brew install gradle\n\n\n\n\n\n\nhttpie\n\n\n\n\n$ brew install httpie\n\n\n\n\nPeriodically verify that \nbrew\n is configured properly with:\n\n\n$ brew doctor", 
             "title": "OSX"
+        }, 
+        {
+            "location": "/osx-setup/#osx-setup", 
+            "text": "Install the following pieces of software:     XCode    Java 8    brew    $ /usr/bin/ruby -e  $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)    Python 3   $ brew install python3   git   $ brew install git   maven   $ brew install maven   gradle   $ brew install gradle   httpie   $ brew install httpie  Periodically verify that  brew  is configured properly with:  $ brew doctor", 
+            "title": "OSX Setup"
+        }, 
+        {
+            "location": "/windows-setup/", 
+            "text": "Windows Setup", 
+            "title": "Windows"
+        }, 
+        {
+            "location": "/windows-setup/#windows-setup", 
+            "text": "", 
+            "title": "Windows Setup"
         }, 
         {
             "location": "/python-admin/", 
@@ -222,7 +227,7 @@
         }, 
         {
             "location": "/homebrew/", 
-            "text": "Homebrew Notes\n\n\nThe Homebrew homepage is \nhere\n.\n\n\nInstallation\n\n\nInstall Homebrew with:\n\n\n$ /usr/bin/ruby -e \n$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\n\n\n\n\n\nUsage\n\n\nUpgrade installed packages with:\n\n\n$ brew update\n$ brew upgrade\n\n\n\n\nList installed packages with:\n\n\n$ brew list\n\n\n\n\nCheck the health of your \nbrew\n configuration with:\n\n\n$ brew doctor\n\n\n\n\nCleanup old files with:\n\n\n$ brew prune", 
+            "text": "Homebrew Notes\n\n\nThe Homebrew homepage is \nhere\n.\n\n\nInstallation\n\n\nInstall Homebrew on OSX with:\n\n\n$ /usr/bin/ruby -e \n$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\n\n\n\n\n\nUsage\n\n\nUpgrade installed packages with:\n\n\n$ brew update\n$ brew upgrade\n\n\n\n\nList installed packages with:\n\n\n$ brew list\n\n\n\n\nCheck the health of your \nbrew\n configuration with:\n\n\n$ brew doctor\n\n\n\n\nCleanup old files with:\n\n\n$ brew prune", 
             "title": "Homebrew"
         }, 
         {
@@ -232,7 +237,7 @@
         }, 
         {
             "location": "/homebrew/#installation", 
-            "text": "Install Homebrew with:  $ /usr/bin/ruby -e  $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)", 
+            "text": "Install Homebrew on OSX with:  $ /usr/bin/ruby -e  $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)", 
             "title": "Installation"
         }, 
         {
@@ -337,7 +342,7 @@
         }, 
         {
             "location": "/xquartz/", 
-            "text": "XQuartz Notes\n\n\nXQuartz\n is an X server for OSX.\n\n\nInstallation:\n\n\nDownload and install XQuartz from \nhere\n.\n\n\nOn OSX, type:\n\n\n$ xterm + raspberrypi\n\n\n\n\nAdd this line to ~/.profile on the Raspi:\n\n\nDISPLAY=pleiku.local:0.0 ; export DISPLAY\n\n\n\n\nVerify the setup on the Raspi with:\n\n\n$ lxsession", 
+            "text": "XQuartz Notes\n\n\nXQuartz\n is an X server for OSX.\n\n\nInstallation\n\n\nDownload and install XQuartz from \nhere\n.\n\n\nType this on the Mac:\n\n\n$ xterm + raspberrypi\n\n\n\n\nAdd this line to ~/.profile on the Raspi:\n\n\nDISPLAY=pleiku.local:0.0 ; export DISPLAY\n\n\n\n\nVerify the setup on the Raspi with:\n\n\n$ lxsession", 
             "title": "XQuartz"
         }, 
         {
@@ -347,8 +352,8 @@
         }, 
         {
             "location": "/xquartz/#installation", 
-            "text": "Download and install XQuartz from  here .  On OSX, type:  $ xterm + raspberrypi  Add this line to ~/.profile on the Raspi:  DISPLAY=pleiku.local:0.0 ; export DISPLAY  Verify the setup on the Raspi with:  $ lxsession", 
-            "title": "Installation:"
+            "text": "Download and install XQuartz from  here .  Type this on the Mac:  $ xterm + raspberrypi  Add this line to ~/.profile on the Raspi:  DISPLAY=pleiku.local:0.0 ; export DISPLAY  Verify the setup on the Raspi with:  $ lxsession", 
+            "title": "Installation"
         }, 
         {
             "location": "/mkdocs/", 

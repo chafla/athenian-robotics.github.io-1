@@ -1,6 +1,5 @@
-# Machine Setup
+# OSX Setup
 
-## OSX 
 Install the following pieces of software: 
 
 * [XCode](http://developer.apple.com/xcode/)
@@ -39,6 +38,6 @@ $ brew install httpie
 ```
 
 Periodically verify that `brew` is configured properly with:
- ```bash
- $ brew doctor
- ```
+```bash
+$ brew doctor
+```

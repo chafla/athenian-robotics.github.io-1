@@ -10,11 +10,19 @@
     
 
     
+        
     <url>
-     <loc>http://www.athenian-robotics.org/setup/</loc>
+     <loc>http://www.athenian-robotics.org/osx-setup/</loc>
      <lastmod>2017-01-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    <url>
+     <loc>http://www.athenian-robotics.org/windows-setup/</loc>
+     <lastmod>2017-01-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
     

@@ -4,7 +4,7 @@ The Homebrew homepage is [here](http://brew.sh).
 
 ## Installation
 
-Install Homebrew with:
+Install Homebrew on OSX with:
 ```bash
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
