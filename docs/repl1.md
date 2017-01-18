@@ -94,8 +94,7 @@ def is_even(val):
 def is_odd(val):
     return val%2 != 0
        
-vals = range(10)
-for i in vals:
+for i in range(10):
     if is_even(i):
         print(str(i) + " is even")
     if is_odd(i):
@@ -103,7 +102,7 @@ for i in vals:
 ```
 
 ### Function Exercises: 
-* Write a function `double_num()` that doubles a number
+* Write a function `triple_num()` that returns the argument multiplied times 3.
 * Write a function `my_abs()` that returns the absolute value of a number
 * Write a function `str_len()` that returns the length of a string
 * Write a function `max_val()` that returns the maximum value in a list
