@@ -19,5 +19,4 @@ Install the driver with:
 $ curl -sS get.pimoroni.com/displayotron | bash
 ```
 
-
 <iframe src="https://player.vimeo.com/video/105573800" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
