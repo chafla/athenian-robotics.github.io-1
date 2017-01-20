@@ -7,7 +7,7 @@ The github repo is [here](https://github.com/pimoroni/unicorn-hat).
 
 Examples are [here](https://github.com/pimoroni/unicorn-hat/tree/master/examples).
 
-## Raspbery Pi Installation
+## Raspbian Installation
 
 Python 3
 ```bash

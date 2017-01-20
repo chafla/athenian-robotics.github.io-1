@@ -14,7 +14,7 @@ Python 3
 $ pip3 install paho-mqtt
 ```
 
-### Raspberry Pi
+### Raspbian
 
 ```bash
 $ sudo apt-get install python3-pip

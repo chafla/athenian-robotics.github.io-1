@@ -12,7 +12,7 @@ Tutorials are [here](https://learn.pimoroni.com/?tag=display-o-tron)
 
 Examples are [here](https://github.com/pimoroni/dot3k/tree/master/examples).
 
-## Raspbery Pi Installation
+## Raspbian Installation
 
 Install the driver with:
 ```bash
