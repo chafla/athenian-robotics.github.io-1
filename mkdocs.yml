@@ -18,7 +18,8 @@ pages:
 - Software Notes:
   - Git: git.md
   - Homebrew: homebrew.md
-  - MQTT: mqtt.md
+  - MQTT Broker: mqtt-broker.md
+  - MQTT Client: mqtt-client.md
   - Plot.ly: plotly.md
   - OpenCV: opencv.md
   - XQuartz: xquartz.md

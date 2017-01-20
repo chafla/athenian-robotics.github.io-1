@@ -1,6 +1,6 @@
-# MQTT Notes
+# MQTT Broker Notes
 
-## MQTT Broker Installation
+## Installation
 
 ### OSX
 
