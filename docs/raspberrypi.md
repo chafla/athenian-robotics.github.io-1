@@ -53,7 +53,7 @@ pi@raspberrypi:~ $ sudo reboot now
 Multiple Raspis on your network cannot share the same hostname. Change your hostname with:
 
 ```bash
-pi@raspberrypi:~ $ nano /etc/hostname
+pi@raspberrypi:~ $ sudo nano /etc/hostname
 pi@raspberrypi:~ $ sudo reboot now
 ```
 
