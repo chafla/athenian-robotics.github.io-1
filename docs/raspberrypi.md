@@ -104,18 +104,3 @@ Enable file sharing with:
 pi@raspberrypi:~ $ sudo apt-get install netatalk
 ```
 
-## Copy an SD card
-
-### OSX 
-
-Insert an SD card and determine the mount point with:
-```bash
-$ diskutil list
-```
-
-If the mount point were */dev/disk3*, copy the contents to *~/Desktop/raspberrypi.dmg* with:
-```bash
-$ sudo dd if=/dev/disk3 of=~/Desktop/raspberrypi.dmg
-```
-
-After creating the *.img* file, use [Etcher](https://etcher.io) to burn the image file to an SD card.
