@@ -1,38 +1,55 @@
 # OSX Setup
 
+## One-time Steps
+
 Install the following pieces of software: 
 
-## [XCode](http://developer.apple.com/xcode/)
+### [XCode](http://developer.apple.com/xcode/)
 
-## [Java 8](https://java.com/en/download/)
+### [Java 8](https://java.com/en/download/)
 
-## [Homebrew](http://brew.sh)
+### [Homebrew](http://brew.sh)
 
 ```bash
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-## [Python 3](https://www.python.org)
+### [Python 3](https://www.python.org)
 ```bash
 $ brew install python3
 ```
 
-## [git](https://git-scm.com)
+### [pip](https://en.wikipedia.org/wiki/Pip_(package_manager))
+```bash
+$ sudo easy_install pip
+```
+
+### [git](https://git-scm.com)
 ```bash
 $ brew install git
 ```
 
-## [maven](http://maven.apache.org)
+### [maven](http://maven.apache.org)
 ```bash
 $ brew install maven
 ```
 
-## [gradle](http://maven.apache.org)
+### [gradle](http://maven.apache.org)
 ```bash
 $ brew install gradle
 ```
 
-## [httpie](https://github.com/jkbrzt/httpie)
+### [httpie](https://github.com/jkbrzt/httpie)
 ```bash
 $ brew install httpie
+```
+
+
+## Ongoing Admin
+
+Keep your brew-installed apps up to date with: 
+
+```bash
+$ brew update
+$ brew upgrade
 ```
