@@ -26,6 +26,7 @@ pages:
   - numpy: numpy.md
   - gRPC: grpc.md
   - XQuartz: xquartz.md
+  - Tkinter: tkinter.md
   - MkDocs: mkdocs.md
 - Hardware Notes:
   - Raspberry Pi: raspberrypi.md
