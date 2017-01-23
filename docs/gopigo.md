@@ -11,6 +11,8 @@ A GoPiGo overview is
 
 ## Setup
 
+### Enable WiFi
+
 After plugging in the ethernet cable, connect to the GoPiGo with:
 ```bash
 $ ssh pi@dex.local
@@ -32,4 +34,12 @@ After disconnecting the ethernet cable, verify the GoPiGo's Wifi is working with
 $ ssh pi@dex.local
 Password: robots1234
 pi@dex:~ $
+```
+
+### Change hostname
+Multiple GoPiGos on your network cannot share the same hostname. Change your hostname with:
+
+```bash
+pi@dex.local:~ $ sudo nano /etc/hostname
+pi@dex.local:~ $ sudo reboot now
 ```
