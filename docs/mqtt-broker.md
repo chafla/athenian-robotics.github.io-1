@@ -70,10 +70,10 @@ $ systemctl status mosquitto
 ### Subscribe
 
 ```bash
-$ mosquitto_sub -d -h localhost -t /testnode
+$ mosquitto_sub -d -h localhost -t testtopic
 Client mosqsub/27524-pleiku.lo sending CONNECT
 Client mosqsub/27524-pleiku.lo received CONNACK
-Client mosqsub/27524-pleiku.lo sending SUBSCRIBE (Mid: 1, Topic: /testnode, QoS: 0)
+Client mosqsub/27524-pleiku.lo sending SUBSCRIBE (Mid: 1, Topic: testtopic, QoS: 0)
 Client mosqsub/27524-pleiku.lo received SUBACK
 Subscribed (mid: 1): 0
 ```
@@ -81,9 +81,9 @@ Subscribed (mid: 1): 0
 ### Publish
 
 ```bash
-$ mosquitto_pub -d -h localhost -m "simple val" -t /testnode
+$ mosquitto_pub -d -h localhost -m "simple val" -t testtopic
 Client mosqpub/27472-pleiku.lo sending CONNECT
 Client mosqpub/27472-pleiku.lo received CONNACK
-Client mosqpub/27472-pleiku.lo sending PUBLISH (d0, q0, r0, m1, '/testnode', ... (10 bytes))
+Client mosqpub/27472-pleiku.lo sending PUBLISH (d0, q0, r0, m1, 'testtopic', ... (10 bytes))
 Client mosqpub/27472-pleiku.lo sending DISCONNECT
 ```
