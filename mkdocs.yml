@@ -23,6 +23,7 @@ pages:
   - Plot.ly: plotly.md
   - OpenCV: opencv.md
   - imutils: imutils.md
+  - numpy: numpy.md
   - gRPC: grpc.md
   - XQuartz: xquartz.md
   - MkDocs: mkdocs.md

@@ -1,6 +1,6 @@
 # imutils Notes
 
-A detailed description of the *imutils* python package is 
+A detailed description of the *imutils* Python package is 
 [here](https://github.com/jrosebr1/imutils)
 
 ## Installation
