@@ -65,8 +65,14 @@ pi@raspberrypi:~ $ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 Add a network entry for each SID with which the Raspi will need to connect:
 ```snakeyaml
 network={
-    ssid="MyWiFiNetwork"
-    psk="the_password"
+    ssid="MyWiFiNetwork1"
+    psk="the_password1"
+    key_mgmt=WPA-PSK
+}
+
+network={
+    ssid="MyWiFiNetwork2"
+    psk="the_password2"
     key_mgmt=WPA-PSK
 }
 ```
