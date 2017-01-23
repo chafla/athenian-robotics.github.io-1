@@ -65,7 +65,7 @@ Verify that the broker is running with:
 $ systemctl status mosquitto
 ```
 
-## Testing from CLI
+## Testing the MQTT Broker from CLI
 
 ### Subscribe
 
