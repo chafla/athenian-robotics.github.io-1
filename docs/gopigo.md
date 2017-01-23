@@ -42,7 +42,7 @@ Password: robots1234
 pi@dex:~ $
 ```
 
-### Enable WiFi
+### Enable Wi-Fi
 
 ```bash
 pi@dex:~ $ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
@@ -68,7 +68,7 @@ Reboot with:
 pi@dex:~ $ sudo reboot now
 ```
 
-After disconnecting the ethernet cable, verify the Wifi on the GoPiGo's Raspi is working with:
+After disconnecting the ethernet cable, verify the Wi-Fi on the GoPiGo's Raspi is working with:
 ```bash
 $ ssh pi@dex.local
 Password: robots1234

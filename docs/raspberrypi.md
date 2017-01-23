@@ -57,7 +57,7 @@ pi@raspberrypi:~ $ sudo nano /etc/hostname
 pi@raspberrypi:~ $ sudo reboot now
 ```
 
-## Enable Wifi
+## Enable Wi-Fi
 ```bash
 pi@raspberrypi:~ $ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 ```
