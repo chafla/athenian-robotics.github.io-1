@@ -10,3 +10,9 @@ Install [gRPC](http://www.grpc.io/docs/guides/) with:
 $ pip install grpcio
 $ pip install grpcio-tools
 ```
+
+If the installation fails with `ImportError: No module named Cython`, install *Cython* with:
+```bash
+$ pip install Cython
+```
+
