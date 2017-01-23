@@ -89,5 +89,7 @@ Update the Linux distro with:
 ```bash
 pi@dex:~ $ sudo apt-get update
 pi@dex:~ $ sudo apt-get upgrade
+pi@dex:~ $ sudo apt-get dist-upgrade
+pi@dex:~ $ sudo apt-get autoremove
 pi@dex:~ $ sudo reboot now
 ```
