@@ -1,7 +1,7 @@
 # numpy Notes
 
 A detailed description of the *numpy* Python package is 
-[here](http://www.numpy.org)
+[here](http://www.numpy.org).
 
 ## Installation
 
