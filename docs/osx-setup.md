@@ -14,6 +14,11 @@ Install the following pieces of software:
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
+### [Python 2](https://www.python.org)
+```bash
+$ brew install python
+```
+
 ### [Python 3](https://www.python.org)
 ```bash
 $ brew install python3
@@ -52,4 +57,9 @@ Keep your brew-installed apps up to date with:
 ```bash
 $ brew update
 $ brew upgrade
+```
+
+You can check on the health of your `brew` installation with:
+```bash
+$ brew doctor
 ```
