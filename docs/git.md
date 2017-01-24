@@ -1,7 +1,7 @@
 # Git Notes
 
 A good [Git](https://git-scm.com) tutorial is 
-[here](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud)
+[here](https://try.github.io/levels/1/challenges/1)
 
 ## Installation
 
