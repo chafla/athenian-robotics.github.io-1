@@ -29,3 +29,21 @@ addressed, use Python 2.7 with OpenCV 3.
 Detailed instructions are 
 [here](http://www.pyimagesearch.com/2016/04/18/install-guide-raspberry-pi-3-raspbian-jessie-opencv-3/).
 Make sure to use version `3.2.0` instead of `3.1.0`.
+
+## Displaying Raspi OpenCV camera images to a Mac
+
+1) Set **DISPLAY** env var to use the OSX machine (in this case *my-mac*). 
+On the Raspi type:
+```bash
+$ set DISPLAY my-mac:0
+```
+
+2) Start the *[X](https://en.wikipedia.org/wiki/X_Window_System) server* 
+[XQuartz](https://www.xquartz.org) on the OSX machine.
+
+3) Add the Raspi host name to enable connections to the X server (in this case *my-raspi*). 
+On the OSX machine type:
+```bash
+$ xhost + my-raspi
+my-raspi being added to access control list
+```
