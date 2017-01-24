@@ -17,6 +17,7 @@ pages:
   - Python: ev3-python.md
 - Software Notes:
   - Git: git.md
+  - PyCharm: pycharm.md
   - Homebrew: homebrew.md
   - MQTT Broker: mqtt-broker.md
   - MQTT Client: mqtt-client.md
