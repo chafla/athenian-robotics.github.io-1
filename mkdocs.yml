@@ -30,6 +30,7 @@ pages:
   - MkDocs: mkdocs.md
 - Hardware Notes:
   - Raspberry Pi: raspberrypi.md
+  - Arduino: arduino.md
   - SD Cards: sdcards.md
   - Blinkt: blinkt.md
   - Unicorn Hat: unicorn.md

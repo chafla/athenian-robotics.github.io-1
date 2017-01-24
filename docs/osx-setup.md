@@ -49,6 +49,8 @@ $ brew install gradle
 $ brew install httpie
 ```
 
+### [GitKraken](https://www.gitkraken.com) or [SourceTree](https://www.sourcetreeapp.com)
+
 
 ## Ongoing Admin
 
