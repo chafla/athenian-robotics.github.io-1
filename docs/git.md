@@ -1,5 +1,8 @@
 # Git Notes
 
+A good [Git](https://git-scm.com) tutorial is 
+[here](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud)
+
 ## Installation
 
 ### OSX 
