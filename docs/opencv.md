@@ -4,6 +4,9 @@ OpenCV is described in detail [here](http://opencv.org).
 
 A great OpenCV resource is [pyimagesearch](http://www.pyimagesearch.com).
 
+A good OpenCV Python tutorial is 
+[here](http://docs.opencv.org/3.0-beta/doc/py_tutorials/py_tutorials.html).
+
 ## Installation
 
 ### OSX
