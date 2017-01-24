@@ -30,6 +30,6 @@ Any change you make to the interpreter path will be seen by all your PyCharm pro
 have to go through this process multiple times.
 
 
-Detailed instructions are 
+Additional instructions are 
 [here](https://www.jetbrains.com/help/pycharm/2016.3/installing-uninstalling-and-reloading-interpreter-paths.html).
 
