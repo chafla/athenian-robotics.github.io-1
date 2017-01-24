@@ -18,6 +18,9 @@ at the bottom of the dialog (hovering over the symbol reveals "Show paths for th
 <img title="Add ⌘N" src="https://www.jetbrains.com/help/img/idea/2016.3/new.png" width="12" height="12">
 and add your package
 
+Any change you make to the interpreter path will be seen by all your PyCharm projects, so you do not
+have to go through this process multiple times.
+
 
 Detailed instructions are 
 [here](https://www.jetbrains.com/help/pycharm/2016.3/installing-uninstalling-and-reloading-interpreter-paths.html).
