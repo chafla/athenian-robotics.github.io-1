@@ -20,14 +20,8 @@ pages:
   - PyCharm: pycharm.md
   - Homebrew: homebrew.md
   - MQTT Broker: mqtt-broker.md
-  - MQTT Client: mqtt-client.md
   - Plot.ly: plotly.md
-  - OpenCV: opencv.md
-  - imutils: imutils.md
-  - numpy: numpy.md
-  - gRPC: grpc.md
   - XQuartz: xquartz.md
-  - Tkinter: tkinter.md
   - MkDocs: mkdocs.md
 - Hardware Notes:
   - Raspberry Pi: raspberrypi.md
@@ -37,6 +31,14 @@ pages:
   - Unicorn Hat: unicorn.md
   - Display-O-Tron Hat: displayotron.md
   - GoPiGo: gopigo.md
+- Python Packages:
+  - OpenCV: opencv.md
+  - imutils: imutils.md
+  - numpy: numpy.md
+  - gRPC: grpc.md
+  - MQTT Client: mqtt-client.md
+  - Tkinter: tkinter.md
+
 
 theme: readthedocs
 
