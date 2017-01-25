@@ -5,6 +5,7 @@ site_author: Athenian Robotics Team
 
 pages:
 - Home: index.md
+- Github Repos: github-repos.md
 - Machine Setup:
   - OSX: osx-setup.md
   - Windows: windows-setup.md
