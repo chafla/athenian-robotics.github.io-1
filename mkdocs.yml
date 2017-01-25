@@ -13,9 +13,13 @@ pages:
   - Admin: python-admin.md
   - Links: python-links.md
   - REPL 1: repl1.md
-- EV3:
-  - Admin: ev3-admin.md
-  - Python: ev3-python.md
+- Python Packages:
+  - OpenCV: opencv.md
+  - imutils: imutils.md
+  - numpy: numpy.md
+  - gRPC: grpc.md
+  - MQTT Client: mqtt-client.md
+  - Tkinter: tkinter.md
 - Software Notes:
   - Git: git.md
   - PyCharm: pycharm.md
@@ -31,14 +35,11 @@ pages:
   - Blinkt: blinkt.md
   - Unicorn Hat: unicorn.md
   - Display-O-Tron Hat: displayotron.md
+- Robots:
   - GoPiGo: gopigo.md
-- Python Packages:
-  - OpenCV: opencv.md
-  - imutils: imutils.md
-  - numpy: numpy.md
-  - gRPC: grpc.md
-  - MQTT Client: mqtt-client.md
-  - Tkinter: tkinter.md
+  - EV3:
+    - Admin: ev3-admin.md
+    - Python: ev3-python.md
 
 
 theme: readthedocs
