@@ -1,5 +1,10 @@
 # PyCharm Notes
 
+## Installation
+
+After installing [PyCharm](https://www.jetbrains.com/pycharm/), enable the Toolbar and 
+Tool Buttons by clicking on `View-->Toolbar` and `View-->Tool Buttons`.
+
 ## Adjusting the PyCharm Interpreter Path 
 
 The `PYTHONPATH` shell variable is used to modify the interpreter path in the shell.
